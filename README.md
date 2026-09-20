@@ -26,7 +26,7 @@ This repository is designed to help engineers, students, and hobbyists quickly l
 
 ## 🚀 Getting Started
 
-1. **Install QSpice:** Download and install the simulator from [Qorvo's Official Site](https://www.qorvo.com/qspice).
+1. **Install QSpice:** Download and install the simulator from [Qorvo's Official Site](https://www.qorvo.com/design-hub/calculators-simulation/qspice).
 2. **Clone the Repository:**
    ```bash
    git clone [https://github.com/QSpice-Circuits/Qspice-examples.git](https://github.com/QSpice-Circuits/Qspice-examples.git)
