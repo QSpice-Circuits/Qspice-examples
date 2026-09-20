@@ -11,10 +11,12 @@ This repository is designed to help engineers, students, and hobbyists quickly l
 
 ## 📌 Repository Contents
 
-* LTspice-Educational - Ported [LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) Educational Examples to Qspice
-* PLECS-DemoModels - Ported [PLECS](https://www.plexim.com/products/plecs) Demo Models to Qspice
-* PSIM-Examples - Ported [PSIM](https://www.siemens.com/en-us/products/simcenter/systems-simulation/psim/) Examples to Qspice
-* Valentin Volodin - Ported Valentin Volodin [ValVol.lib](https://valvol.xyz/models.php)
+| Category / Folder | Description | Source / Reference |
+| :--- | :--- | :--- |
+| **LTspice-Educational** | Ported educational circuit examples | [LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) |
+| **PLECS-DemoModels** | Ported demo models for system-level power electronics | [PLECS](https://www.plexim.com/products/plecs) |
+| **PSIM-Examples** | Ported simulation examples for power electronics and motor drives | [PSIM](https://www.siemens.com/en-us/products/simcenter/systems-simulation/psim/) |
+| **Valentin Volodin** | Ported component and subcircuit models from `ValVol.lib` | [ValVol.lib](https://valvol.xyz/models.php) |
 
 ---
 
