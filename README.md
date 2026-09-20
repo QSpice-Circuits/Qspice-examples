@@ -14,10 +14,10 @@ This repository is designed to help engineers, students, and hobbyists quickly l
 | Category / Folder | Description | Reference |
 | :--- | :--- | :--- |
 | **[KSKelvin-Examples](https://github.com/QSpice-Circuits/Qspice-examples/tree/main/KSKelvin-Examples)** | KSKelvin circuit examples <br> - Qspice native devices, Symbols-KSKelvin devices examples | [Symbols-KSKelvin](https://github.com/KSKelvin-Github/Qspice/tree/main/Symbols-KSKelvin)|
-| **LTspice-Educational** | Ported educational circuit examples | [LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) |
-| **PLECS-DemoModels** | Ported demo models for system-level power electronics | [PLECS](https://www.plexim.com/products/plecs) |
-| **PSIM-Examples** | Ported simulation examples for power electronics and motor drives | [PSIM](https://www.siemens.com/en-us/products/simcenter/systems-simulation/psim/) |
-| **Valentin Volodin** | Ported component and subcircuit models from `ValVol.lib` | [ValVol.lib](https://valvol.xyz/models.php) |
+| **[LTspice-Educational](https://github.com/QSpice-Circuits/Qspice-examples/tree/main/LTspice-Educational)** | Ported educational circuit examples | [LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) |
+| **[PLECS-DemoModels](https://github.com/QSpice-Circuits/Qspice-examples/tree/main/PLECS-DemoModels)** | Ported demo models for system-level power electronics | [PLECS](https://www.plexim.com/products/plecs) |
+| **[PSIM-Examples](https://github.com/QSpice-Circuits/Qspice-examples/tree/main/PSIM-Examples)** | Ported simulation examples for power electronics and motor drives | [PSIM](https://www.siemens.com/en-us/products/simcenter/systems-simulation/psim/) |
+| **[Valentin Volodin](https://github.com/QSpice-Circuits/Qspice-examples/tree/main/Valentin%20Volodin/ValVol)** | Ported component and subcircuit models from `ValVol.lib` | [ValVol.lib](https://valvol.xyz/models.php) |
 
 > [!IMPORTANT]
 > **Implementation Note:** All schematics in this repository were built entirely from scratch in QSpice, using the referenced LTspice, PLECS, and PSIM examples solely as functional specifications. Every circuit relies exclusively on native QSpice components or subcircuits constructed from native primitives.
