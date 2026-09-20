@@ -19,7 +19,8 @@ This repository is designed to help engineers, students, and hobbyists quickly l
 | **PSIM-Examples** | Ported simulation examples for power electronics and motor drives | [PSIM](https://www.siemens.com/en-us/products/simcenter/systems-simulation/psim/) |
 | **Valentin Volodin** | Ported component and subcircuit models from `ValVol.lib` | [ValVol.lib](https://valvol.xyz/models.php) |
 
-The schematic was built from scratch in QSPICE using the LTspice, PLECS, and PSIM examples solely as a functional specification. All circuits use native QSPICE components or subcircuits built entirely from native QSPICE primitives.
+> [!IMPORTANT]
+> **Implementation Note:** All schematics in this repository were built entirely from scratch in QSpice, using the referenced LTspice, PLECS, and PSIM examples solely as functional specifications. Every circuit relies exclusively on native QSpice components or subcircuits constructed from native primitives.
 
 ---
 
