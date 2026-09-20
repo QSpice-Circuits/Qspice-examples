@@ -1,2 +1,4 @@
 # Qspice-examples
 This repository serves as a centralized collection of example projects, circuit schematics, custom component models, and simulation files for QSpice—the high-performance circuit simulator developed by Qorvo. It is designed to help engineers, students, and hobbyists quickly learn how to set up simulations, build custom C-block/DLL models, and implement various electronic designs using QSpice.
+
+Custom Symbols appeared in example schematics uses solely Symbols-KSKelvin custom symbol library from [KSKelvin-Github](https://github.com/KSKelvin-Github/Qspice)
