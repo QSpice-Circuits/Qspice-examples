@@ -1,6 +1,6 @@
 # QSpice Examples
 
-[![QSpice](https://img.shields.io/badge/Simulator-QSpice-blue.svg)](https://www.qorvo.com/qspice)
+[![QSpice](https://img.shields.io/badge/Simulator-QSpice-blue.svg)](https://www.qorvo.com/design-hub/calculators-simulation/qspice)
 [![Symbol Library](https://img.shields.io/badge/Symbol%20Library-KSKelvin-orange.svg)](https://github.com/KSKelvin-Github/Qspice)
 
 A centralized collection of example projects, circuit schematics, custom component models, and simulation files for **QSpice**—the high-performance circuit simulator developed by Qorvo. 
