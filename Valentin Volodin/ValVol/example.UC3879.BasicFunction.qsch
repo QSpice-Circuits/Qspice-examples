@@ -1,0 +1,274 @@
+ÿØÿÛ«schematic
+  «component (0,3000) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R16"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "4.8K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (0,3600) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C14"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "0.01µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (0,1800) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R17"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "4.8K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (0,2400) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C13"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "0.01µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (700,200) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R5"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "2K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (200,1200) 8 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (180,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (180,-150) 1 7 0 0x1000000 -1 -1 "pulse 1 5 0 1m 1m 0 2m"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (400,-200) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "RT"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "9.53K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (600,-1000) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C11"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "0.0022µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (3900,2400) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V7"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "12"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (4300,-200) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "CT"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "1000p"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (2200,800) 0 0
+    «symbol UC3879
+      «type: X»
+      «description: UC3879 Phase Shift Resonant Controller by Valentin Volodin (Qspice Version from KSKelvin)»
+      «library file: |.subckt UC3879 VREF COMP EA- CS DELAYSET_CD SS OUTD OUTC VC VIN PGND OUTB OUTA CT DELAYSET_AB UVSEL CLKSYNC RT RAMP AGND\nD4 AGND RAMP Z5\n¥A4 Q5V2AGND 0 N009 N008 N008 N012 SHUTDOWN AGND ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ D-FLOP td=10n Trise=10n\n¥A5 Q5V2AGND 0 N026 ¥ COMP N032 Q5V2AGND ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=0 Vh=1m Td=115n Trise=10n\n¥A6 Q5V2AGND 0 N040 ¥ N037 COMP Q5V2AGND ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=0 Vh=1m Trise=10n\nV2 N032 RAMP 1.3\n¥A7 Q5V2AGND 0 N002 ¥ VIN AGND Q5V2AGND ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=12.25 Vh=3 Trise=50n\nR3 VIN AGND 53k\nG1 VIN AGND UVLO AGND 4.6m\nG2 VC AGND UVLO AGND 0.8m\nG3 AGND N007 UVLO AGND 10m\nD6 AGND N007 Z5\nV3 N007 VREF 0\nF2 VIN AGND V3 1\nV4 N037 AGND 0.9\n¥A8 Q5V2AGND 0 ¥ N034 N027 ¥ ¥ ¥ N012 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A9 Q5V2AGND 0 ¥ N038 N040 ¥ ¥ ¥ N006 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A10 Q5V2AGND 0 ¥ N039 N034 N038 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A11 Q5V2AGND 0 N035 N036 N009 ¥ ¥ ¥ N039 ¥ ¥ ¥ ¥ ¥ ¥ ¥ XOR Trise=20n\nE1 N041 AGND SS AGND 1\nD7 COMP N041 IDEAL\nR4 COMP N052 1k\nC1 N051 AGND 1.59n ic=0\nE2 N052 AGND N051 AGND 1\nI1 N050 N051 15.9m Vsat=0.5\nI2 N051 N050 15.9m Vsat=0.5\nE3 N049 AGND N053 EA- 31622\nR5 N049 N050 100k\nR6 EA- AGND 5meg\nC2 N050 AGND 0.1p ic=0\nD8 AGND N051 Z5\n¥A12 Q5V2AGND 0 N068 ¥ N062 ¥ ¥ ¥ N069 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A13 Q5V2AGND 0 N070 ¥ N071 ¥ N072 ¥ N064 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A14 Q5V2AGND 0 N067 SHUTDOWN N070 N068 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A15 Q5V2AGND 0 N069 N071 CS ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(2.5-(0)) Td=160n Trise=10n\n¥A16 Q5V2AGND 0 ¥ N072 SS ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.2-(0)) Trise=10n\n¥A17 Q5V2AGND 0 N065 ¥ SS ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(4.3-(0)) Trise=10n\n¥A18 Q5V2AGND 0 N066 ¥ N065 ¥ ¥ ¥ SHUTDOWN ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A19 Q5V2AGND 0 N063 ¥ N062 ¥ ¥ ¥ N066 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nD9 AGND SS Z5\nI3 AGND SS 9u\nG4 SS AGND N064 AGND 46u\n¥A21 Q5V2AGND 0 N061 ¥ VREF ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(4.75-(0)) Trise=10n\n¥A22 Q5V2AGND 0 ¥ N062 N061 ¥ UVLO ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\nV5 DELAYSET_AB AGND 2.5 Rser=275\nC3 N019 AGND 15p ic=0\nD10 N017 N018 Ideal\n¥A23 Q5V2AGND 0 N017 ¥ N016 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nR8 N018 N019 150\nF3 N019 AGND V5 -1\nD11 AGND N019 Ideal\n¥A24 Q5V2AGND 0 N020 ¥ N019 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(1-(0)) Trise=10n\n¥A25 Q5V2AGND 0 N021 N015 N020 N016 SHUTDOWN ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nC4 N030 AGND 15p ic=0\nD12 N028 N029 Ideal\n¥A26 Q5V2AGND 0 N028 ¥ N023 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nR9 N029 N030 150\nF4 N030 AGND V5 -1\nD13 AGND N030 Ideal\n¥A27 Q5V2AGND 0 N031 ¥ N030 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(1-(0)) Trise=10n\n¥A28 Q5V2AGND 0 N033 N025 N031 N023 SHUTDOWN ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nC5 N044 AGND 15p ic=0\nD14 N042 N043 Ideal\n¥A29 Q5V2AGND 0 N042 ¥ N035 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nR10 N043 N044 150\nF5 N044 AGND V6 -1\nD15 AGND N044 Ideal\n¥A30 Q5V2AGND 0 N045 ¥ N044 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(1-(0)) Trise=10n\n¥A31 Q5V2AGND 0 N047 N048 N045 N035 SHUTDOWN ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nC6 N056 AGND 15p ic=0\nD16 N054 N055 Ideal\n¥A32 Q5V2AGND 0 N054 ¥ N036 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nR11 N055 N056 150\nF6 N056 AGND V6 -1\nD17 AGND N056 Ideal\n¥A33 Q5V2AGND 0 N057 ¥ N056 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(1-(0)) Trise=10n\n¥A34 Q5V2AGND 0 N058 N059 N057 N036 SHUTDOWN ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nV6 DELAYSET_CD AGND 2.5 Rser=275\nXS1 OUTA N014 N015 AGND HOUT\nXS2 PGND P001 N021 AGND LOUT\nXS3 OUTB N024 N025 AGND HOUT\nXS4 PGND P002 N033 AGND LOUT\nD18 VC N014 IDEAL\nD19 VC N024 IDEAL\nD20 OUTA P001 IDEAL\nD21 OUTB P002 IDEAL\nXS5 OUTC N046 N048 AGND HOUT\nXS6 PGND P003 N047 AGND LOUT\nXS7 OUTD N060 N059 AGND HOUT\nXS8 PGND P004 N058 AGND LOUT\nD22 VC N046 IDEAL\nD23 VC N060 IDEAL\nD24 OUTC P003 IDEAL\nD25 OUTD P004 IDEAL\n¥A35 Q5V2AGND 0 N016 ¥ N009 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=20n\n¥A36 Q5V2AGND 0 N023 ¥ N008 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=20n\nC7 SS AGND 0.1p ic=0\n¥A20 Q5V2AGND 0 ¥ N064 N067 N063 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\nC9 SS AGND 0.1p ic=0\nR13 VC AGND 800k\n¥A37 Q5V2AGND 0 N027 ¥ N022 N026 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A38 Q5V2AGND 0 ¥ N022 CS ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(2-(0)) Td=110n Trise=10n\nV7 N053 AGND 2.5\n¥A39 Q5V2AGND 0 N001 ¥ UVSEL AGND Q5V2AGND ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=9.875 Vh=0.875 Trise=50n\nR7 UVSEL AGND 270k\n¥A40 Q5V2AGND 0 UVLO ¥ N001 N002 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A1 Q5V2AGND 0 N006 N012 N013 CLKSYNC ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\nD1 CT N004 Ideal\nR1 N005 N006 20\nD2 N010 N011 Ideal\nR2 CLKSYNC AGND 100k\nR12 N011 CLKSYNC 10\n¥A2 Q5V2AGND 0 ¥ N013 CT ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.2-(0)) Trise=10n\nF1 AGND CT V1 -1\nV1 N003 AGND 2.5\nI4 N004 N005 10m Vsat=0.5\n¥A3 Q4V2AGND Q1V N010 ¥ CT AGND Q4V2AGND ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=1.6 Vh=1.3 Trise=10n\nR15 RT N003 470\n.model Ideal D(Ron=1m Roff=1g Vfwd=0)\n.model Real D(Ron=10 Roff=1g Vfwd=0.7)\n.model Z5 D(Ron=1m Roff=1G Vfwd=0 Vrev=5)\n.subckt HOUT + - +C -C Vser=1.5 Ilimit=0.1\nS1 + N001 +C -C SWq\nVS1 N002 N001 Vser\nIS1 N003 N002 Ilimit Vsat=100m\nDS1 - N003 Di\n.model Di D Ron=1m Roff=100Meg Vfwd=0\n.model SWq SW Ron=0.68 Roff=220k Vt=3.25 Vh=-0.7\n.ends HOUT\n.subckt LOUT + - +C -C Vser=0.2 Ilimit=0.1\nS1 + N001 +C -C SWq\nVS1 N002 N001 Vser\nIS1 N003 N002 Ilimit Vsat=100m\nDS1 - N003 Di\n.model Di D Ron=1m Roff=100Meg Vfwd=0\n.model SWq SW Ron=2.2 Roff=220k Vt=3.25 Vh=-0.7\n.ends LOUT\nVQ1 Q1V AGND 1\nVQ2 Q4V2AGND AGND 4\nVQ3 Q5V2AGND AGND 5\n.ends UC3879»
+      «shorted pins: false»
+      «rect (-900,-2000) (1000,2000) 0 0 0 0xff0000 0xf5e5f3 -1 0 -1»
+      «text (0,2100) 1 15 0 0x1000000 -1 -1 "X1"»
+      «text (0,0) 1 15 0 0x1000000 -1 -1 "UC3879"»
+      «pin (-900,1800) (20,0) 1 7 0 0x0 -1 "VREF"»
+      «pin (-900,600) (20,0) 1 7 0 0x0 -1 "COMP"»
+      «pin (-900,200) (20,0) 1 7 0 0x0 -1 "EA-"»
+      «pin (-900,-600) (20,0) 1 7 0 0x0 -1 "CS"»
+      «pin (-900,1000) (20,0) 1 7 0 0x0 -1 "DELAYSET_CD"»
+      «pin (-900,-1800) (20,0) 1 7 0 0x0 -1 "SS"»
+      «pin (1000,-200) (-30,0) 1 11 0 0x0 -1 "OUTD"»
+      «pin (1000,200) (-30,0) 1 11 0 0x0 -1 "OUTC"»
+      «pin (1000,1400) (-30,0) 1 11 0 0x0 -1 "VC"»
+      «pin (1000,1800) (-30,0) 1 11 0 0x0 -1 "VIN"»
+      «pin (1000,-600) (-20,0) 1 11 0 0x0 -1 "PGND"»
+      «pin (1000,600) (-20,0) 1 11 0 0x0 -1 "OUTB"»
+      «pin (1000,1000) (-20,0) 1 11 0 0x0 -1 "OUTA"»
+      «pin (1000,-1000) (-20,0) 1 11 0 0x0 -1 "CT"»
+      «pin (-900,1400) (30,0) 1 7 0 0x0 -1 "DELAYSET_AB"»
+      «pin (-900,-200) (30,0) 1 7 0 0x0 -1 "UVSEL"»
+      «pin (1000,-1400) (-20,0) 1 11 0 0x0 -1 "CLKSYNC"»
+      «pin (-900,-1000) (30,0) 1 7 0 0x0 -1 "RT"»
+      «pin (-900,-1400) (30,0) 1 7 0 0x0 -1 "RAMP"»
+      «pin (1000,-1800) (-20,0) 1 11 0 0x0 -1 "AGND"»
+    »
+  »
+  «net (1000,2600) 1 14 0 "VREF"»
+  «net (-300,1700) 1 13 0 "GND"»
+  «net (400,200) 1 11 0 "GND"»
+  «net (200,1000) 1 13 0 "GND"»
+  «net (1000,1400) 1 14 0 "COMP"»
+  «net (400,-1000) 1 11 0 "GND"»
+  «net (3900,2200) 1 13 0 "GND"»
+  «net (3600,1800) 1 7 0 "OUTA"»
+  «net (3600,1400) 1 7 0 "OUTB"»
+  «net (3600,1000) 1 7 0 "OUTC"»
+  «net (3600,600) 1 7 0 "OUTD"»
+  «net (3600,-600) 1 7 0 "sync"»
+  «net (3500,-1200) 1 13 0 "GND"»
+  «net (4700,-400) 1 13 0 "GND"»
+  «net (1000,-1000) 1 14 0 "SS"»
+  «net (1100,-200) 1 14 0 "RT"»
+  «net (3500,2600) 1 14 0 "+12V"»
+  «net (1000,600) 1 11 0 "+12V"»
+  «net (100,-200) 1 11 0 "GND"»
+  «net (3700,-200) 1 14 0 "CT"»
+  «net (1100,200) 1 14 0 "CS"»
+  «junction (4000,-200)»
+  «junction (3500,2600)»
+  «junction (3500,-1000)»
+  «junction (1000,1400)»
+  «junction (300,3000)»
+  «junction (300,1800)»
+  «junction (-300,3000)»
+  «junction (-300,2400)»
+  «junction (-300,1800)»
+  «wire (1300,2600) (1000,2600) "VREF"»
+  «wire (-200,3600) (-300,3600) "GND"»
+  «wire (-300,3600) (-300,3000) "GND"»
+  «wire (-300,3000) (-200,3000) "GND"»
+  «wire (300,3000) (200,3000) "N01"»
+  «wire (200,3600) (300,3600) "N01"»
+  «wire (300,3600) (300,3000) "N01"»
+  «wire (1300,2200) (600,2200) "N01"»
+  «wire (-200,2400) (-300,2400) "GND"»
+  «wire (-300,2400) (-300,1800) "GND"»
+  «wire (-300,1800) (-200,1800) "GND"»
+  «wire (300,1800) (200,1800) "N02"»
+  «wire (200,2400) (300,2400) "N02"»
+  «wire (300,2400) (300,1800) "N02"»
+  «wire (-300,1800) (-300,1700) "GND"»
+  «wire (300,1800) (1300,1800) "N02"»
+  «wire (1300,1400) (1000,1400) "COMP"»
+  «wire (500,200) (400,200) "GND"»
+  «wire (1100,200) (900,200) "CS"»
+  «wire (600,3000) (300,3000) "N01"»
+  «wire (600,2200) (600,3000) "N01"»
+  «wire (1000,2600) (900,2600) "VREF"»
+  «wire (1000,-1000) (800,-1000) "SS"»
+  «wire (1100,-200) (600,-200) "RT"»
+  «wire (200,-200) (100,-200) "GND"»
+  «wire (3500,2600) (3200,2600) "+12V"»
+  «wire (3200,2200) (3500,2200) "+12V"»
+  «wire (3500,2200) (3500,2600) "+12V"»
+  «wire (3900,2600) (3500,2600) "+12V"»
+  «wire (3200,1800) (3600,1800) "OUTA"»
+  «wire (3200,1400) (3600,1400) "OUTB"»
+  «wire (3200,1000) (3600,1000) "OUTC"»
+  «wire (3200,600) (3600,600) "OUTD"»
+  «wire (3200,-600) (3600,-600) "sync"»
+  «wire (3500,-1000) (3500,200) "GND"»
+  «wire (3500,200) (3200,200) "GND"»
+  «wire (3500,-1000) (3200,-1000) "GND"»
+  «wire (3500,-1200) (3500,-1000) "GND"»
+  «wire (4500,-200) (4700,-200) "GND"»
+  «wire (4000,-200) (4100,-200) "CT"»
+  «wire (4700,-200) (4700,-400) "GND"»
+  «wire (1300,-1000) (1000,-1000) "SS"»
+  «wire (1300,-200) (1100,-200) "RT"»
+  «wire (1300,600) (1000,600) "+12V"»
+  «wire (1300,1000) (1000,1000) "COMP"»
+  «wire (1000,1000) (1000,1400) "COMP"»
+  «wire (3200,-200) (3700,-200) "CT"»
+  «wire (1300,-600) (100,-600) "CT"»
+  «wire (100,-600) (100,-1500) "CT"»
+  «wire (100,-1500) (4000,-1500) "CT"»
+  «wire (4000,-1500) (4000,-200) "CT"»
+  «wire (3700,-200) (4000,-200) "CT"»
+  «wire (-300,3000) (-300,2400) "GND"»
+  «wire (1000,1400) (200,1400) "COMP"»
+  «wire (1300,200) (1100,200) "CS"»
+  «text (4700,1850) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 1m 1Âµ skipbp"»
+  «text (4700,1607) 1 5 0 0x1000000 -1 -1 "ï»¿.plot V(OUTA) V(OUTC)\n.plot V(CT)+1.3 V(COMP)\n.plot V(sync)"»
+  «text (4200,-900) 1 7 1 0x1000000 -1 -1 "ï»¿CT and RT determine switching frequency\nCT connects to RAMP to feed the sawtooth"»
+  «text (-1200,600) 1 7 1 0x1000000 -1 -1 "ï»¿UVSEL : UVLO selection"»
+  «text (-300,4450) 1 7 1 0x1000000 -1 -1 "ï»¿UC3879 Texas Instruments Enhanced bipolar phase shifted full bridge controller\nPorted Valentin Volodin ValVol.zip in https://valvol.xyz/models.php\nBy KSKelvin, Qspice subcircuit is converted from LTspice syntax/devices to Qspice syntax/devices\n - download custom Symbols-KSKelvin from https://github.com/KSKelvin-Github/Qspice"»
+»
+
