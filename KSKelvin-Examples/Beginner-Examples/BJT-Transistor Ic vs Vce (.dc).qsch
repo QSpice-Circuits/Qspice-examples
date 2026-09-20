@@ -65,6 +65,6 @@
   «wire (-800,200) (-800,400) "N02"»
   «wire (-800,400) (-400,400) "N02"»
   «text (-900,-700) 1 7 0 0x1000000 -1 -1 "ï»¿; dc sweep with Vce from 0V to 40V and Ib from 2uA to 10uA\n.dc Vce 0 40 10m Ib 2Âµ 10Âµ 2Âµ\n.plot Ic(Q1)\n.abscissa Vce"»
-  «text (-900,1150) 1 7 1 0x1000000 -1 -1 "ï»¿Beginner Example by KSKelvin\n  - https://github.com/QSpice-Circuits/Qspice-examples\nPlot Ic vs Vce of BJT transistor"»
+  «text (-900,1250) 1 7 1 0x1000000 -1 -1 "ï»¿KSKelvin-Examples/Beginner-Example/\nBy KSKelvin on 9-20-2026\n  - https://github.com/QSpice-Circuits/Qspice-examples\nPlot Ic vs Vce of BJT transistor"»
 »
 

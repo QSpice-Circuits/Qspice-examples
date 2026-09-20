@@ -1,0 +1,76 @@
+ÿØÿÛ«schematic
+  «component (-200,800) 0 0
+    «symbol Transformer
+      «type: ×»
+      «description: Native Transformer Device(2 windings)»
+      «shorted pins: false»
+      «line (-200,200) (-110,200) 0 0 0x1000000 -1 -1»
+      «line (10,200) (100,200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (-110,-200) 0 0 0x1000000 -1 -1»
+      «line (-110,200) (-110,170) 0 0 0x1000000 -1 -1»
+      «line (-110,-170) (-110,-200) 0 0 0x1000000 -1 -1»
+      «line (10,-170) (10,-200) 0 0 0x1000000 -1 -1»
+      «line (10,200) (10,170) 0 0 0x1000000 -1 -1»
+      «line (10,-200) (100,-200) 0 0 0x1000000 -1 -1»
+      «line (-50,200) (-50,-200) 0 1 0x1000000 -1 -1»
+      «ellipse (-165,180) (-125,140) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «ellipse (25,180) (65,140) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «coil (-150,170) (-70,-170) 0 0 0 0x1000000 -1 -1»
+      «coil (50,170) (-30,-170) 0 0 0 0x1000000 -1 -1»
+      «text (-50,198) 1 14 0 0x1000000 -1 -1 "×1"»
+      «text (-50,-208) 1 13 0 0x1000000 -1 -1 "Turns=220 15"»
+      «pin (-200,200) (0,0) 1 0 0 0x1000000 -1 "PRI+"»
+      «pin (-200,-200) (0,0) 1 0 0 0x1000000 -1 "PRI-"»
+      «pin (100,200) (0,0) 1 0 0 0x1000000 -1 "SEC+"»
+      «pin (100,-200) (0,0) 1 0 0 0x1000000 -1 "SEC-"»
+    »
+  »
+  «component (-1000,800) 8 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (180,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (180,-150) 1 7 0 0x1000000 -1 -1 "sin 0 220 50"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (500,800) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "100"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «net (-1000,500) 1 13 0 "GND"»
+  «net (500,500) 1 13 0 "GND"»
+  «net (-600,1000) 1 14 0 "pri"»
+  «net (100,1000) 1 14 0 "sec"»
+  «junction (500,600)»
+  «junction (-1000,600)»
+  «wire (-600,1000) (-1000,1000) "pri"»
+  «wire (-400,600) (-1000,600) "GND"»
+  «wire (-1000,500) (-1000,600) "GND"»
+  «wire (-100,600) (500,600) "GND"»
+  «wire (100,1000) (-100,1000) "sec"»
+  «wire (500,500) (500,600) "GND"»
+  «wire (-400,1000) (-600,1000) "pri"»
+  «wire (500,1000) (100,1000) "sec"»
+  «text (-950,50) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 100m\n.plot V(sec)\n.plot V(pri)"»
+  «text (-2050,2250) 1 7 1 0x1000000 -1 -1 "ï»¿KSKelvin-Examples/Qspice-Native/\nBy KSKelvin on 9-20-2026\n  - https://github.com/QSpice-Circuits/Qspice-examples\nUse of Ã—-device for ideal transformer\n  - Symbols & IP > Behavioral > analog > Transformer\n  - this example demonstrate an ideal transformer\n  -   ideal transformer with infinite magnetizing inductance\n  -   turn ratio is 220:15, to step down AC from 220V to 15V"»
+»
+

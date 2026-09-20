@@ -233,6 +233,6 @@
   «rect (-600,1650) (4150,-1550) 0 0 2 0x4000000 0x1000000 -1 0 -1»
   «text (-450,-2100) 1 7 0 0x1000000 -1 -1 "ï»¿; transient simulation\n.tran 10ms\n.plot V(out)\n.plot V(c) \n.plot V(in)"»
   «text (-470,-1340) 1 7 0 0x1000000 -1 -1 "ï»¿.param Rx=3.9K ; standard E12"»
-  «text (-600,2000) 1 7 1 0x1000000 -1 -1 "ï»¿Beginner Example by KSKelvin\n  - https://github.com/QSpice-Circuits/Qspice-examples\nTransient simulation (time-domain) : transient response from 0s to 10ms"»
+  «text (-550,2100) 1 7 1 0x1000000 -1 -1 "ï»¿KSKelvin-Examples/Beginner-Example/\nBy KSKelvin on 9-20-2026\n  - https://github.com/QSpice-Circuits/Qspice-examples\nTransient simulation (time-domain) : transient response from 0s to 10ms"»
 »
 

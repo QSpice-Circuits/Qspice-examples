@@ -1,0 +1,90 @@
+ÿØÿÛ«schematic
+  «component (-1000,800) 8 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (180,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (180,-150) 1 7 0 0x1000000 -1 -1 "sin 0 220 50"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (800,800) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "100"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-400,800) 0 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «ellipse (-60,160) (-30,130) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "L1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "Lp"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (200,800) 0 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «ellipse (-60,160) (-30,130) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "L2"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "Ls"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «net (-1000,400) 1 13 0 "GND"»
+  «net (800,400) 1 13 0 "GND"»
+  «net (-600,1100) 1 14 0 "pri"»
+  «net (400,1100) 1 14 0 "sec"»
+  «junction (800,500)»
+  «junction (-1000,500)»
+  «wire (-600,1100) (-1000,1100) "pri"»
+  «wire (-400,500) (-1000,500) "GND"»
+  «wire (-1000,400) (-1000,500) "GND"»
+  «wire (200,500) (800,500) "GND"»
+  «wire (400,1100) (200,1100) "sec"»
+  «wire (800,400) (800,500) "GND"»
+  «wire (-400,1000) (-400,1100) "pri"»
+  «wire (800,1100) (400,1100) "sec"»
+  «wire (-400,1100) (-600,1100) "pri"»
+  «wire (200,1100) (200,1000) "sec"»
+  «wire (800,600) (800,500) "GND"»
+  «wire (800,1100) (800,1000) "sec"»
+  «wire (200,500) (200,600) "GND"»
+  «wire (-400,500) (-400,600) "GND"»
+  «wire (-1000,1000) (-1000,1100) "pri"»
+  «wire (-1000,500) (-1000,600) "GND"»
+  «text (-1750,-150) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 100m\n.plot V(sec)\n.plot V(pri)"»
+  «text (-2050,2100) 1 7 1 0x1000000 -1 -1 "ï»¿KSKelvin-Examples/Qspice-Native/\nBy KSKelvin on 9-20-2026\n  - https://github.com/QSpice-Circuits/Qspice-examples\nUse of coupled inductors with K mutual inductance\n  - this example demonstrate a transformer with magnetizing inductance\n  -   define Lp=1mH and turn ration n=220/15\n  -   calculate Ls=Lp/(n^2)"»
+  «text (-450,350) 1 7 0 0x1000000 -1 -1 "ï»¿K1 L1 L2 1"»
+  «text (-490,-120) 1 7 0 0x1000000 -1 -1 "ï»¿.param Lp=1m\n.param n=220/15\n.param Ls=Lp/(n^2)"»
+»
+

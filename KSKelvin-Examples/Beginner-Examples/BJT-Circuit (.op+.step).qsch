@@ -233,6 +233,6 @@
   «rect (-600,1650) (4150,-1550) 0 0 2 0x4000000 0x1000000 -1 0 -1»
   «text (-500,-2100) 1 7 0 0x1000000 -1 -1 "ï»¿; DC operation point (Sweep Rx)\n.step param Rx 2K 5K 0.1K\n.op\n.plot V(c)\n.abscissa Rx"»
   «text (-470,-1340) 1 7 0 0x1000000 -1 -1 "ï»¿.param Rx=3.9K ; standard E12"»
-  «text (-550,2000) 1 7 1 0x1000000 -1 -1 "ï»¿Beginner Example by KSKelvin\n  - https://github.com/QSpice-Circuits/Qspice-examples\nSweep Rx (resistor R4) in help to determine optimal value for V(c) equals half of V+"»
+  «text (-550,2100) 1 7 1 0x1000000 -1 -1 "ï»¿KSKelvin-Examples/Beginner-Example/\nBy KSKelvin on 9-20-2026\n  - https://github.com/QSpice-Circuits/Qspice-examples\nSweep Rx (resistor R4) in help to determine optimal value for V(c) equals half of V+"»
 »
 
