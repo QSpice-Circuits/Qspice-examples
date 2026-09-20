@@ -1,0 +1,1005 @@
+ÿØÿÛ«schematic
+  «component (-1400,1200) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "600"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (100,800) 0 0
+    «symbol Ideal-MOSFET
+      «type: X»
+      «description: Ideal MOSFET»
+      «library file: |.subckt Ideal-MOSFET D G S\nS1 D S G 0 SWi ON=ON OFF=OFF\nD1 S D Dp\n.model SWi SW Ron=Rdson Roff=2*Roff Vt=Vt Vh=Vh TTOL=TTOL\n.model Dp D Ron=dRon Roff=2*Roff Vfwd=dVfwd\n.param ON =if(Initial==0,0,if(Initial==1,1,0))\n.param OFF=if(Initial==0,1,if(Initial==1,0,0))\n.ends Ideal-MOSFET»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-300,0) 0 0 0xff00ff -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (150,150) 1 7 0 0x1000000 -1 -1 "X1"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "IDEAL-MOSFET"»
+      «text (151,-150) 1 7 2 0x1000000 -1 -1 "Initial=<-1,(0),1> ;0:InitialOFF / 1:InitialON / -1:NotSet"»
+      «text (150,-300) 1 7 2 0x1000000 -1 -1 "Rdson=<1m> ;Rds,on"»
+      «text (150,-450) 1 7 2 0x1000000 -1 -1 "Roff=<10Meg> ;Roff of MOSFET and DIODE"»
+      «text (150,-600) 1 7 2 0x1000000 -1 -1 "dRon=<1m> ;Ron of Body Diode"»
+      «text (150,-750) 1 7 2 0x1000000 -1 -1 "dVfwd=<1m> ;Vfwd of Body Diode"»
+      «text (150,-900) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (150,-1050) 1 7 2 0x1000000 -1 -1 "Vt=<0.5> ;gate threshold"»
+      «text (150,-1200) 1 7 2 0x1000000 -1 -1 "Vh=<0> ;gate hysteresis"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (1200,800) 0 0
+    «symbol Ideal-MOSFET
+      «type: X»
+      «description: Ideal MOSFET»
+      «library file: |.subckt Ideal-MOSFET D G S\nS1 D S G 0 SWi ON=ON OFF=OFF\nD1 S D Dp\n.model SWi SW Ron=Rdson Roff=2*Roff Vt=Vt Vh=Vh TTOL=TTOL\n.model Dp D Ron=dRon Roff=2*Roff Vfwd=dVfwd\n.param ON =if(Initial==0,0,if(Initial==1,1,0))\n.param OFF=if(Initial==0,1,if(Initial==1,0,0))\n.ends Ideal-MOSFET»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-300,0) 0 0 0xff00ff -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (150,150) 1 7 0 0x1000000 -1 -1 "X2"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "IDEAL-MOSFET"»
+      «text (151,-150) 1 7 2 0x1000000 -1 -1 "Initial=<-1,(0),1> ;0:InitialOFF / 1:InitialON / -1:NotSet"»
+      «text (150,-300) 1 7 2 0x1000000 -1 -1 "Rdson=<1m> ;Rds,on"»
+      «text (150,-450) 1 7 2 0x1000000 -1 -1 "Roff=<10Meg> ;Roff of MOSFET and DIODE"»
+      «text (150,-600) 1 7 2 0x1000000 -1 -1 "dRon=<1m> ;Ron of Body Diode"»
+      «text (150,-750) 1 7 2 0x1000000 -1 -1 "dVfwd=<1m> ;Vfwd of Body Diode"»
+      «text (150,-900) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (150,-1050) 1 7 2 0x1000000 -1 -1 "Vt=<0.5> ;gate threshold"»
+      «text (150,-1200) 1 7 2 0x1000000 -1 -1 "Vh=<0> ;gate hysteresis"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (100,-400) 0 0
+    «symbol Ideal-MOSFET
+      «type: X»
+      «description: Ideal MOSFET»
+      «library file: |.subckt Ideal-MOSFET D G S\nS1 D S G 0 SWi ON=ON OFF=OFF\nD1 S D Dp\n.model SWi SW Ron=Rdson Roff=2*Roff Vt=Vt Vh=Vh TTOL=TTOL\n.model Dp D Ron=dRon Roff=2*Roff Vfwd=dVfwd\n.param ON =if(Initial==0,0,if(Initial==1,1,0))\n.param OFF=if(Initial==0,1,if(Initial==1,0,0))\n.ends Ideal-MOSFET»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-300,0) 0 0 0xff00ff -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (150,150) 1 7 0 0x1000000 -1 -1 "X3"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "IDEAL-MOSFET"»
+      «text (151,-150) 1 7 2 0x1000000 -1 -1 "Initial=<-1,(0),1> ;0:InitialOFF / 1:InitialON / -1:NotSet"»
+      «text (150,-300) 1 7 2 0x1000000 -1 -1 "Rdson=<1m> ;Rds,on"»
+      «text (150,-450) 1 7 2 0x1000000 -1 -1 "Roff=<10Meg> ;Roff of MOSFET and DIODE"»
+      «text (150,-600) 1 7 2 0x1000000 -1 -1 "dRon=<1m> ;Ron of Body Diode"»
+      «text (150,-750) 1 7 2 0x1000000 -1 -1 "dVfwd=<1m> ;Vfwd of Body Diode"»
+      «text (150,-900) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (150,-1050) 1 7 2 0x1000000 -1 -1 "Vt=<0.5> ;gate threshold"»
+      «text (150,-1200) 1 7 2 0x1000000 -1 -1 "Vh=<0> ;gate hysteresis"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (1200,-400) 0 0
+    «symbol Ideal-MOSFET
+      «type: X»
+      «description: Ideal MOSFET»
+      «library file: |.subckt Ideal-MOSFET D G S\nS1 D S G 0 SWi ON=ON OFF=OFF\nD1 S D Dp\n.model SWi SW Ron=Rdson Roff=2*Roff Vt=Vt Vh=Vh TTOL=TTOL\n.model Dp D Ron=dRon Roff=2*Roff Vfwd=dVfwd\n.param ON =if(Initial==0,0,if(Initial==1,1,0))\n.param OFF=if(Initial==0,1,if(Initial==1,0,0))\n.ends Ideal-MOSFET»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-300,0) 0 0 0xff00ff -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (150,150) 1 7 0 0x1000000 -1 -1 "X4"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "IDEAL-MOSFET"»
+      «text (151,-150) 1 7 2 0x1000000 -1 -1 "Initial=<-1,(0),1> ;0:InitialOFF / 1:InitialON / -1:NotSet"»
+      «text (150,-300) 1 7 2 0x1000000 -1 -1 "Rdson=<1m> ;Rds,on"»
+      «text (150,-450) 1 7 2 0x1000000 -1 -1 "Roff=<10Meg> ;Roff of MOSFET and DIODE"»
+      «text (150,-600) 1 7 2 0x1000000 -1 -1 "dRon=<1m> ;Ron of Body Diode"»
+      «text (150,-750) 1 7 2 0x1000000 -1 -1 "dVfwd=<1m> ;Vfwd of Body Diode"»
+      «text (150,-900) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (150,-1050) 1 7 2 0x1000000 -1 -1 "Vt=<0.5> ;gate threshold"»
+      «text (150,-1200) 1 7 2 0x1000000 -1 -1 "Vh=<0> ;gate hysteresis"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (1800,500) 0 0
+    «symbol iSense-0Vsrc-2
+      «type: X»
+      «description: iSense - Current Sense»
+      «library file: |.subckt isense in+ in- out\nV1 in+ in- 0\nB1 out 0 V=A*I(V1)\n.ends isense»
+      «shorted pins: false»
+      «line (-160,60) (-100,60) 0 0 0x1000000 -1 -1»
+      «line (-130,30) (-130,90) 0 0 0x1000000 -1 -1»
+      «line (0,-100) (0,-30) 0 0 0x1000000 -1 -1»
+      «ellipse (-30,30) (30,-30) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (100,0) (-100,0) (0,0) 0 0 0x1000000 -1 -1»
+      «text (0,200) 1 15 0 0x1000000 -1 -1 "X5"»
+      «text (200,200) 1 7 2 0x1000000 -1 -1 "iSense"»
+      «text (100,-150) 1 7 2 0x1000000 -1 -1 "A=<1>"»
+      «pin (-100,0) (0,0) 1 15 0 0x0 -1 "in+"»
+      «pin (100,0) (0,0) 1 15 0 0x0 -1 "in-"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (2500,500) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "Cs"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "1µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (3000,500) 2 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "Ld"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "8µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (3400,200) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "Cp"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "0.1µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (4200,200) 0 0
+    «symbol Ideal-Transformer
+      «type: X»
+      «description: Ideal Transformer (No magnitizing / leakage inductance)»
+      «library file: |.subckt Ideal-Transformer PRI+ PRI- SEC+ SEC-\n×1 «PRI+ PRI- SEC+ SEC-» Turns=Np Ns\n.ends Ideal-Transformer»
+      «shorted pins: false»
+      «line (-200,200) (-110,200) 0 0 0x1000000 -1 -1»
+      «line (10,200) (100,200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (-110,-200) 0 0 0x1000000 -1 -1»
+      «line (-110,200) (-110,170) 0 0 0x1000000 -1 -1»
+      «line (-110,-170) (-110,-200) 0 0 0x1000000 -1 -1»
+      «line (10,-170) (10,-200) 0 0 0x1000000 -1 -1»
+      «line (10,200) (10,170) 0 0 0x1000000 -1 -1»
+      «line (10,-200) (100,-200) 0 0 0x1000000 -1 -1»
+      «line (-50,200) (-50,-200) 0 1 0x1000000 -1 -1»
+      «ellipse (-165,180) (-125,140) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «ellipse (25,180) (65,140) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «coil (-150,170) (-70,-170) 0 0 0 0x1000000 -1 -1»
+      «coil (50,170) (-30,-170) 0 0 0 0x1000000 -1 -1»
+      «text (-50,300) 1 15 0 0x1000000 -1 -1 "X6"»
+      «text (-50,440) 1 0 2 0x1000000 -1 -1 "IDEAL-TRANSFORMER"»
+      «text (-50,-300) 1 15 0 0x1000000 -1 -1 "Np=<1>;no. of turns in primary"»
+      «text (-50,-450) 1 15 0 0x1000000 -1 -1 "Ns=<1>;no. of turns in secondary"»
+      «text (-250,0) 0.794 32 1 0x1000000 -1 -1 "pri"»
+      «text (100,0) 0.794 32 1 0x1000000 -1 -1 "sec"»
+      «pin (-200,200) (0,0) 1 15 0 0x0 -1 "PRI+"»
+      «pin (-200,-200) (0,0) 1 15 0 0x0 -1 "PRI-"»
+      «pin (100,200) (0,0) 1 15 0 0x0 -1 "SEC+"»
+      «pin (100,-200) (0,0) 1 15 0 0x0 -1 "SEC-"»
+    »
+  »
+  «component (4900,500) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "1m"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (5200,800) 0 0
+    «symbol Diode-Ideal(.model)
+      «type: D»
+      «description: Ideal Diode with .model (embedded)»
+      «library file: |.model D-Ideal D RON=1m ROFF=10Meg VFWD=0»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (100,200) 1 7 0 0x1000000 -1 -1 "D1"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "D-Ideal"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (5800,800) 0 0
+    «symbol Diode-Ideal(.model)
+      «type: D»
+      «description: Ideal Diode with .model (embedded)»
+      «library file: |.model D-Ideal D RON=1m ROFF=10Meg VFWD=0»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (100,200) 1 7 0 0x1000000 -1 -1 "D2"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "D-Ideal"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (5200,-400) 0 0
+    «symbol Diode-Ideal(.model)
+      «type: D»
+      «description: Ideal Diode with .model (embedded)»
+      «library file: |.model D-Ideal D RON=1m ROFF=10Meg VFWD=0»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (100,200) 1 7 0 0x1000000 -1 -1 "D3"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "D-Ideal"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (5800,-400) 0 0
+    «symbol Diode-Ideal(.model)
+      «type: D»
+      «description: Ideal Diode with .model (embedded)»
+      «library file: |.model D-Ideal D RON=1m ROFF=10Meg VFWD=0»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (100,200) 1 7 0 0x1000000 -1 -1 "D4"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "D-Ideal"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (6400,200) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "Co"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "100µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (7000,200) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "Ro"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "0.711"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (7600,-1900) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (130,150) 1 7 0 0x1000000 -1 -1 "R2"»
+      «text (130,-150) 1 7 0 0x1000000 -1 -1 "133K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (7600,-2700) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (130,150) 1 7 0 0x1000000 -1 -1 "R3"»
+      «text (130,-150) 1 7 0 0x1000000 -1 -1 "500"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (4900,-1700) 8 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (180,150) 1 7 0 0x1000000 -1 -1 "V2"»
+      «text (180,-150) 1 7 0 0x1000000 -1 -1 "PWL 0 0 1m 1 4m 1 4m+1n 0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1700,-1300) 0 0
+    «symbol Comparator-InternalSupply(small)-1
+      «type: X»
+      «description: Ideal Comparator with Internal Supply»
+      «library file: |.subckt Comparator-InternalSupply IN+ IN- Q\nVdd Vdd 0 UL\nVss Vss 0 LL\n¥1 Vdd Vss Q ¥ IN+ IN- ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=TTOL Td=Td Vh=Vh Vt=Vt\n.ends Comparator-InternalSupply»
+      «shorted pins: false»
+      «line (-200,300) (300,0) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (300,0) 0 0 0x1000000 -1 -1»
+      «line (25,100) (-75,100) 0 0 0x1000000 -1 -1»
+      «line (-25,100) (-25,-100) 0 0 0x1000000 -1 -1»
+      «line (-75,100) (-75,-100) 0 0 0x1000000 -1 -1»
+      «line (-25,-100) (-125,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (-200,300) 0 0 0x1000000 -1 -1»
+      «line (-180,200) (-120,200) 0 0 0x1000000 -1 -1»
+      «line (-150,170) (-150,230) 0 0 0x1000000 -1 -1»
+      «line (-180,-200) (-120,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,-200) (-280,-200) 0 0 0x1000000 -1 -1»
+      «ellipse (-280,-160) (-200,-240) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (50,250) 1 7 0 0x1000000 -1 -1 "X10"»
+      «text (50,400) 1 7 2 0x1000000 -1 -1 "COMPARATOR-INTERNALSUPPLY"»
+      «text (50,-250) 1 7 0 0x0 -1 -1 "UL=<1>;(U)pper output (L)evel"»
+      «text (50,-400) 1 7 0 0x0 -1 -1 "LL=<0>;(L)ower output (L)evel"»
+      «text (50,-550) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (50,-700) 1 7 2 0x1000000 -1 -1 "Td=<0>"»
+      «text (50,-850) 1 7 2 0x1000000 -1 -1 "Vt=<0>"»
+      «text (50,-1000) 1 7 2 0x1000000 -1 -1 "Vh=<0>"»
+      «pin (-300,200) (20,0) 1 15 0 0x0 -1 "IN+"»
+      «pin (-300,-200) (-20,0) 1 15 0 0x0 -1 "IN-"»
+      «pin (300,0) (0,10) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (-100,-2100) 0 0
+    «symbol psim-Monostable-adjustable
+      «type: X»
+      «description: Monostable Adjustable Width (PSIM) - Rising and Falling Edge Trigger»
+      «library file: |.subckt psim-Monostable-adjustable posEdge negEdge PLwidth Q ¬Q\nR1 posEdge 0 1G\nR2 negEdge 0 1G\nB1 x1 0 V=V(posEdge)>=thres\nB2 x2 0 V=state(1,V(posEdge))<thres\nB3 y1 0 V=V(negEdge)<=thres\nB4 y2 0 V=state(1,V(negEdge))>thres\nB6 idt-T 0 V=idt(1,if(time>0,0,1),V(reset))\nB5 reset 0 V=( V(x1) & V(x2) ) || ( V(y1) & V(y2) )\n¥1 p1v 0 Q ¬Q PLwidth idt-T ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=TTOL\nV1 p1v 0 1\n.ends psim-Monostable-adjustable»
+      «shorted pins: false»
+      «line (-250,110) (-200,110) 0 0 0x1000000 -1 -1»
+      «line (-200,110) (-200,250) 0 0 0x1000000 -1 -1»
+      «line (-200,250) (-150,250) 0 0 0x1000000 -1 -1»
+      «line (-240,160) (-200,200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (-160,160) 0 0 0x1000000 -1 -1»
+      «line (-250,-110) (-200,-110) 0 0 0x1000000 -1 -1»
+      «line (-200,-110) (-200,-250) 0 0 0x1000000 -1 -1»
+      «line (-200,-250) (-150,-250) 0 0 0x1000000 -1 -1»
+      «line (-240,-160) (-200,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (-160,-160) 0 0 0x1000000 -1 -1»
+      «line (-80,-220) (80,-220) 0 0 0x1000000 -1 -1»
+      «line (80,-220) (40,-190) 0 0 0x1000000 -1 -1»
+      «line (80,-220) (40,-250) 0 0 0x1000000 -1 -1»
+      «line (-80,-220) (-40,-190) 0 0 0x1000000 -1 -1»
+      «line (-80,-220) (-40,-250) 0 0 0x1000000 -1 -1»
+      «rect (-300,300) (300,-300) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-300,550) 1 7 0 0x1000000 -1 -1 "X9"»
+      «text (-300,700) 1 7 2 0x1000000 -1 -1 "psim-Monostable-adjustable"»
+      «text (100,-400) 1 7 2 0x1000000 -1 -1 "thres=<0.5>;input edge threshold"»
+      «text (100,-550) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (-300,400) 1 7 1 0x1000000 -1 -1 "Monostable"»
+      «pin (-300,200) (0,0) 1 15 0 0x0 -1 "posEdge"»
+      «pin (-300,-200) (0,0) 1 15 0 0x0 -1 "negEdge"»
+      «pin (0,-300) (0,0) 1 0 0 0x0 -1 "PLwidth"»
+      «pin (300,200) (-20,0) 1 11 0 0x0 -1 "Q"»
+      «pin (300,-200) (-20,0) 1 11 0 0x0 -1 "¬Q"»
+    »
+  »
+  «component (-2100,-2300) 0 0
+    «symbol V-Source 0&1 Logic Supply
+      «type: V»
+      «description: 1V for 0&1 logic library»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «line (-50,-200) (50,-200) 0 0 0x1000000 -1 -1»
+      «line (50,-200) (0,-250) 0 0 0x1000000 -1 -1»
+      «line (0,-250) (-50,-200) 0 0 0x1000000 -1 -1»
+      «line (-50,200) (50,200) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "Vlogic1V"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "1"»
+      «text (0,300) 1 0 1 0x1000000 -1 -1 "p1v"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+" "p1v"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-" "0"»
+    »
+  »
+  «component (-100,-3900) 0 0
+    «symbol psim-Monostable-adjustable
+      «type: X»
+      «description: Monostable Adjustable Width (PSIM) - Rising and Falling Edge Trigger»
+      «library file: |.subckt psim-Monostable-adjustable posEdge negEdge PLwidth Q ¬Q\nR1 posEdge 0 1G\nR2 negEdge 0 1G\nB1 x1 0 V=V(posEdge)>=thres\nB2 x2 0 V=state(1,V(posEdge))<thres\nB3 y1 0 V=V(negEdge)<=thres\nB4 y2 0 V=state(1,V(negEdge))>thres\nB6 idt-T 0 V=idt(1,if(time>0,0,1),V(reset))\nB5 reset 0 V=( V(x1) & V(x2) ) || ( V(y1) & V(y2) )\n¥1 p1v 0 Q ¬Q PLwidth idt-T ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=TTOL\nV1 p1v 0 1\n.ends psim-Monostable-adjustable»
+      «shorted pins: false»
+      «line (-250,110) (-200,110) 0 0 0x1000000 -1 -1»
+      «line (-200,110) (-200,250) 0 0 0x1000000 -1 -1»
+      «line (-200,250) (-150,250) 0 0 0x1000000 -1 -1»
+      «line (-240,160) (-200,200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (-160,160) 0 0 0x1000000 -1 -1»
+      «line (-250,-110) (-200,-110) 0 0 0x1000000 -1 -1»
+      «line (-200,-110) (-200,-250) 0 0 0x1000000 -1 -1»
+      «line (-200,-250) (-150,-250) 0 0 0x1000000 -1 -1»
+      «line (-240,-160) (-200,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (-160,-160) 0 0 0x1000000 -1 -1»
+      «line (-80,-220) (80,-220) 0 0 0x1000000 -1 -1»
+      «line (80,-220) (40,-190) 0 0 0x1000000 -1 -1»
+      «line (80,-220) (40,-250) 0 0 0x1000000 -1 -1»
+      «line (-80,-220) (-40,-190) 0 0 0x1000000 -1 -1»
+      «line (-80,-220) (-40,-250) 0 0 0x1000000 -1 -1»
+      «rect (-300,300) (300,-300) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-300,550) 1 7 0 0x1000000 -1 -1 "X11"»
+      «text (-300,700) 1 7 2 0x1000000 -1 -1 "psim-Monostable-adjustable"»
+      «text (100,-400) 1 7 2 0x1000000 -1 -1 "thres=<0.5>;input edge threshold"»
+      «text (100,-550) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (-300,400) 1 7 1 0x1000000 -1 -1 "Monostable"»
+      «pin (-300,200) (0,0) 1 15 0 0x0 -1 "posEdge"»
+      «pin (-300,-200) (0,0) 1 15 0 0x0 -1 "negEdge"»
+      «pin (0,-300) (0,0) 1 0 0 0x0 -1 "PLwidth"»
+      «pin (300,200) (-20,0) 1 11 0 0x0 -1 "Q"»
+      «pin (300,-200) (-20,0) 1 11 0 0x0 -1 "¬Q"»
+    »
+  »
+  «component (5000,-3600) 0 0
+    «symbol .tran2 - Berkeley Syntax
+      «type: .»
+      «description: Transient - Berkeley Syntax»
+      «shorted pins: false»
+      «line (-500,200) (-500,-100) 0 0 0x1000000 -1 -1»
+      «line (-740,80) (-740,50) 0 0 0x1000000 -1 -1»
+      «line (-700,80) (-700,50) 0 0 0x1000000 -1 -1»
+      «line (-600,80) (-600,20) 0 0 0x1000000 -1 -1»
+      «line (-560,80) (-560,20) 0 0 0x1000000 -1 -1»
+      «line (-650,0) (-630,0) 0 0 0x1000000 -1 -1»
+      «line (-660,-40) (-630,-40) 0 0 0x1000000 -1 -1»
+      «line (-610,-50) (-590,-70) 0 0 0x1000000 -1 -1»
+      «line (600,200) (650,150) 0 0 0x1000000 -1 -1»
+      «line (650,-150) (650,350) 0 0 0x1000000 -1 -1»
+      «line (650,-150) (600,-100) 0 0 0x1000000 -1 -1»
+      «line (650,-150) (-750,-150) 0 0 0x1000000 -1 -1»
+      «line (-750,-150) (-800,-100) 0 0 0x1000000 -1 -1»
+      «line (600,400) (650,350) 0 0 0x1000000 -1 -1»
+      «rect (-800,200) (600,-100) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+      «rect (-300,400) (600,200) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+      «arc3p (-560,80) (-740,80) (-650,80) 0 0 0x1000000 -1 -1»
+      «arc3p (-600,80) (-700,80) (-650,80) 0 0 0x1000000 -1 -1»
+      «arc3p (-600,20) (-560,20) (-580,20) 0 0 0x1000000 -1 -1»
+      «arc3p (-740,50) (-660,-40) (-660,50) 0 0 0x1000000 -1 -1»
+      «arc3p (-700,50) (-650,0) (-650,50) 0 0 0x1000000 -1 -1»
+      «arc3p (-568,-38) (-630,0) (-630,-80) 0 0 0x1000000 -1 -1»
+      «arc3p (-610,-50) (-630,-40) (-630,-70) 0 0 0x1000000 -1 -1»
+      «arc3p (-590,-70) (-568,-38) (-585,-55) 0 0 0x1000000 -1 -1»
+      «triangle (600,-100) (600,20) (480,-100) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-800,300) 1 7 0 0x0 -1 -1 ".tran"»
+      «text (-50,-250) 1 7 0 0x0 -1 -1 "0"»
+      «text (-200,-400) 1 7 0 0x0 -1 -1 "5m"»
+      «text (-200,-550) 1 7 0 0x0 -1 -1 "0"»
+      «text (350,-700) 1 7 0 0x0 -1 -1 "5e-8"»
+      «text (-350,-850) 1 7 1 0x1000000 -1 -1 "UIC"»
+      «text (-700,-250) 1 7 1 0x1000000 -1 -1 "Ignored:"»
+      «text (-700,-400) 1 7 1 0x1000000 -1 -1 "Tstop:"»
+      «text (-700,-550) 1 7 1 0x1000000 -1 -1 "Tstart:"»
+      «text (-700,-700) 1 7 1 0x1000000 -1 -1 "MaxTimeStep:"»
+      «text (-700,-850) 1 7 1 0x1000000 -1 -1 "UIC:"»
+      «text (50,50) 1.36 0 1 0x1000000 -1 -1 "Transient"»
+      «text (150,300) 0.735 15 1 0x1000000 -1 -1 "Berkeley Syntax"»
+    »
+  »
+  «component (-600,-4400) 0 0
+    «symbol Jumper1(S)
+      «type: V»
+      «description: Jumper - 0V Voltage Source»
+      «shorted pins: false»
+      «line (0,-50) (0,-100) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,90) (0,10) 0 0 0x1000000 -1 -1»
+      «ellipse (-30,150) (30,90) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «ellipse (-30,10) (30,-50) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (50,150) 1 7 2 0x1000000 -1 -1 "VJ1"»
+      «text (50,-50) 1 7 2 0x1000000 -1 -1 "0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-600,-2500) 0 0
+    «symbol Jumper1(S)
+      «type: V»
+      «description: Jumper - 0V Voltage Source»
+      «shorted pins: false»
+      «line (0,-50) (0,-100) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,90) (0,10) 0 0 0x1000000 -1 -1»
+      «ellipse (-30,150) (30,90) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «ellipse (-30,10) (30,-50) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (50,150) 1 7 2 0x1000000 -1 -1 "VJ2"»
+      «text (50,-50) 1 7 2 0x1000000 -1 -1 "0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (100,1200) 0 0
+    «symbol IProbe-0Vsrc
+      «type: V»
+      «description: Current Probe - with 0V voltage source by KSKelvin»
+      «shorted pins: false»
+      «line (0,-100) (0,-50) 0 0 0x1000000 -1 -1»
+      «line (0,100) (0,50) 0 0 0x1000000 -1 -1»
+      «line (100,80) (100,-70) 0 0 0x1000000 -1 -1»
+      «ellipse (-20,20) (20,-20) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «arc3p (0,-50) (0,50) (0,0) 0 0 0x1000000 -1 -1»
+      «triangle (100,-70) (80,-20) (120,-20) 0 0 0x1000000 0xff0012 -1 -1»
+      «text (150,9) 0.735 7 0 0x1000000 -1 -1 "Ids1"»
+      «text (150,-100) 0.63 7 2 0x1000000 -1 -1 "0"»
+      «text (150,-200) 0.681 7 3 0x1000000 -1 -1 "; hold shift to probe"»
+      «pin (0,100) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (5100,-1500) 0 0
+    «symbol Subtract(small)
+      «type: X»
+      «description: Subtract / Difference»
+      «library file: |.subckt subtract pos neg error\nE1 error 0 pos neg 1\n.ends subtract»
+      «shorted pins: false»
+      «line (90,0) (170,0) 0 0 0x1000000 -1 -1»
+      «line (130,40) (130,-40) 0 0 0x1000000 -1 -1»
+      «line (160,-80) (240,-80) 0 0 0x1000000 -1 -1»
+      «line (0,0) (70,0) 0 0 0x1000000 -1 -1»
+      «line (200,-200) (200,-130) 0 0 0x1000000 -1 -1»
+      «line (400,0) (330,0) 0 0 0x1000000 -1 -1»
+      «ellipse (70,130) (330,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,220) 1 15 0 0x1000000 -1 -1 "X15"»
+      «text (700,-150) 1 0 2 0x1000000 -1 -1 "SUBTRACT"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "neg"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "error"»
+    »
+  »
+  «component (6000,-1500) 0 0
+    «symbol psim-PI-Controller-1
+      «type: X»
+      «description: PI Controller (PSIM) - Gain and Time Constant»
+      «library file: |.subckt psim-PI-Controller IN OUT\nB1 I 0 V=V(IN) Laplace=1/s/tau IC=0\nB2 OUT 0 V=A*(V(IN)+V(I))\n.ends psim-PI-Controller»
+      «shorted pins: false»
+      «line (-200,0) (600,0) 0 0 0x1000000 -1 -1»
+      «line (650,50) (700,0) 0 0 0x1000000 -1 -1»
+      «line (700,0) (650,-50) 0 0 0x1000000 -1 -1»
+      «rect (-300,200) (700,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-300,450) 1 7 0 0x1000000 -1 -1 "X16"»
+      «text (-300,300) 1 7 0 0x1000000 -1 -1 "psim-PI-Controller"»
+      «text (200,100) 0.857 0 1 0x1000000 -1 -1 "A*(1+s*tau)"»
+      «text (200,-100) 0.857 0 1 0x1000000 -1 -1 "s*tau"»
+      «text (-300,-300) 1 7 0 0x1000000 -1 -1 "A=<8.55987µ>; Gain of PI controller"»
+      «text (-300,-450) 1 7 0 0x0 -1 -1 "tau=<201.726µ>; Time constant of the PI controller"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "IN"»
+      «pin (700,0) (0,0) 1 15 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (-1000,-2500) 6 0
+    «symbol NOT-B-source
+      «type: X»
+      «description: B-source NOT gate (Inverter)»
+      «library file: |.subckt NOT-B-source b0 Q\nB1 Q 0 V=(HI-LO)*((!V(b0)>thres))+LO\n.ends NOT-B-source»
+      «shorted pins: false»
+      «line (200,0) (180,0) 0 0 0x1000000 -1 -1»
+      «line (-100,-100) (100,0) 0 0 0x1000000 -1 -1»
+      «line (100,0) (-100,100) 0 0 0x1000000 -1 -1»
+      «line (-100,100) (-100,-100) 0 0 0x1000000 -1 -1»
+      «ellipse (100,40) (180,-40) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (-50,-150) 1 43 0 0x1000000 -1 -1 "X14"»
+      «text (150,-150) 1 43 2 0x1000000 -1 -1 "NOT-B-SOURCE"»
+      «text (300,-150) 1 43 2 0x1000000 -1 -1 "HI=<1>"»
+      «text (450,-150) 1 43 2 0x1000000 -1 -1 "LO=<0>"»
+      «text (600,-150) 1 43 2 0x1000000 -1 -1 "thres=<0.5>"»
+      «pin (-100,0) (0,0) 1 15 0 0x0 -1 "b0"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (700,-2400) 0 0
+    «symbol AND2Q-B-source
+      «type: X»
+      «description: B-source 2-Input AND gate»
+      «library file: |.subckt AND2Q-B-source b0 b1 Q\nB1 Q 0 V=(HI-LO)*(V(b0)>thres && V(b1)>thres)+LO\n.ends AND2Q-B-source»
+      «shorted pins: false»
+      «line (-200,-200) (-200,200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (300,0) (200,0) 0 0 0x1000000 -1 -1»
+      «arc3p (0,-200) (0,200) (0,0) 0 0 0x1000000 -1 -1»
+      «text (-50,300) 1 0 0 0x1000000 -1 -1 "X12"»
+      «text (-50,450) 1 0 2 0x1000000 -1 -1 "AND2Q-B-SOURCE"»
+      «text (-200,-300) 1 7 2 0x1000000 -1 -1 "HI=<1>"»
+      «text (-200,-450) 1 7 2 0x1000000 -1 -1 "LO=<0>"»
+      «text (-200,-600) 1 7 2 0x1000000 -1 -1 "thres=<0.5>"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "b0"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "b1"»
+      «pin (300,0) (0,0) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (700,-4200) 0 0
+    «symbol AND2Q-B-source
+      «type: X»
+      «description: B-source 2-Input AND gate»
+      «library file: |.subckt AND2Q-B-source b0 b1 Q\nB1 Q 0 V=(HI-LO)*(V(b0)>thres && V(b1)>thres)+LO\n.ends AND2Q-B-source»
+      «shorted pins: false»
+      «line (-200,-200) (-200,200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (300,0) (200,0) 0 0 0x1000000 -1 -1»
+      «arc3p (0,-200) (0,200) (0,0) 0 0 0x1000000 -1 -1»
+      «text (-50,300) 1 0 0 0x1000000 -1 -1 "X13"»
+      «text (-50,450) 1 0 2 0x1000000 -1 -1 "AND2Q-B-SOURCE"»
+      «text (-200,-300) 1 7 2 0x1000000 -1 -1 "HI=<1>"»
+      «text (-200,-450) 1 7 2 0x1000000 -1 -1 "LO=<0>"»
+      «text (-200,-600) 1 7 2 0x1000000 -1 -1 "thres=<0.5>"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "b0"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "b1"»
+      «pin (300,0) (0,0) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (700,-3000) 8 0
+    «symbol OR2Q-B-source
+      «type: X»
+      «description: B-source 2-Input AND gate»
+      «library file: |.subckt AND2Q-B-source b0 b1 Q\nB1 Q 0 V=(HI-LO)*(V(b0)>thres || V(b1)>thres)+LO\n.ends AND2Q-B-source»
+      «shorted pins: false»
+      «line (300,0) (203,0) 0 0 0x1000000 -1 -1»
+      «line (-200,100) (-135,100) 0 0 0x1000000 -1 -1»
+      «line (-200,-100) (-135,-100) 0 0 0x1000000 -1 -1»
+      «arc3p (-200,-200) (200,0) (-100,200) 0 0 0x1000000 -1 -1»
+      «arc3p (200,0) (-200,200) (-100,-200) 0 0 0x1000000 -1 -1»
+      «arc3p (-200,-200) (-200,200) (-400,0) 0 0 0x1000000 -1 -1»
+      «text (-50,300) 1 0 0 0x1000000 -1 -1 "X7"»
+      «text (-50,450) 1 0 2 0x1000000 -1 -1 "AND2Q-B-SOURCE"»
+      «text (-200,-300) 1 7 2 0x1000000 -1 -1 "HI=<1>"»
+      «text (-200,-450) 1 7 2 0x1000000 -1 -1 "LO=<0>"»
+      «text (-200,-600) 1 7 2 0x1000000 -1 -1 "thres=<0.5>"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "b0"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "b1"»
+      «pin (300,0) (0,0) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (700,-4800) 8 0
+    «symbol OR2Q-B-source
+      «type: X»
+      «description: B-source 2-Input AND gate»
+      «library file: |.subckt AND2Q-B-source b0 b1 Q\nB1 Q 0 V=(HI-LO)*(V(b0)>thres || V(b1)>thres)+LO\n.ends AND2Q-B-source»
+      «shorted pins: false»
+      «line (300,0) (203,0) 0 0 0x1000000 -1 -1»
+      «line (-200,100) (-135,100) 0 0 0x1000000 -1 -1»
+      «line (-200,-100) (-135,-100) 0 0 0x1000000 -1 -1»
+      «arc3p (-200,-200) (200,0) (-100,200) 0 0 0x1000000 -1 -1»
+      «arc3p (200,0) (-200,200) (-100,-200) 0 0 0x1000000 -1 -1»
+      «arc3p (-200,-200) (-200,200) (-400,0) 0 0 0x1000000 -1 -1»
+      «text (-50,300) 1 0 0 0x1000000 -1 -1 "X8"»
+      «text (-50,450) 1 0 2 0x1000000 -1 -1 "AND2Q-B-SOURCE"»
+      «text (-200,-300) 1 7 2 0x1000000 -1 -1 "HI=<1>"»
+      «text (-200,-450) 1 7 2 0x1000000 -1 -1 "LO=<0>"»
+      «text (-200,-600) 1 7 2 0x1000000 -1 -1 "thres=<0.5>"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "b0"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "b1"»
+      «pin (300,0) (0,0) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (1300,-2900) 8 0
+    «symbol BUFQ
+      «type: ¥»
+      «description: (0&1) Buffer»
+      «shorted pins: false»
+      «line (-100,-100) (100,0) 0 0 0x1000000 -1 -1»
+      «line (100,0) (-100,100) 0 0 0x1000000 -1 -1»
+      «line (-100,100) (-100,-100) 0 0 0x1000000 -1 -1»
+      «text (50,100) 1 7 0 0x1000000 -1 -1 "¥1"»
+      «text (170,-100) 1 0 2 0x1000000 -1 -1 "OR"»
+      «pin (0,100) (0,0) 1 0 0 0x1000000 -1 "Vdd" "p1v"»
+      «pin (0,-100) (0,0) 1 0 0 0x1000000 -1 "Vss" "0"»
+      «pin (100,0) (0,0) 1 0 0 0x1000000 -1 "Q"»
+      «pin (0,0) (0,0) 1 0 0 0x1000000 -1 "¬Q" "¥"»
+      «pin (-100,0) (0,0) 1 0 0 0x1000000 -1 "b0"»
+    »
+  »
+  «component (1700,-2900) 8 0
+    «symbol BUFQ
+      «type: ¥»
+      «description: (0&1) Buffer»
+      «shorted pins: false»
+      «line (-100,-100) (100,0) 0 0 0x1000000 -1 -1»
+      «line (100,0) (-100,100) 0 0 0x1000000 -1 -1»
+      «line (-100,100) (-100,-100) 0 0 0x1000000 -1 -1»
+      «text (50,100) 1 7 0 0x1000000 -1 -1 "¥2"»
+      «text (170,-100) 1 0 2 0x1000000 -1 -1 "OR"»
+      «pin (0,100) (0,0) 1 0 0 0x1000000 -1 "Vdd" "p1v"»
+      «pin (0,-100) (0,0) 1 0 0 0x1000000 -1 "Vss" "0"»
+      «pin (100,0) (0,0) 1 0 0 0x1000000 -1 "Q"»
+      «pin (0,0) (0,0) 1 0 0 0x1000000 -1 "¬Q" "¥"»
+      «pin (-100,0) (0,0) 1 0 0 0x1000000 -1 "b0"»
+    »
+  »
+  «component (1300,-4700) 8 0
+    «symbol BUFQ
+      «type: ¥»
+      «description: (0&1) Buffer»
+      «shorted pins: false»
+      «line (-100,-100) (100,0) 0 0 0x1000000 -1 -1»
+      «line (100,0) (-100,100) 0 0 0x1000000 -1 -1»
+      «line (-100,100) (-100,-100) 0 0 0x1000000 -1 -1»
+      «text (50,100) 1 7 0 0x1000000 -1 -1 "¥3"»
+      «text (170,-100) 1 0 2 0x1000000 -1 -1 "OR"»
+      «pin (0,100) (0,0) 1 0 0 0x1000000 -1 "Vdd" "p1v"»
+      «pin (0,-100) (0,0) 1 0 0 0x1000000 -1 "Vss" "0"»
+      «pin (100,0) (0,0) 1 0 0 0x1000000 -1 "Q"»
+      «pin (0,0) (0,0) 1 0 0 0x1000000 -1 "¬Q" "¥"»
+      «pin (-100,0) (0,0) 1 0 0 0x1000000 -1 "b0"»
+    »
+  »
+  «component (1700,-4700) 8 0
+    «symbol BUFQ
+      «type: ¥»
+      «description: (0&1) Buffer»
+      «shorted pins: false»
+      «line (-100,-100) (100,0) 0 0 0x1000000 -1 -1»
+      «line (100,0) (-100,100) 0 0 0x1000000 -1 -1»
+      «line (-100,100) (-100,-100) 0 0 0x1000000 -1 -1»
+      «text (50,100) 1 7 0 0x1000000 -1 -1 "¥4"»
+      «text (170,-100) 1 0 2 0x1000000 -1 -1 "OR"»
+      «pin (0,100) (0,0) 1 0 0 0x1000000 -1 "Vdd" "p1v"»
+      «pin (0,-100) (0,0) 1 0 0 0x1000000 -1 "Vss" "0"»
+      «pin (100,0) (0,0) 1 0 0 0x1000000 -1 "Q"»
+      «pin (0,0) (0,0) 1 0 0 0x1000000 -1 "¬Q" "¥"»
+      «pin (-100,0) (0,0) 1 0 0 0x1000000 -1 "b0"»
+    »
+  »
+  «net (-1400,900) 1 13 0 "GND"»
+  «net (1200,-800) 1 13 0 "GND"»
+  «net (100,-800) 1 13 0 "GND"»
+  «net (-300,800) 1 11 0 "Vgs1"»
+  «net (800,800) 1 11 0 "Vgs2"»
+  «net (-300,-400) 1 11 0 "Vgs3"»
+  «net (800,-400) 1 11 0 "Vgs4"»
+  «net (1800,300) 1 13 0 "Itank"»
+  «net (4500,500) 1 14 0 "sec+"»
+  «net (4600,-100) 1 14 0 "sec-"»
+  «net (7000,-800) 1 13 0 "GND"»
+  «net (7000,1100) 1 14 0 "Vo"»
+  «net (100,1600) 1 14 0 "Rail"»
+  «net (600,500) 1 14 0 "m1"»
+  «net (1400,-100) 1 14 0 "m2"»
+  «net (7600,-3100) 1 13 0 "GND"»
+  «net (4900,-1900) 1 13 0 "GND"»
+  «net (4900,-1500) 1 14 0 "Vref"»
+  «net (-2100,-1600) 1 13 0 "GND"»
+  «net (-2100,-1100) 1 11 0 "Itank"»
+  «net (-100,-1300) 1 7 1 "Vgs1"»
+  «net (-600,-2700) 1 13 0 "GND"»
+  «net (-100,-2500) 1 13 0 "Ton"»
+  «net (1200,-2400) 1 7 1 "Vgs2"»
+  «net (1900,-2900) 1 7 0 "Vgs1"»
+  «net (-600,-4600) 1 13 0 "GND"»
+  «net (-100,-4300) 1 13 0 "Ton"»
+  «net (1200,-4200) 1 7 1 "Vgs4"»
+  «net (1900,-4700) 1 7 0 "Vgs3"»
+  «net (-100,-3100) 1 7 1 "Vgs3"»
+  «net (6900,-1500) 1 7 1 "Ton"»
+  «junction (7600,-2400)»
+  «junction (7000,1100)»
+  «junction (7000,-700)»
+  «junction (6400,1100)»
+  «junction (6400,-700)»
+  «junction (5800,1100)»
+  «junction (5800,-100)»
+  «junction (5800,-700)»
+  «junction (5200,500)»
+  «junction (3400,500)»
+  «junction (3400,-100)»
+  «junction (1200,-100)»
+  «junction (100,1600)»
+  «junction (100,500)»
+  «junction (-600,-1900)»
+  «junction (-1000,-1900)»
+  «junction (-1000,-3100)»
+  «wire (100,1300) (100,1600) "Rail"»
+  «wire (100,500) (100,600) "m1"»
+  «wire (100,-800) (100,-600) "GND"»
+  «wire (100,1600) (-1400,1600) "Rail"»
+  «wire (-1400,1600) (-1400,1400) "Rail"»
+  «wire (-1400,900) (-1400,1000) "GND"»
+  «wire (100,1600) (1200,1600) "Rail"»
+  «wire (1200,1600) (1200,1000) "Rail"»
+  «wire (1200,-600) (1200,-800) "GND"»
+  «wire (1200,-100) (1200,-200) "m2"»
+  «wire (-200,800) (-300,800) "Vgs1"»
+  «wire (900,800) (800,800) "Vgs2"»
+  «wire (-200,-400) (-300,-400) "Vgs3"»
+  «wire (900,-400) (800,-400) "Vgs4"»
+  «wire (600,500) (1700,500) "m1"»
+  «wire (100,-200) (100,500) "m1"»
+  «wire (1200,600) (1200,-100) "m2"»
+  «wire (1800,400) (1800,300) "Itank"»
+  «wire (1900,500) (2300,500) "N01"»
+  «wire (3200,500) (3400,500) "N02"»
+  «wire (2700,500) (2800,500) "N03"»
+  «wire (1400,-100) (3400,-100) "m2"»
+  «wire (3400,500) (3400,400) "N02"»
+  «wire (3400,-100) (3400,0) "m2"»
+  «wire (3400,-100) (3900,-100) "m2"»
+  «wire (3900,-100) (3900,0) "m2"»
+  «wire (3900,0) (4000,0) "m2"»
+  «wire (4000,400) (3900,400) "N02"»
+  «wire (3900,400) (3900,500) "N02"»
+  «wire (3900,500) (3400,500) "N02"»
+  «wire (4300,400) (4400,400) "sec+"»
+  «wire (4400,400) (4400,500) "sec+"»
+  «wire (4500,500) (4700,500) "sec+"»
+  «wire (4300,0) (4400,0) "sec-"»
+  «wire (4400,0) (4400,-100) "sec-"»
+  «wire (4400,500) (4500,500) "sec+"»
+  «wire (4400,-100) (4600,-100) "sec-"»
+  «wire (5100,500) (5200,500) "N04"»
+  «wire (5200,500) (5200,600) "N04"»
+  «wire (5200,500) (5200,-200) "N04"»
+  «wire (4600,-100) (5800,-100) "sec-"»
+  «wire (5800,-100) (5800,600) "sec-"»
+  «wire (5800,-200) (5800,-100) "sec-"»
+  «wire (5200,-600) (5200,-700) "GND"»
+  «wire (5800,-700) (5800,-600) "GND"»
+  «wire (5200,-700) (5800,-700) "GND"»
+  «wire (5200,1000) (5200,1100) "Vo"»
+  «wire (5800,1100) (5800,1000) "Vo"»
+  «wire (5200,1100) (5800,1100) "Vo"»
+  «wire (6400,-700) (7000,-700) "GND"»
+  «wire (7000,-700) (7000,0) "GND"»
+  «wire (6400,1100) (7000,1100) "Vo"»
+  «wire (7000,400) (7000,1100) "Vo"»
+  «wire (6400,0) (6400,-700) "GND"»
+  «wire (5800,-700) (6400,-700) "GND"»
+  «wire (5800,1100) (6400,1100) "Vo"»
+  «wire (6400,1100) (6400,400) "Vo"»
+  «wire (7000,-800) (7000,-700) "GND"»
+  «wire (100,500) (600,500) "m1"»
+  «wire (1200,-100) (1400,-100) "m2"»
+  «wire (7600,-3100) (7600,-2900) "GND"»
+  «wire (7600,-2400) (7600,-2100) "N05"»
+  «wire (-2000,-1500) (-2100,-1500) "GND"»
+  «wire (-2100,-1600) (-2100,-1500) "GND"»
+  «wire (-2000,-1100) (-2100,-1100) "Itank"»
+  «wire (-1000,-1900) (-1000,-2400) "Vgs1"»
+  «wire (-1400,-1300) (-1000,-1300) "Vgs1"»
+  «wire (-1000,-1300) (-1000,-1900) "Vgs1"»
+  «wire (-400,-2300) (-600,-2300) "N06"»
+  «wire (-100,-2400) (-100,-2500) "Ton"»
+  «wire (1000,-2400) (1200,-2400) "Vgs2"»
+  «wire (400,-3000) (400,-2500) "N07"»
+  «wire (400,-2500) (500,-2500) "N07"»
+  «wire (-400,-3700) (-1000,-3700) "Vgs3"»
+  «wire (-600,-4200) (-600,-4100) "N08"»
+  «wire (-400,-4100) (-600,-4100) "N08"»
+  «wire (-100,-4200) (-100,-4300) "Ton"»
+  «wire (1000,-4200) (1200,-4200) "Vgs4"»
+  «wire (400,-4800) (400,-4300) "N09"»
+  «wire (400,-4300) (500,-4300) "N09"»
+  «wire (-1000,-3100) (-1000,-2700) "Vgs3"»
+  «wire (2300,-1900) (2300,-4900) "N10"»
+  «wire (2300,-4900) (900,-4900) "N10"»
+  «wire (1200,-3700) (1200,-3100) "N11"»
+  «wire (1200,-3100) (900,-3100) "N11"»
+  «wire (-600,-4500) (-600,-4600) "GND"»
+  «wire (-600,-2700) (-600,-2600) "GND"»
+  «wire (100,1000) (100,1100) "N12"»
+  «wire (2300,-1900) (200,-1900) "N10"»
+  «wire (1200,-3700) (200,-3700) "N11"»
+  «wire (-600,-1300) (-600,-1900) "Vgs1"»
+  «wire (-400,-1900) (-600,-1900) "Vgs1"»
+  «wire (500,-4100) (200,-4100) "N13"»
+  «wire (500,-2300) (200,-2300) "N14"»
+  «wire (-1000,-1900) (-600,-1900) "Vgs1"»
+  «wire (-1000,-3700) (-1000,-3100) "Vgs3"»
+  «wire (5500,-1500) (5700,-1500) "N15"»
+  «wire (4900,-1500) (5100,-1500) "Vref"»
+  «wire (7600,-2500) (7600,-2400) "N05"»
+  «wire (7600,-2400) (5300,-2400) "N05"»
+  «wire (6700,-1500) (6900,-1500) "Ton"»
+  «wire (5300,-2400) (5300,-1700) "N05"»
+  «wire (7000,1100) (7600,1100) "Vo"»
+  «wire (7600,1100) (7600,-1700) "Vo"»
+  «wire (-1000,-3100) (-100,-3100) "Vgs3"»
+  «wire (-100,-1300) (-600,-1300) "Vgs1"»
+  «wire (1800,-4700) (1900,-4700) "Vgs3"»
+  «wire (1200,-2900) (900,-2900) "N16"»
+  «wire (1600,-2900) (1400,-2900) "N17"»
+  «wire (1900,-2900) (1800,-2900) "Vgs1"»
+  «wire (900,-4700) (1200,-4700) "N18"»
+  «wire (1400,-4700) (1600,-4700) "N19"»
+  «text (5400,-4050) 1 7 0 0x1000000 -1 -1 "ï»¿.option fastmath=0"»
+  «text (2900,-2950) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vgs4) V(Vgs3)+1.1 V(Vgs2)+2.2 V(Vgs1)+3.3\n.plot I(Ids1)\n.plot V(Vo)"»
+  «text (-550,-5200) 1 7 1 0x1000000 -1 -1 "ï»¿Â¥1 to Â¥4 is to compensate delay in gate\nto prevent glitch gating in Vgs2 and Vgs4"»
+  «text (-1450,2250) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, Resonant converter closed loop simulation 5kBW 60degPMM.psimsch\nby KSKelvin on 4-15-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+»
+

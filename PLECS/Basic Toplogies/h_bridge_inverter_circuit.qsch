@@ -1,0 +1,272 @@
+ÿØÿÛ«schematic
+  «component (0,1700) 0 0
+    «symbol Voltage-Source-Controlled
+      «type: E»
+      «description: (PLECS) Voltage Source (Controlled)»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-200,-40) (-200,40) (-130,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "E1"»
+      «text (100,-150) 1 7 2 0x1000000 -1 -1 "1"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "+C"»
+      «pin (-200,-100) (0,0) 1 0 0 0x0 -1 "-C" "0"»
+    »
+  »
+  «component (-600,1700) 0 0
+    «symbol Constant-3digit
+      «type: V»
+      «description: Constant (3 digits)»
+      «shorted pins: false»
+      «rect (-200,150) (100,-150) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+      «text (-200,250) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (-50,10) 1 15 0 0x1000000 -1 -1 "10"»
+      «pin (100,0) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "-" "0"»
+    »
+  »
+  «component (3700,2000) 2 0
+    «symbol
+      «type: L»
+      «description: (PLECS) Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «ellipse (-60,160) (-30,130) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "L1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "0.001"»
+      «text (-230,0) 1 109 0 0x1000000 -1 -1 "IC=0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (4400,2000) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "1"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (300,2900) 2 0
+    «symbol IProbe-0Vsrc(large)
+      «type: V»
+      «description: Current Probe - with 0V voltage source by KSKelvin»
+      «shorted pins: false»
+      «line (150,130) (150,-150) 0 0 0x1000000 -1 -1»
+      «ellipse (-40,40) (40,-40) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «arc3p (0,-100) (0,100) (0,0) 0 0 0x1000000 -1 -1»
+      «triangle (150,-150) (100,-80) (200,-80) 0 0 0x1000000 0xff0012 -1 -1»
+      «text (200,-10) 1 110 0 0x1000000 -1 -1 "Iin"»
+      «text (-40,-10) 0.63 109 2 0x1000000 -1 -1 "0"»
+      «text (-135,-10) 0.681 109 3 0x1000000 -1 -1 "; hold shift to probe"»
+      «pin (0,100) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-900,-200) 0 0
+    «symbol Combinatorial-Logic-2in4out
+      «type: X»
+      «description: (PLECS) Combinatorial Logic 2 IN 4 OUT»
+      «library file: |.subckt Combinatorial-Logic-2in4out in0 in1 out0 out1 out2 out3\nB1 logic0 0 V=if(V(in0),1,0)\nB2 logic1 0 V=if(V(in1),1,0)\nB3 out0 0 V=if(!V(logic0)&!V(logic1),A00, if(V(logic0)&!V(logic1),A10, if(!V(logic0)&V(logic1),A20, A30 ) ) )\nB4 out1 0 V=if(!V(logic0)&!V(logic1),A01, if(V(logic0)&!V(logic1),A11, if(!V(logic0)&V(logic1),A21, A31 ) ) )\nB5 out2 0 V=if(!V(logic0)&!V(logic1),A02, if(V(logic0)&!V(logic1),A12, if(!V(logic0)&V(logic1),A22, A32 ) ) )\nB6 out3 0 V=if(!V(logic0)&!V(logic1),A03, if(V(logic0)&!V(logic1),A13, if(!V(logic0)&V(logic1),A23, A33 ) ) )\n.ends Combinatorial-Logic-2in4out»
+      «shorted pins: false»
+      «rect (-400,400) (400,-400) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (0,650) 1 15 0 0x1000000 -1 -1 "X1"»
+      «text (0,500) 1 15 0 0x1000000 -1 -1 "Combinatorial-Logic-2in4out"»
+      «text (0,-650) 1 15 0 0x1000000 -1 -1 "A00=0 A01=0 A02=1 A03=1"»
+      «text (0,-800) 1 15 0 0x1000000 -1 -1 "A10=1 A11=0 A12=1 A13=0"»
+      «text (0,-950) 1 15 0 0x1000000 -1 -1 "A20=0 A21=1 A22=0 A23=1"»
+      «text (0,-1100) 1 15 0 0x1000000 -1 -1 "A30=1 A31=1 A32=0 A33=0"»
+      «text (0,-500) 1 15 1 0x1000000 -1 -1 "TrueTable:A[INn,OUTn]"»
+      «pin (-400,200) (20,0) 1 7 0 0x0 -1 "in0"»
+      «pin (-400,-200) (20,0) 1 7 0 0x0 -1 "in1"»
+      «pin (400,300) (-20,0) 1 11 0 0x0 -1 "out0"»
+      «pin (400,100) (-20,0) 1 11 0 0x0 -1 "out1"»
+      «pin (400,-100) (-20,0) 1 11 0 0x0 -1 "out2"»
+      «pin (400,-300) (-20,0) 1 11 0 0x0 -1 "out3"»
+    »
+  »
+  «component (-3100,-100) 0 0
+    «symbol Pulse-Generator-2out
+      «type: X»
+      «description: (PLECS) Pulse Geneator (2 Outputs)»
+      «library file: |.subckt Pulse-Generator-2out out1 out2\nV1 out1 0 pulse Lo Hi remainder(Delay1,1/f) 1p 1p DutyCycle/f 1/f DC if(remainder(Delay1,1/f)<=0,Hi,Lo)\nV2 out2 0 pulse Lo Hi remainder(Delay2,1/f) 1p 1p DutyCycle/f 1/f DC if(remainder(Delay2,1/f)<=0,Hi,Lo)\n.func remainder(x,y)=x-y*round(x/y)\n.ends Pulse-Generator-2out»
+      «shorted pins: false»
+      «line (-150,-150) (-100,-150) 0 0 0x1000000 -1 -1»
+      «line (-100,-150) (-100,150) 0 0 0x1000000 -1 -1»
+      «line (-100,150) (-30,150) 0 0 0x1000000 -1 -1»
+      «line (-30,150) (-30,-150) 0 0 0x1000000 -1 -1»
+      «line (-30,-150) (30,-150) 0 0 0x1000000 -1 -1»
+      «line (30,150) (30,-150) 0 0 0x1000000 -1 -1»
+      «line (30,150) (100,150) 0 0 0x1000000 -1 -1»
+      «line (100,-150) (100,150) 0 0 0x1000000 -1 -1»
+      «line (100,-150) (150,-150) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "XSRC1"»
+      «text (-200,450) 1 7 2 0x1000000 -1 -1 "Pulse-Generator-2out"»
+      «text (-200,-300) 1 7 0 0x1000000 -1 -1 "Hi=<1> ;High State Output"»
+      «text (-200,-450) 1 7 0 0x1000000 -1 -1 "Lo=<0> ;Low State Output"»
+      «text (-200,-600) 1 7 0 0x1000000 -1 -1 "f=<50>;Frequency (Hz))"»
+      «text (-200,-750) 1 7 0 0x1000000 -1 -1 "DutyCycle=<0.5> ;Duty Cycle (p.u.)"»
+      «text (-200,-900) 1 7 0 0x1000000 -1 -1 "Delay1=<0> ;Phase Delay (s) of Output 1"»
+      «text (-200,-1050) 1 7 0 0x1000000 -1 -1 "Delay2=<0.003>;Phase Delay (s) of Output 2"»
+      «pin (200,100) (0,0) 1 15 0 0x0 -1 "out1"»
+      «pin (200,-100) (0,0) 1 0 0 0x0 -1 "out2"»
+    »
+  »
+  «component (900,2500) 0 0
+    «symbol Switch
+      «type: X»
+      «description: (PLECS) Switch»
+      «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-100,150) 0 0 0x1000000 -1 -1»
+      «line (-130,0) (-80,0) 0 0 0x1000000 -1 -1»
+      «triangle (-200,-40) (-200,40) (-130,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (100,100) 1 7 0 0x1000000 -1 -1 "XS1"»
+      «text (400,250) 1 0 2 0x1000000 -1 -1 "SWITCH"»
+      «text (100,-50) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "extreme=<0,(1)> ;Extreme Ron/Roff value"»
+      «pin (0,200) (20,0) 1 15 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "-"»
+      «pin (-200,0) (-20,0) 1 15 0 0x0 -1 "C"»
+    »
+  »
+  «component (2500,1000) 0 0
+    «symbol Switch
+      «type: X»
+      «description: (PLECS) Switch»
+      «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-100,150) 0 0 0x1000000 -1 -1»
+      «line (-130,0) (-80,0) 0 0 0x1000000 -1 -1»
+      «triangle (-200,-40) (-200,40) (-130,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (100,100) 1 7 0 0x1000000 -1 -1 "XS2"»
+      «text (400,250) 1 0 2 0x1000000 -1 -1 "SWITCH"»
+      «text (100,-50) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "extreme=<0,(1)> ;Extreme Ron/Roff value"»
+      «pin (0,200) (20,0) 1 15 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "-"»
+      «pin (-200,0) (-20,0) 1 15 0 0x0 -1 "C"»
+    »
+  »
+  «component (2500,2500) 0 0
+    «symbol Switch
+      «type: X»
+      «description: (PLECS) Switch»
+      «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-100,150) 0 0 0x1000000 -1 -1»
+      «line (-130,0) (-80,0) 0 0 0x1000000 -1 -1»
+      «triangle (-200,-40) (-200,40) (-130,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (100,100) 1 7 0 0x1000000 -1 -1 "XS3"»
+      «text (400,250) 1 0 2 0x1000000 -1 -1 "SWITCH"»
+      «text (100,-50) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "extreme=<0,(1)> ;Extreme Ron/Roff value"»
+      «pin (0,200) (20,0) 1 15 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "-"»
+      «pin (-200,0) (-20,0) 1 15 0 0x0 -1 "C"»
+    »
+  »
+  «component (900,1100) 0 0
+    «symbol Switch
+      «type: X»
+      «description: (PLECS) Switch»
+      «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-100,150) 0 0 0x1000000 -1 -1»
+      «line (-130,0) (-80,0) 0 0 0x1000000 -1 -1»
+      «triangle (-200,-40) (-200,40) (-130,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (100,100) 1 7 0 0x1000000 -1 -1 "XS4"»
+      «text (400,250) 1 0 2 0x1000000 -1 -1 "SWITCH"»
+      «text (100,-50) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "extreme=<0,(1)> ;Extreme Ron/Roff value"»
+      «pin (0,200) (20,0) 1 15 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "-"»
+      «pin (-200,0) (-20,0) 1 15 0 0x0 -1 "C"»
+    »
+  »
+  «net (-1500,0) 1 14 0 "in0"»
+  «net (-1500,-400) 1 14 0 "in1"»
+  «net (100,100) 1 14 0 "g1"»
+  «net (100,-100) 1 14 0 "g2"»
+  «net (100,-300) 1 14 0 "g3"»
+  «net (100,-500) 1 14 0 "g4"»
+  «net (900,500) 1 13 0 "GND"»
+  «net (3200,2000) 1 14 0 "Vm+"»
+  «net (3200,1400) 1 14 0 "Vm-"»
+  «junction (2500,1400)»
+  «junction (900,2900)»
+  «junction (900,2000)»
+  «junction (900,600)»
+  «wire (-1500,-400) (-1300,-400) "in1"»
+  «wire (-1300,0) (-1500,0) "in0"»
+  «wire (-2900,-200) (-2300,-200) "in1"»
+  «wire (100,100) (300,100) "g1"»
+  «wire (-500,100) (100,100) "g1"»
+  «wire (-500,-100) (100,-100) "g2"»
+  «wire (-500,-300) (100,-300) "g3"»
+  «wire (-500,-500) (100,-500) "g4"»
+  «wire (-500,1700) (-200,1700) "N01"»
+  «wire (0,1900) (0,2900) "N02"»
+  «wire (900,2900) (2500,2900) "N03"»
+  «wire (2500,800) (2500,600) "GND"»
+  «wire (2500,2900) (2500,2700) "N03"»
+  «wire (2500,1400) (2500,1200) "Vm-"»
+  «wire (900,600) (0,600) "GND"»
+  «wire (0,600) (0,1500) "GND"»
+  «wire (900,2700) (900,2900) "N03"»
+  «wire (400,2900) (900,2900) "N03"»
+  «wire (2500,600) (900,600) "GND"»
+  «wire (900,2000) (900,2300) "Vm+"»
+  «wire (900,600) (900,900) "GND"»
+  «wire (4600,2000) (4900,2000) "Vm-"»
+  «wire (900,1300) (900,2000) "Vm+"»
+  «wire (3900,2000) (4200,2000) "N04"»
+  «wire (3200,2000) (3500,2000) "Vm+"»
+  «wire (4900,2000) (4900,1400) "Vm-"»
+  «wire (3200,1400) (2500,1400) "Vm-"»
+  «wire (2500,2300) (2500,1400) "Vm-"»
+  «wire (900,500) (900,600) "GND"»
+  «wire (900,2000) (3200,2000) "Vm+"»
+  «wire (4900,1400) (3200,1400) "Vm-"»
+  «wire (300,100) (300,2500) "g1"»
+  «wire (300,2500) (700,2500) "g1"»
+  «wire (100,-100) (2100,-100) "g2"»
+  «wire (2100,-100) (2100,1000) "g2"»
+  «wire (2100,1000) (2300,1000) "g2"»
+  «wire (100,-300) (1900,-300) "g3"»
+  «wire (1900,-300) (1900,2500) "g3"»
+  «wire (1900,2500) (2300,2500) "g3"»
+  «wire (100,-500) (500,-500) "g4"»
+  «wire (500,-500) (500,1100) "g4"»
+  «wire (500,1100) (700,1100) "g4"»
+  «wire (0,2900) (200,2900) "N02"»
+  «wire (-2900,0) (-1500,0) "in0"»
+  «wire (-2300,-200) (-2100,-400) "in1"»
+  «wire (-2100,-400) (-1500,-400) "in1"»
+  «text (2150,-750) 1 7 0 0x1000000 -1 -1 "ï»¿.tran .1\n.plot I(L1)\n.plot I(Iin)\n.plot V(Vm+,Vm-)\n.plot V(g1) V(g2)+1.1 V(g3)+2.2 V(g4)+3.3"»
+  «text (-3450,3650) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Basic Topologies > H-Bridge Inverter Circuit (h_bridge_inverter_circuit.plecs)\nby KSKelvin on 7-24-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+»
+

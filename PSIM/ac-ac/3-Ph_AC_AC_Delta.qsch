@@ -1,0 +1,988 @@
+ÿØÿÛ«schematic
+  «component (-1700,700) 6 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (-130,0) 1 46 0 0x1000000 -1 -1 "V1"»
+      «text (130,0) 1 45 0 0x1000000 -1 -1 "sin 0 110*sqrt(2) 60 0 0 0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1700,-600) 6 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (-130,0) 1 46 0 0x1000000 -1 -1 "V2"»
+      «text (130,0) 1 45 0 0x1000000 -1 -1 "sin 0 110*sqrt(2) 60 0 0 -120"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1700,-1900) 6 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (-130,0) 1 46 0 0x1000000 -1 -1 "V3"»
+      «text (130,0) 1 45 0 0x1000000 -1 -1 "sin 0 110*sqrt(2) 60 0 0 -240"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-800,700) 2 0
+    «symbol IProbe-0Vsrc(large)
+      «type: V»
+      «description: Current Probe - with 0V voltage source by KSKelvin»
+      «shorted pins: false»
+      «line (150,130) (150,-150) 0 0 0x1000000 -1 -1»
+      «ellipse (-40,40) (40,-40) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «arc3p (0,-100) (0,100) (0,0) 0 0 0x1000000 -1 -1»
+      «triangle (150,-150) (100,-80) (200,-80) 0 0 0x1000000 0xff0012 -1 -1»
+      «text (200,-10) 1 110 0 0x1000000 -1 -1 "Ir"»
+      «text (-40,-10) 0.63 109 2 0x1000000 -1 -1 "0"»
+      «text (-135,-10) 0.681 109 3 0x1000000 -1 -1 "; hold shift to probe"»
+      «pin (0,100) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (1800,700) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "10"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (1800,-600) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R2"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "10"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (1700,-1900) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R3"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "10"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-2000,-3000) 0 0
+    «symbol .tran2 - Berkeley Syntax
+      «type: .»
+      «description: Transient - Berkeley Syntax»
+      «shorted pins: false»
+      «line (-500,200) (-500,-100) 0 0 0x1000000 -1 -1»
+      «line (-740,80) (-740,50) 0 0 0x1000000 -1 -1»
+      «line (-700,80) (-700,50) 0 0 0x1000000 -1 -1»
+      «line (-600,80) (-600,20) 0 0 0x1000000 -1 -1»
+      «line (-560,80) (-560,20) 0 0 0x1000000 -1 -1»
+      «line (-650,0) (-630,0) 0 0 0x1000000 -1 -1»
+      «line (-660,-40) (-630,-40) 0 0 0x1000000 -1 -1»
+      «line (-610,-50) (-590,-70) 0 0 0x1000000 -1 -1»
+      «line (600,200) (650,150) 0 0 0x1000000 -1 -1»
+      «line (650,-150) (650,350) 0 0 0x1000000 -1 -1»
+      «line (650,-150) (600,-100) 0 0 0x1000000 -1 -1»
+      «line (650,-150) (-750,-150) 0 0 0x1000000 -1 -1»
+      «line (-750,-150) (-800,-100) 0 0 0x1000000 -1 -1»
+      «line (600,400) (650,350) 0 0 0x1000000 -1 -1»
+      «rect (-800,200) (600,-100) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+      «rect (-300,400) (600,200) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+      «arc3p (-560,80) (-740,80) (-650,80) 0 0 0x1000000 -1 -1»
+      «arc3p (-600,80) (-700,80) (-650,80) 0 0 0x1000000 -1 -1»
+      «arc3p (-600,20) (-560,20) (-580,20) 0 0 0x1000000 -1 -1»
+      «arc3p (-740,50) (-660,-40) (-660,50) 0 0 0x1000000 -1 -1»
+      «arc3p (-700,50) (-650,0) (-650,50) 0 0 0x1000000 -1 -1»
+      «arc3p (-568,-38) (-630,0) (-630,-80) 0 0 0x1000000 -1 -1»
+      «arc3p (-610,-50) (-630,-40) (-630,-70) 0 0 0x1000000 -1 -1»
+      «arc3p (-590,-70) (-568,-38) (-585,-55) 0 0 0x1000000 -1 -1»
+      «triangle (600,-100) (600,20) (480,-100) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-800,300) 1 7 0 0x0 -1 -1 ".tran"»
+      «text (-50,-250) 1 7 0 0x0 -1 -1 "0"»
+      «text (-200,-400) 1 7 0 0x0 -1 -1 "0.066"»
+      «text (-200,-550) 1 7 0 0x0 -1 -1 "0"»
+      «text (350,-700) 1 7 0 0x0 -1 -1 "1.5822µ"»
+      «text (-350,-850) 1 7 1 0x1000000 -1 -1 "UIC"»
+      «text (-700,-250) 1 7 1 0x1000000 -1 -1 "Ignored:"»
+      «text (-700,-400) 1 7 1 0x1000000 -1 -1 "Tstop:"»
+      «text (-700,-550) 1 7 1 0x1000000 -1 -1 "Tstart:"»
+      «text (-700,-700) 1 7 1 0x1000000 -1 -1 "MaxTimeStep:"»
+      «text (-700,-850) 1 7 1 0x1000000 -1 -1 "UIC:"»
+      «text (50,50) 1.36 0 1 0x1000000 -1 -1 "Transient"»
+      «text (150,300) 0.735 15 1 0x1000000 -1 -1 "Berkeley Syntax"»
+    »
+  »
+  «component (4300,1300) 0 0
+    «symbol Comparator-InternalSupply(small)-1
+      «type: X»
+      «description: Ideal Comparator with Internal Supply»
+      «library file: |.subckt Comparator-InternalSupply IN+ IN- Q\nVdd Vdd 0 UL\nVss Vss 0 LL\n¥1 Vdd Vss Q ¥ IN+ IN- ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=TTOL Td=Td Vh=Vh Vt=Vt\n.ends Comparator-InternalSupply»
+      «shorted pins: false»
+      «line (-200,300) (300,0) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (300,0) 0 0 0x1000000 -1 -1»
+      «line (25,100) (-75,100) 0 0 0x1000000 -1 -1»
+      «line (-25,100) (-25,-100) 0 0 0x1000000 -1 -1»
+      «line (-75,100) (-75,-100) 0 0 0x1000000 -1 -1»
+      «line (-25,-100) (-125,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (-200,300) 0 0 0x1000000 -1 -1»
+      «line (-180,200) (-120,200) 0 0 0x1000000 -1 -1»
+      «line (-150,170) (-150,230) 0 0 0x1000000 -1 -1»
+      «line (-180,-200) (-120,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,-200) (-280,-200) 0 0 0x1000000 -1 -1»
+      «ellipse (-280,-160) (-200,-240) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (50,250) 1 7 0 0x1000000 -1 -1 "X7"»
+      «text (50,400) 1 7 2 0x1000000 -1 -1 "COMPARATOR-INTERNALSUPPLY"»
+      «text (50,-250) 1 7 0 0x0 -1 -1 "UL=<1> ;(U)pper output (L)evel"»
+      «text (50,-400) 1 7 0 0x0 -1 -1 "LL=<0> ;(L)ower output (L)evel"»
+      «text (50,-550) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (50,-700) 1 7 2 0x1000000 -1 -1 "Td=<0>"»
+      «text (50,-850) 1 7 2 0x1000000 -1 -1 "Vt=<0>"»
+      «text (50,-1000) 1 7 2 0x1000000 -1 -1 "Vh=<0>"»
+      «pin (-300,200) (20,0) 1 15 0 0x0 -1 "IN+"»
+      «pin (-300,-200) (-20,0) 1 15 0 0x0 -1 "IN-"»
+      «pin (300,0) (0,10) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (3500,1500) 0 0
+    «symbol E-Source Isolation-Gain 2 (large)
+      «type: E»
+      «description: Voltage Dependent Voltage Source»
+      «shorted pins: false»
+      «line (-170,-140) (-90,-140) 0 0 0x1000000 -1 -1»
+      «line (-170,140) (-90,140) 0 0 0x1000000 -1 -1»
+      «line (-130,180) (-130,100) 0 0 0x1000000 -1 -1»
+      «line (250,-200) (250,-34) 0 0 0x1000000 -1 1»
+      «line (250,-200) (300,-200) 0 0 0x1000000 -1 1»
+      «line (0,180) (0,-180) 0 0 0x1000000 -1 -1»
+      «line (-200,300) (-200,-300) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (0,-180) 0 0 0x1000000 -1 -1»
+      «line (-200,300) (0,180) 0 0 0x1000000 -1 -1»
+      «triangle (50,150) (50,-150) (300,0) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (110,250) 1 15 0 0x1000000 -1 -1 "E1"»
+      «text (60,-250) 0.735 15 0 0x1000000 -1 -1 "1/11"»
+      «pin (300,0) (0,0) 1 0 0 0x0 -1 ""»
+      «pin (300,-200) (0,0) 1 0 0 0x0 -1 "" "0"»
+      «pin (-200,200) (0,0) 1 0 0 0x0 -1 ""»
+      «pin (-200,-200) (0,0) 1 0 0 0x0 -1 ""»
+    »
+  »
+  «component (5600,400) 0 0
+    «symbol Alpha-Controller-2
+      «type: X»
+      «description: Alpha Controller (ACTRL)»
+      «library file: |.subckt Alpha-Controller sync alpha EN OUT\nB1 timer1 0 V=idt(1,0,V(sync)-state(1,V(sync)))\nB2 PulseWidth 0 V=1/frq*PulseWidthDeg/360\nB3 delay 0 V=1/frq*V(alpha)/360\nVlogic1V p1v 0 1\n¥1 p1v 0 trig ¥ timer1 delay ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nB4 timer2 0 V=idt(1,0,V(trig)-state(1,V(trig)))\n¥2 p1v 0 N01 ¥ PulseWidth timer2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nRpullup p1v EN 10K\n¥3 p1v 0 OUT ¥4 EN trig N01 N02 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND\nV5 N02 0 PWL 0 0 1p 1 trigger=V(sync)>0.5\n.ends Alpha-Controller»
+      «shorted pins: false»
+      «line (100,-100) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,200) (-300,-400) 0 0 0x1000000 -1 -1»
+      «line (-300,-400) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-600,-100) (-300,-100) 0 0 0x1000000 -1 -1»
+      «line (-280,-20) (-250,-20) 0 0 0x1000000 -1 -1»
+      «line (-250,-20) (-250,100) 0 0 0x1000000 -1 -1»
+      «line (-250,100) (-220,100) 0 0 0x1000000 -1 -1»
+      «line (-280,20) (-250,60) 0 0 0x1000000 -1 -1»
+      «line (-250,60) (-220,20) 0 0 0x1000000 -1 -1»
+      «line (200,-100) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-500) (-200,-330) 0 0 0x1000000 -1 -1»
+      «line (-600,100) (-350,100) 0 0 0x1000000 -1 -1»
+      «line (-350,100) (-300,50) 0 0 0x1000000 -1 -1»
+      «rect (200,300) (-600,-500) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «ellipse (-235,-50) (-135,-150) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (-85,-50) (-85,-150) (-85,-100) 0 0 0x1000000 -1 -1»
+      «text (-600,400) 1 7 0 0x1000000 -1 -1 "X8"»
+      «text (-600,550) 1 7 2 0x1000000 -1 -1 "ALPHA-CONTROLLER"»
+      «text (0,-600) 1 7 0 0x0 -1 -1 "frq=<60>"»
+      «text (0,-750) 1 7 0 0x0 -1 -1 "PulseWidthDeg=<120>"»
+      «text (0,-900) 1 7 0 0x0 -1 -1 "TTOL=<1n>"»
+      «pin (-600,100) (20,0) 0.735 6 0 0x0 -1 "sync"»
+      «pin (-600,-100) (20,0) 0.735 5 0 0x0 -1 "alpha"»
+      «pin (-200,-500) (40,0) 0.735 6 0 0x0 -1 "EN"»
+      «pin (200,-100) (0,20) 1 111 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (5400,-600) 0 0
+    «symbol psim-VSQ
+      «type: X»
+      «description: Square V-Source (PSIM)»
+      «library file: |.subckt PSIM-VSQ + -\nV1 square 0 PULSE V1 V2 Td Trise Tfall Ton Tperiod\nB1 + - V=if(time>=Tstart,V(square),0)\n.param V1=DCoffset\n.param V2=DCoffset+Vpp\n.param Td=PhaseDelay/360/Freq\n.param Ton=Duty/Freq\n.param Tperiod=1/Freq\n.param Trise=0\n.param Tfall=0\n.ends PSIM-VSQ»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «line (-70,0) (-70,70) 0 0 0x1000000 -1 -1»
+      «line (-70,70) (0,70) 0 0 0x1000000 -1 -1»
+      «line (70,0) (70,-70) 0 0 0x1000000 -1 -1»
+      «line (70,-70) (0,-70) 0 0 0x1000000 -1 -1»
+      «line (0,70) (0,-70) 0 0 0x1000000 -1 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (-150,150) 1 11 0 0x1000000 -1 -1 "X9"»
+      «text (-150,0) 1 11 0 0x1000000 -1 -1 "psim-VSQ"»
+      «text (-150,-150) 0.681 11 0 0x1000000 -1 -1 "Vpp=<1> ;peak-peak voltage"»
+      «text (-150,-250) 0.681 11 0 0x1000000 -1 -1 "freq=<3K>;frequency"»
+      «text (-150,-350) 0.681 11 0 0x1000000 -1 -1 "duty=<0.15>"»
+      «text (-150,-450) 0.681 11 0 0x1000000 -1 -1 "DCoffset=<0>"»
+      «text (-150,-550) 0.681 11 0 0x1000000 -1 -1 "Tstart=<0> ;Starting time, 0 before this time"»
+      «text (-150,-650) 0.681 11 0 0x1000000 -1 -1 "PhaseDelay=<0> ;phase in degree"»
+      «text (-150,-750) 0.681 11 2 0x1000000 -1 -1 "Trise=<0> ;rise time"»
+      «text (-150,-850) 0.681 11 2 0x1000000 -1 -1 "Tfall=<0> ;fall time"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (4300,300) 0 0
+    «symbol Constant-4digit
+      «type: V»
+      «description: Constant (4 digits)»
+      «shorted pins: false»
+      «rect (-200,150) (200,-150) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+      «text (-200,250) 1 7 0 0x1000000 -1 -1 "V4"»
+      «text (0,10) 1 15 0 0x1000000 -1 -1 "60"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "-" "0"»
+    »
+  »
+  «component (8200,400) 0 0
+    «symbol Alpha-Controller-2
+      «type: X»
+      «description: Alpha Controller (ACTRL)»
+      «library file: |.subckt Alpha-Controller sync alpha EN OUT\nB1 timer1 0 V=idt(1,0,V(sync)-state(1,V(sync)))\nB2 PulseWidth 0 V=1/frq*PulseWidthDeg/360\nB3 delay 0 V=1/frq*V(alpha)/360\nVlogic1V p1v 0 1\n¥1 p1v 0 trig ¥ timer1 delay ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nB4 timer2 0 V=idt(1,0,V(trig)-state(1,V(trig)))\n¥2 p1v 0 N01 ¥ PulseWidth timer2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nRpullup p1v EN 10K\n¥3 p1v 0 OUT ¥4 EN trig N01 N02 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND\nV5 N02 0 PWL 0 0 1p 1 trigger=V(sync)>0.5\n.ends Alpha-Controller»
+      «shorted pins: false»
+      «line (100,-100) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,200) (-300,-400) 0 0 0x1000000 -1 -1»
+      «line (-300,-400) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-600,-100) (-300,-100) 0 0 0x1000000 -1 -1»
+      «line (-280,-20) (-250,-20) 0 0 0x1000000 -1 -1»
+      «line (-250,-20) (-250,100) 0 0 0x1000000 -1 -1»
+      «line (-250,100) (-220,100) 0 0 0x1000000 -1 -1»
+      «line (-280,20) (-250,60) 0 0 0x1000000 -1 -1»
+      «line (-250,60) (-220,20) 0 0 0x1000000 -1 -1»
+      «line (200,-100) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-500) (-200,-330) 0 0 0x1000000 -1 -1»
+      «line (-600,100) (-350,100) 0 0 0x1000000 -1 -1»
+      «line (-350,100) (-300,50) 0 0 0x1000000 -1 -1»
+      «rect (200,300) (-600,-500) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «ellipse (-235,-50) (-135,-150) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (-85,-50) (-85,-150) (-85,-100) 0 0 0x1000000 -1 -1»
+      «text (-600,400) 1 7 0 0x1000000 -1 -1 "X10"»
+      «text (-600,550) 1 7 2 0x1000000 -1 -1 "ALPHA-CONTROLLER"»
+      «text (0,-600) 1 7 0 0x0 -1 -1 "frq=<60>"»
+      «text (0,-750) 1 7 0 0x0 -1 -1 "PulseWidthDeg=<120>"»
+      «text (0,-900) 1 7 0 0x0 -1 -1 "TTOL=<1n>"»
+      «pin (-600,100) (20,0) 0.735 6 0 0x0 -1 "sync"»
+      «pin (-600,-100) (20,0) 0.735 5 0 0x0 -1 "alpha"»
+      «pin (-200,-500) (40,0) 0.735 6 0 0x0 -1 "EN"»
+      «pin (200,-100) (0,20) 1 111 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (6600,0) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V5"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "180"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6800,300) 0 0
+    «symbol Sum(small)
+      «type: X»
+      «description: Sum»
+      «library file: |.subckt sum pos1 pos2 out\nB1 out 0 V=V(pos1)+V(pos2)\n.ends sum»
+      «shorted pins: false»
+      «line (400,0) (330,0) 0 0 0x1000000 -1 -1»
+      «line (0,0) (70,0) 0 0 0x1000000 -1 -1»
+      «line (200,-200) (200,-130) 0 0 0x1000000 -1 -1»
+      «line (90,0) (170,0) 0 0 0x1000000 -1 -1»
+      «line (130,40) (130,-40) 0 0 0x1000000 -1 -1»
+      «line (200,-30) (200,-110) 0 0 0x1000000 -1 -1»
+      «line (160,-70) (240,-70) 0 0 0x1000000 -1 -1»
+      «ellipse (70,130) (330,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,230) 1 0 0 0x1000000 -1 -1 "X11"»
+      «text (450,-150) 1 0 2 0x1000000 -1 -1 "SUM"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos1"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "pos2"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (4300,-1900) 0 0
+    «symbol Comparator-InternalSupply(small)-1
+      «type: X»
+      «description: Ideal Comparator with Internal Supply»
+      «library file: |.subckt Comparator-InternalSupply IN+ IN- Q\nVdd Vdd 0 UL\nVss Vss 0 LL\n¥1 Vdd Vss Q ¥ IN+ IN- ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=TTOL Td=Td Vh=Vh Vt=Vt\n.ends Comparator-InternalSupply»
+      «shorted pins: false»
+      «line (-200,300) (300,0) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (300,0) 0 0 0x1000000 -1 -1»
+      «line (25,100) (-75,100) 0 0 0x1000000 -1 -1»
+      «line (-25,100) (-25,-100) 0 0 0x1000000 -1 -1»
+      «line (-75,100) (-75,-100) 0 0 0x1000000 -1 -1»
+      «line (-25,-100) (-125,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (-200,300) 0 0 0x1000000 -1 -1»
+      «line (-180,200) (-120,200) 0 0 0x1000000 -1 -1»
+      «line (-150,170) (-150,230) 0 0 0x1000000 -1 -1»
+      «line (-180,-200) (-120,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,-200) (-280,-200) 0 0 0x1000000 -1 -1»
+      «ellipse (-280,-160) (-200,-240) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (50,250) 1 7 0 0x1000000 -1 -1 "X12"»
+      «text (50,400) 1 7 2 0x1000000 -1 -1 "COMPARATOR-INTERNALSUPPLY"»
+      «text (50,-250) 1 7 0 0x0 -1 -1 "UL=<1> ;(U)pper output (L)evel"»
+      «text (50,-400) 1 7 0 0x0 -1 -1 "LL=<0> ;(L)ower output (L)evel"»
+      «text (50,-550) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (50,-700) 1 7 2 0x1000000 -1 -1 "Td=<0>"»
+      «text (50,-850) 1 7 2 0x1000000 -1 -1 "Vt=<0>"»
+      «text (50,-1000) 1 7 2 0x1000000 -1 -1 "Vh=<0>"»
+      «pin (-300,200) (20,0) 1 15 0 0x0 -1 "IN+"»
+      «pin (-300,-200) (-20,0) 1 15 0 0x0 -1 "IN-"»
+      «pin (300,0) (0,10) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (3500,-1700) 0 0
+    «symbol E-Source Isolation-Gain 2 (large)
+      «type: E»
+      «description: Voltage Dependent Voltage Source»
+      «shorted pins: false»
+      «line (-170,-140) (-90,-140) 0 0 0x1000000 -1 -1»
+      «line (-170,140) (-90,140) 0 0 0x1000000 -1 -1»
+      «line (-130,180) (-130,100) 0 0 0x1000000 -1 -1»
+      «line (250,-200) (250,-34) 0 0 0x1000000 -1 1»
+      «line (250,-200) (300,-200) 0 0 0x1000000 -1 1»
+      «line (0,180) (0,-180) 0 0 0x1000000 -1 -1»
+      «line (-200,300) (-200,-300) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (0,-180) 0 0 0x1000000 -1 -1»
+      «line (-200,300) (0,180) 0 0 0x1000000 -1 -1»
+      «triangle (50,150) (50,-150) (300,0) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (110,250) 1 15 0 0x1000000 -1 -1 "E2"»
+      «text (60,-250) 0.735 15 0 0x1000000 -1 -1 "1/11"»
+      «pin (300,0) (0,0) 1 0 0 0x0 -1 ""»
+      «pin (300,-200) (0,0) 1 0 0 0x0 -1 "" "0"»
+      «pin (-200,200) (0,0) 1 0 0 0x0 -1 ""»
+      «pin (-200,-200) (0,0) 1 0 0 0x0 -1 ""»
+    »
+  »
+  «component (5600,-2800) 0 0
+    «symbol Alpha-Controller-2
+      «type: X»
+      «description: Alpha Controller (ACTRL)»
+      «library file: |.subckt Alpha-Controller sync alpha EN OUT\nB1 timer1 0 V=idt(1,0,V(sync)-state(1,V(sync)))\nB2 PulseWidth 0 V=1/frq*PulseWidthDeg/360\nB3 delay 0 V=1/frq*V(alpha)/360\nVlogic1V p1v 0 1\n¥1 p1v 0 trig ¥ timer1 delay ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nB4 timer2 0 V=idt(1,0,V(trig)-state(1,V(trig)))\n¥2 p1v 0 N01 ¥ PulseWidth timer2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nRpullup p1v EN 10K\n¥3 p1v 0 OUT ¥4 EN trig N01 N02 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND\nV5 N02 0 PWL 0 0 1p 1 trigger=V(sync)>0.5\n.ends Alpha-Controller»
+      «shorted pins: false»
+      «line (100,-100) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,200) (-300,-400) 0 0 0x1000000 -1 -1»
+      «line (-300,-400) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-600,-100) (-300,-100) 0 0 0x1000000 -1 -1»
+      «line (-280,-20) (-250,-20) 0 0 0x1000000 -1 -1»
+      «line (-250,-20) (-250,100) 0 0 0x1000000 -1 -1»
+      «line (-250,100) (-220,100) 0 0 0x1000000 -1 -1»
+      «line (-280,20) (-250,60) 0 0 0x1000000 -1 -1»
+      «line (-250,60) (-220,20) 0 0 0x1000000 -1 -1»
+      «line (200,-100) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-500) (-200,-330) 0 0 0x1000000 -1 -1»
+      «line (-600,100) (-350,100) 0 0 0x1000000 -1 -1»
+      «line (-350,100) (-300,50) 0 0 0x1000000 -1 -1»
+      «rect (200,300) (-600,-500) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «ellipse (-235,-50) (-135,-150) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (-85,-50) (-85,-150) (-85,-100) 0 0 0x1000000 -1 -1»
+      «text (-600,400) 1 7 0 0x1000000 -1 -1 "X13"»
+      «text (-600,550) 1 7 2 0x1000000 -1 -1 "ALPHA-CONTROLLER"»
+      «text (0,-600) 1 7 0 0x0 -1 -1 "frq=<60>"»
+      «text (0,-750) 1 7 0 0x0 -1 -1 "PulseWidthDeg=<120>"»
+      «text (0,-900) 1 7 0 0x0 -1 -1 "TTOL=<1n>"»
+      «pin (-600,100) (20,0) 0.735 6 0 0x0 -1 "sync"»
+      «pin (-600,-100) (20,0) 0.735 5 0 0x0 -1 "alpha"»
+      «pin (-200,-500) (40,0) 0.735 6 0 0x0 -1 "EN"»
+      «pin (200,-100) (0,20) 1 111 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (8200,-2800) 0 0
+    «symbol Alpha-Controller-2
+      «type: X»
+      «description: Alpha Controller (ACTRL)»
+      «library file: |.subckt Alpha-Controller sync alpha EN OUT\nB1 timer1 0 V=idt(1,0,V(sync)-state(1,V(sync)))\nB2 PulseWidth 0 V=1/frq*PulseWidthDeg/360\nB3 delay 0 V=1/frq*V(alpha)/360\nVlogic1V p1v 0 1\n¥1 p1v 0 trig ¥ timer1 delay ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nB4 timer2 0 V=idt(1,0,V(trig)-state(1,V(trig)))\n¥2 p1v 0 N01 ¥ PulseWidth timer2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nRpullup p1v EN 10K\n¥3 p1v 0 OUT ¥4 EN trig N01 N02 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND\nV5 N02 0 PWL 0 0 1p 1 trigger=V(sync)>0.5\n.ends Alpha-Controller»
+      «shorted pins: false»
+      «line (100,-100) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,200) (-300,-400) 0 0 0x1000000 -1 -1»
+      «line (-300,-400) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-600,-100) (-300,-100) 0 0 0x1000000 -1 -1»
+      «line (-280,-20) (-250,-20) 0 0 0x1000000 -1 -1»
+      «line (-250,-20) (-250,100) 0 0 0x1000000 -1 -1»
+      «line (-250,100) (-220,100) 0 0 0x1000000 -1 -1»
+      «line (-280,20) (-250,60) 0 0 0x1000000 -1 -1»
+      «line (-250,60) (-220,20) 0 0 0x1000000 -1 -1»
+      «line (200,-100) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-500) (-200,-330) 0 0 0x1000000 -1 -1»
+      «line (-600,100) (-350,100) 0 0 0x1000000 -1 -1»
+      «line (-350,100) (-300,50) 0 0 0x1000000 -1 -1»
+      «rect (200,300) (-600,-500) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «ellipse (-235,-50) (-135,-150) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (-85,-50) (-85,-150) (-85,-100) 0 0 0x1000000 -1 -1»
+      «text (-600,400) 1 7 0 0x1000000 -1 -1 "X15"»
+      «text (-600,550) 1 7 2 0x1000000 -1 -1 "ALPHA-CONTROLLER"»
+      «text (0,-600) 1 7 0 0x0 -1 -1 "frq=<60>"»
+      «text (0,-750) 1 7 0 0x0 -1 -1 "PulseWidthDeg=<120>"»
+      «text (0,-900) 1 7 0 0x0 -1 -1 "TTOL=<1n>"»
+      «pin (-600,100) (20,0) 0.735 6 0 0x0 -1 "sync"»
+      «pin (-600,-100) (20,0) 0.735 5 0 0x0 -1 "alpha"»
+      «pin (-200,-500) (40,0) 0.735 6 0 0x0 -1 "EN"»
+      «pin (200,-100) (0,20) 1 111 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (6600,-3200) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V7"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "180"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6800,-2900) 0 0
+    «symbol Sum(small)
+      «type: X»
+      «description: Sum»
+      «library file: |.subckt sum pos1 pos2 out\nB1 out 0 V=V(pos1)+V(pos2)\n.ends sum»
+      «shorted pins: false»
+      «line (400,0) (330,0) 0 0 0x1000000 -1 -1»
+      «line (0,0) (70,0) 0 0 0x1000000 -1 -1»
+      «line (200,-200) (200,-130) 0 0 0x1000000 -1 -1»
+      «line (90,0) (170,0) 0 0 0x1000000 -1 -1»
+      «line (130,40) (130,-40) 0 0 0x1000000 -1 -1»
+      «line (200,-30) (200,-110) 0 0 0x1000000 -1 -1»
+      «line (160,-70) (240,-70) 0 0 0x1000000 -1 -1»
+      «ellipse (70,130) (330,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,230) 1 0 0 0x1000000 -1 -1 "X16"»
+      «text (450,-150) 1 0 2 0x1000000 -1 -1 "SUM"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos1"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "pos2"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (4300,-4400) 0 0
+    «symbol Comparator-InternalSupply(small)-1
+      «type: X»
+      «description: Ideal Comparator with Internal Supply»
+      «library file: |.subckt Comparator-InternalSupply IN+ IN- Q\nVdd Vdd 0 UL\nVss Vss 0 LL\n¥1 Vdd Vss Q ¥ IN+ IN- ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=TTOL Td=Td Vh=Vh Vt=Vt\n.ends Comparator-InternalSupply»
+      «shorted pins: false»
+      «line (-200,300) (300,0) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (300,0) 0 0 0x1000000 -1 -1»
+      «line (25,100) (-75,100) 0 0 0x1000000 -1 -1»
+      «line (-25,100) (-25,-100) 0 0 0x1000000 -1 -1»
+      «line (-75,100) (-75,-100) 0 0 0x1000000 -1 -1»
+      «line (-25,-100) (-125,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (-200,300) 0 0 0x1000000 -1 -1»
+      «line (-180,200) (-120,200) 0 0 0x1000000 -1 -1»
+      «line (-150,170) (-150,230) 0 0 0x1000000 -1 -1»
+      «line (-180,-200) (-120,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,-200) (-280,-200) 0 0 0x1000000 -1 -1»
+      «ellipse (-280,-160) (-200,-240) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (50,250) 1 7 0 0x1000000 -1 -1 "X14"»
+      «text (50,400) 1 7 2 0x1000000 -1 -1 "COMPARATOR-INTERNALSUPPLY"»
+      «text (50,-250) 1 7 0 0x0 -1 -1 "UL=<1> ;(U)pper output (L)evel"»
+      «text (50,-400) 1 7 0 0x0 -1 -1 "LL=<0> ;(L)ower output (L)evel"»
+      «text (50,-550) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (50,-700) 1 7 2 0x1000000 -1 -1 "Td=<0>"»
+      «text (50,-850) 1 7 2 0x1000000 -1 -1 "Vt=<0>"»
+      «text (50,-1000) 1 7 2 0x1000000 -1 -1 "Vh=<0>"»
+      «pin (-300,200) (20,0) 1 15 0 0x0 -1 "IN+"»
+      «pin (-300,-200) (-20,0) 1 15 0 0x0 -1 "IN-"»
+      «pin (300,0) (0,10) 1 15 0 0x0 -1 "Q"»
+    »
+  »
+  «component (3500,-4200) 0 0
+    «symbol E-Source Isolation-Gain 2 (large)
+      «type: E»
+      «description: Voltage Dependent Voltage Source»
+      «shorted pins: false»
+      «line (-170,-140) (-90,-140) 0 0 0x1000000 -1 -1»
+      «line (-170,140) (-90,140) 0 0 0x1000000 -1 -1»
+      «line (-130,180) (-130,100) 0 0 0x1000000 -1 -1»
+      «line (250,-200) (250,-34) 0 0 0x1000000 -1 1»
+      «line (250,-200) (300,-200) 0 0 0x1000000 -1 1»
+      «line (0,180) (0,-180) 0 0 0x1000000 -1 -1»
+      «line (-200,300) (-200,-300) 0 0 0x1000000 -1 -1»
+      «line (-200,-300) (0,-180) 0 0 0x1000000 -1 -1»
+      «line (-200,300) (0,180) 0 0 0x1000000 -1 -1»
+      «triangle (50,150) (50,-150) (300,0) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (110,250) 1 15 0 0x1000000 -1 -1 "E3"»
+      «text (60,-250) 0.735 15 0 0x1000000 -1 -1 "1/11"»
+      «pin (300,0) (0,0) 1 0 0 0x0 -1 ""»
+      «pin (300,-200) (0,0) 1 0 0 0x0 -1 "" "0"»
+      «pin (-200,200) (0,0) 1 0 0 0x0 -1 ""»
+      «pin (-200,-200) (0,0) 1 0 0 0x0 -1 ""»
+    »
+  »
+  «component (5600,-5300) 0 0
+    «symbol Alpha-Controller-2
+      «type: X»
+      «description: Alpha Controller (ACTRL)»
+      «library file: |.subckt Alpha-Controller sync alpha EN OUT\nB1 timer1 0 V=idt(1,0,V(sync)-state(1,V(sync)))\nB2 PulseWidth 0 V=1/frq*PulseWidthDeg/360\nB3 delay 0 V=1/frq*V(alpha)/360\nVlogic1V p1v 0 1\n¥1 p1v 0 trig ¥ timer1 delay ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nB4 timer2 0 V=idt(1,0,V(trig)-state(1,V(trig)))\n¥2 p1v 0 N01 ¥ PulseWidth timer2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nRpullup p1v EN 10K\n¥3 p1v 0 OUT ¥4 EN trig N01 N02 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND\nV5 N02 0 PWL 0 0 1p 1 trigger=V(sync)>0.5\n.ends Alpha-Controller»
+      «shorted pins: false»
+      «line (100,-100) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,200) (-300,-400) 0 0 0x1000000 -1 -1»
+      «line (-300,-400) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-600,-100) (-300,-100) 0 0 0x1000000 -1 -1»
+      «line (-280,-20) (-250,-20) 0 0 0x1000000 -1 -1»
+      «line (-250,-20) (-250,100) 0 0 0x1000000 -1 -1»
+      «line (-250,100) (-220,100) 0 0 0x1000000 -1 -1»
+      «line (-280,20) (-250,60) 0 0 0x1000000 -1 -1»
+      «line (-250,60) (-220,20) 0 0 0x1000000 -1 -1»
+      «line (200,-100) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-500) (-200,-330) 0 0 0x1000000 -1 -1»
+      «line (-600,100) (-350,100) 0 0 0x1000000 -1 -1»
+      «line (-350,100) (-300,50) 0 0 0x1000000 -1 -1»
+      «rect (200,300) (-600,-500) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «ellipse (-235,-50) (-135,-150) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (-85,-50) (-85,-150) (-85,-100) 0 0 0x1000000 -1 -1»
+      «text (-600,400) 1 7 0 0x1000000 -1 -1 "X17"»
+      «text (-600,550) 1 7 2 0x1000000 -1 -1 "ALPHA-CONTROLLER"»
+      «text (0,-600) 1 7 0 0x0 -1 -1 "frq=<60>"»
+      «text (0,-750) 1 7 0 0x0 -1 -1 "PulseWidthDeg=<120>"»
+      «text (0,-900) 1 7 0 0x0 -1 -1 "TTOL=<1n>"»
+      «pin (-600,100) (20,0) 0.735 6 0 0x0 -1 "sync"»
+      «pin (-600,-100) (20,0) 0.735 5 0 0x0 -1 "alpha"»
+      «pin (-200,-500) (40,0) 0.735 6 0 0x0 -1 "EN"»
+      «pin (200,-100) (0,20) 1 111 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (8200,-5300) 0 0
+    «symbol Alpha-Controller-2
+      «type: X»
+      «description: Alpha Controller (ACTRL)»
+      «library file: |.subckt Alpha-Controller sync alpha EN OUT\nB1 timer1 0 V=idt(1,0,V(sync)-state(1,V(sync)))\nB2 PulseWidth 0 V=1/frq*PulseWidthDeg/360\nB3 delay 0 V=1/frq*V(alpha)/360\nVlogic1V p1v 0 1\n¥1 p1v 0 trig ¥ timer1 delay ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nB4 timer2 0 V=idt(1,0,V(trig)-state(1,V(trig)))\n¥2 p1v 0 N01 ¥ PulseWidth timer2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nRpullup p1v EN 10K\n¥3 p1v 0 OUT ¥4 EN trig N01 N02 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND\nV5 N02 0 PWL 0 0 1p 1 trigger=V(sync)>0.5\n.ends Alpha-Controller»
+      «shorted pins: false»
+      «line (100,-100) (-300,200) 0 0 0x1000000 -1 -1»
+      «line (-300,200) (-300,-400) 0 0 0x1000000 -1 -1»
+      «line (-300,-400) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-600,-100) (-300,-100) 0 0 0x1000000 -1 -1»
+      «line (-280,-20) (-250,-20) 0 0 0x1000000 -1 -1»
+      «line (-250,-20) (-250,100) 0 0 0x1000000 -1 -1»
+      «line (-250,100) (-220,100) 0 0 0x1000000 -1 -1»
+      «line (-280,20) (-250,60) 0 0 0x1000000 -1 -1»
+      «line (-250,60) (-220,20) 0 0 0x1000000 -1 -1»
+      «line (200,-100) (100,-100) 0 0 0x1000000 -1 -1»
+      «line (-200,-500) (-200,-330) 0 0 0x1000000 -1 -1»
+      «line (-600,100) (-350,100) 0 0 0x1000000 -1 -1»
+      «line (-350,100) (-300,50) 0 0 0x1000000 -1 -1»
+      «rect (200,300) (-600,-500) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «ellipse (-235,-50) (-135,-150) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (-85,-50) (-85,-150) (-85,-100) 0 0 0x1000000 -1 -1»
+      «text (-600,400) 1 7 0 0x1000000 -1 -1 "X18"»
+      «text (-600,550) 1 7 2 0x1000000 -1 -1 "ALPHA-CONTROLLER"»
+      «text (0,-600) 1 7 0 0x0 -1 -1 "frq=<60>"»
+      «text (0,-750) 1 7 0 0x0 -1 -1 "PulseWidthDeg=<120>"»
+      «text (0,-900) 1 7 0 0x0 -1 -1 "TTOL=<1n>"»
+      «pin (-600,100) (20,0) 0.735 6 0 0x0 -1 "sync"»
+      «pin (-600,-100) (20,0) 0.735 5 0 0x0 -1 "alpha"»
+      «pin (-200,-500) (40,0) 0.735 6 0 0x0 -1 "EN"»
+      «pin (200,-100) (0,20) 1 111 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (6600,-5700) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V6"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "180"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6800,-5400) 0 0
+    «symbol Sum(small)
+      «type: X»
+      «description: Sum»
+      «library file: |.subckt sum pos1 pos2 out\nB1 out 0 V=V(pos1)+V(pos2)\n.ends sum»
+      «shorted pins: false»
+      «line (400,0) (330,0) 0 0 0x1000000 -1 -1»
+      «line (0,0) (70,0) 0 0 0x1000000 -1 -1»
+      «line (200,-200) (200,-130) 0 0 0x1000000 -1 -1»
+      «line (90,0) (170,0) 0 0 0x1000000 -1 -1»
+      «line (130,40) (130,-40) 0 0 0x1000000 -1 -1»
+      «line (200,-30) (200,-110) 0 0 0x1000000 -1 -1»
+      «line (160,-70) (240,-70) 0 0 0x1000000 -1 -1»
+      «ellipse (70,130) (330,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,230) 1 0 0 0x1000000 -1 -1 "X19"»
+      «text (450,-150) 1 0 2 0x1000000 -1 -1 "SUM"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos1"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "pos2"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (500,900) 14 0
+    «symbol Thyristor-Ideal-0&1
+      «type: X»
+      «description: Thyristor / SCR Silicon Controlled Rectifier (Ideal) - 0&1 gate»
+      «library file: |.subckt Thyristor-Ideal-0&1 A G K\nD1 N01 K D\nS1 A N01 Q 0 SW\n¥1 N02 0 Q ¥ Set Reset ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP\nB1 Reset 0 V=if(V(A,K)<=Vfwd,1,0)\nE1 Set 0 G 0 1\nV1 N02 0 1\n.model D D Ron=1m Roff=10Meg Vfwd=Vfwd\n.model SW SW Ron=1m Roff=10Meg Vt=0.5 Vh=0\n.ends Thyristor-Ideal-0&1»
+      «shorted pins: false»
+      «line (-100,-80) (100,-80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,70) 0 0 0x1000000 -1 -1»
+      «line (-50,-80) (-100,-200) 0 0 0xff00ff -1 -1»
+      «line (-100,-200) (-200,-200) 0 0 0xff00ff -1 -1»
+      «triangle (0,-80) (-100,70) (100,70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-300,100) 1 107 0 0x1000000 -1 -1 "X1"»
+      «text (100,-200) 1 105 2 0x1000000 -1 -1 "THYRISTOR-IDEAL-0&1"»
+      «text (-250,450) 1 105 0 0x0 -1 -1 "Vfwd=<0>"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "A"»
+      «pin (-200,-200) (0,0) 1 64 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "K"»
+    »
+  »
+  «component (500,-2100) 10 0
+    «symbol Thyristor-Ideal-0&1
+      «type: X»
+      «description: Thyristor / SCR Silicon Controlled Rectifier (Ideal) - 0&1 gate»
+      «library file: |.subckt Thyristor-Ideal-0&1 A G K\nD1 N01 K D\nS1 A N01 Q 0 SW\n¥1 N02 0 Q ¥ Set Reset ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP\nB1 Reset 0 V=if(V(A,K)<=Vfwd,1,0)\nE1 Set 0 G 0 1\nV1 N02 0 1\n.model D D Ron=1m Roff=10Meg Vfwd=Vfwd\n.model SW SW Ron=1m Roff=10Meg Vt=0.5 Vh=0\n.ends Thyristor-Ideal-0&1»
+      «shorted pins: false»
+      «line (-100,-80) (100,-80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,70) 0 0 0x1000000 -1 -1»
+      «line (-50,-80) (-100,-200) 0 0 0xff00ff -1 -1»
+      «line (-100,-200) (-200,-200) 0 0 0xff00ff -1 -1»
+      «triangle (0,-80) (-100,70) (100,70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-400,-50) 1 102 0 0x1000000 -1 -1 "X2"»
+      «text (-200,200) 1 103 2 0x1000000 -1 -1 "THYRISTOR-IDEAL-0&1"»
+      «text (-150,-150) 1 103 0 0x0 -1 -1 "Vfwd=<0>"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "A"»
+      «pin (-200,-200) (0,0) 1 64 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "K"»
+    »
+  »
+  «component (500,-400) 14 0
+    «symbol Thyristor-Ideal-0&1
+      «type: X»
+      «description: Thyristor / SCR Silicon Controlled Rectifier (Ideal) - 0&1 gate»
+      «library file: |.subckt Thyristor-Ideal-0&1 A G K\nD1 N01 K D\nS1 A N01 Q 0 SW\n¥1 N02 0 Q ¥ Set Reset ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP\nB1 Reset 0 V=if(V(A,K)<=Vfwd,1,0)\nE1 Set 0 G 0 1\nV1 N02 0 1\n.model D D Ron=1m Roff=10Meg Vfwd=Vfwd\n.model SW SW Ron=1m Roff=10Meg Vt=0.5 Vh=0\n.ends Thyristor-Ideal-0&1»
+      «shorted pins: false»
+      «line (-100,-80) (100,-80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,70) 0 0 0x1000000 -1 -1»
+      «line (-50,-80) (-100,-200) 0 0 0xff00ff -1 -1»
+      «line (-100,-200) (-200,-200) 0 0 0xff00ff -1 -1»
+      «triangle (0,-80) (-100,70) (100,70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-300,100) 1 107 0 0x1000000 -1 -1 "X3"»
+      «text (100,-200) 1 105 2 0x1000000 -1 -1 "THYRISTOR-IDEAL-0&1"»
+      «text (-250,450) 1 105 0 0x0 -1 -1 "Vfwd=<0>"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "A"»
+      «pin (-200,-200) (0,0) 1 64 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "K"»
+    »
+  »
+  «component (500,500) 10 0
+    «symbol Thyristor-Ideal-0&1
+      «type: X»
+      «description: Thyristor / SCR Silicon Controlled Rectifier (Ideal) - 0&1 gate»
+      «library file: |.subckt Thyristor-Ideal-0&1 A G K\nD1 N01 K D\nS1 A N01 Q 0 SW\n¥1 N02 0 Q ¥ Set Reset ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP\nB1 Reset 0 V=if(V(A,K)<=Vfwd,1,0)\nE1 Set 0 G 0 1\nV1 N02 0 1\n.model D D Ron=1m Roff=10Meg Vfwd=Vfwd\n.model SW SW Ron=1m Roff=10Meg Vt=0.5 Vh=0\n.ends Thyristor-Ideal-0&1»
+      «shorted pins: false»
+      «line (-100,-80) (100,-80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,70) 0 0 0x1000000 -1 -1»
+      «line (-50,-80) (-100,-200) 0 0 0xff00ff -1 -1»
+      «line (-100,-200) (-200,-200) 0 0 0xff00ff -1 -1»
+      «triangle (0,-80) (-100,70) (100,70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-400,-50) 1 102 0 0x1000000 -1 -1 "X4"»
+      «text (-200,200) 1 103 2 0x1000000 -1 -1 "THYRISTOR-IDEAL-0&1"»
+      «text (-150,-150) 1 103 0 0x0 -1 -1 "Vfwd=<0>"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "A"»
+      «pin (-200,-200) (0,0) 1 64 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "K"»
+    »
+  »
+  «component (500,-1700) 14 0
+    «symbol Thyristor-Ideal-0&1
+      «type: X»
+      «description: Thyristor / SCR Silicon Controlled Rectifier (Ideal) - 0&1 gate»
+      «library file: |.subckt Thyristor-Ideal-0&1 A G K\nD1 N01 K D\nS1 A N01 Q 0 SW\n¥1 N02 0 Q ¥ Set Reset ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP\nB1 Reset 0 V=if(V(A,K)<=Vfwd,1,0)\nE1 Set 0 G 0 1\nV1 N02 0 1\n.model D D Ron=1m Roff=10Meg Vfwd=Vfwd\n.model SW SW Ron=1m Roff=10Meg Vt=0.5 Vh=0\n.ends Thyristor-Ideal-0&1»
+      «shorted pins: false»
+      «line (-100,-80) (100,-80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,70) 0 0 0x1000000 -1 -1»
+      «line (-50,-80) (-100,-200) 0 0 0xff00ff -1 -1»
+      «line (-100,-200) (-200,-200) 0 0 0xff00ff -1 -1»
+      «triangle (0,-80) (-100,70) (100,70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-300,100) 1 107 0 0x1000000 -1 -1 "X5"»
+      «text (100,-200) 1 105 2 0x1000000 -1 -1 "THYRISTOR-IDEAL-0&1"»
+      «text (-250,450) 1 105 0 0x0 -1 -1 "Vfwd=<0>"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "A"»
+      «pin (-200,-200) (0,0) 1 64 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "K"»
+    »
+  »
+  «component (500,-800) 10 0
+    «symbol Thyristor-Ideal-0&1
+      «type: X»
+      «description: Thyristor / SCR Silicon Controlled Rectifier (Ideal) - 0&1 gate»
+      «library file: |.subckt Thyristor-Ideal-0&1 A G K\nD1 N01 K D\nS1 A N01 Q 0 SW\n¥1 N02 0 Q ¥ Set Reset ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP\nB1 Reset 0 V=if(V(A,K)<=Vfwd,1,0)\nE1 Set 0 G 0 1\nV1 N02 0 1\n.model D D Ron=1m Roff=10Meg Vfwd=Vfwd\n.model SW SW Ron=1m Roff=10Meg Vt=0.5 Vh=0\n.ends Thyristor-Ideal-0&1»
+      «shorted pins: false»
+      «line (-100,-80) (100,-80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,70) 0 0 0x1000000 -1 -1»
+      «line (-50,-80) (-100,-200) 0 0 0xff00ff -1 -1»
+      «line (-100,-200) (-200,-200) 0 0 0xff00ff -1 -1»
+      «triangle (0,-80) (-100,70) (100,70) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-400,-50) 1 102 0 0x1000000 -1 -1 "X6"»
+      «text (-200,200) 1 103 2 0x1000000 -1 -1 "THYRISTOR-IDEAL-0&1"»
+      «text (-150,-150) 1 103 0 0x0 -1 -1 "Vfwd=<0>"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "A"»
+      «pin (-200,-200) (0,0) 1 64 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "K"»
+    »
+  »
+  «net (-2900,-600) 1 11 0 "GND"»
+  «net (-1400,700) 1 14 0 "SynR"»
+  «net (-1400,-600) 1 14 0 "SynS"»
+  «net (-1400,-1900) 1 14 0 "SynT"»
+  «net (800,1100) 1 7 0 "THY1"»
+  «net (200,-2300) 1 11 0 "THY2"»
+  «net (800,-200) 1 7 0 "THY3"»
+  «net (200,300) 1 11 0 "THY4"»
+  «net (800,-1500) 1 7 0 "THY5"»
+  «net (200,-1000) 1 11 0 "THY6"»
+  «net (1400,700) 1 14 0 "oa"»
+  «net (1400,-600) 1 14 0 "ob"»
+  «net (1400,-1900) 1 14 0 "oc"»
+  «net (3100,1700) 1 11 0 "SynR"»
+  «net (3900,1100) 1 11 0 "GND"»
+  «net (4700,300) 1 14 0 "alpha"»
+  «net (5400,-900) 1 13 0 "GND"»
+  «net (5300,-300) 1 11 0 "Step"»
+  «net (8000,-300) 1 13 0 "Step"»
+  «net (6600,-200) 1 13 0 "GND"»
+  «net (7100,0) 1 7 0 "alpha"»
+  «net (6000,300) 1 7 0 "THY1"»
+  «net (8600,300) 1 7 0 "THY4"»
+  «net (3100,-1500) 1 11 0 "SynS"»
+  «net (3900,-2100) 1 11 0 "GND"»
+  «net (4700,-2900) 1 11 0 "alpha"»
+  «net (5400,-3500) 1 13 0 "Step"»
+  «net (8000,-3500) 1 13 0 "Step"»
+  «net (6600,-3400) 1 13 0 "GND"»
+  «net (7100,-3200) 1 7 0 "alpha"»
+  «net (6000,-2900) 1 7 0 "THY3"»
+  «net (8600,-2900) 1 7 0 "THY6"»
+  «net (3100,-4000) 1 11 0 "SynT"»
+  «net (3900,-4600) 1 11 0 "GND"»
+  «net (4700,-5400) 1 11 0 "alpha"»
+  «net (5400,-6000) 1 13 0 "Step"»
+  «net (8000,-6000) 1 13 0 "Step"»
+  «net (6600,-5900) 1 13 0 "GND"»
+  «net (7100,-5700) 1 7 0 "alpha"»
+  «net (6000,-5400) 1 7 0 "THY5"»
+  «net (8600,-5400) 1 7 0 "THY2"»
+  «net (-400,700) 1 14 0 "a"»
+  «net (-400,-600) 1 14 0 "b"»
+  «net (-400,-1900) 1 14 0 "c"»
+  «net (3100,1300) 1 11 0 "SynS"»
+  «net (3100,-1900) 1 11 0 "SynT"»
+  «net (3100,-4400) 1 11 0 "SynR"»
+  «junction (5400,-300)»
+  «junction (4900,1300)»
+  «junction (4900,-1900)»
+  «junction (4900,-4400)»
+  «junction (800,700)»
+  «junction (800,-600)»
+  «junction (800,-1900)»
+  «junction (200,700)»
+  «junction (200,-600)»
+  «junction (200,-1900)»
+  «junction (-100,700)»
+  «junction (-100,-600)»
+  «junction (-100,-1900)»
+  «junction (-2800,-600)»
+  «wire (-2800,-600) (-1900,-600) "GND"»
+  «wire (-1900,700) (-2800,700) "GND"»
+  «wire (-2800,700) (-2800,-600) "GND"»
+  «wire (-2900,-600) (-2800,-600) "GND"»
+  «wire (-2800,-600) (-2800,-1900) "GND"»
+  «wire (-2800,-1900) (-1900,-1900) "GND"»
+  «wire (-1500,700) (-1400,700) "SynR"»
+  «wire (-1500,-600) (-1400,-600) "SynS"»
+  «wire (-1500,-1900) (-1400,-1900) "SynT"»
+  «wire (300,-400) (200,-400) "SynS"»
+  «wire (200,-600) (200,-800) "SynS"»
+  «wire (200,-800) (300,-800) "SynS"»
+  «wire (300,900) (200,900) "a"»
+  «wire (200,700) (200,500) "a"»
+  «wire (200,500) (300,500) "a"»
+  «wire (300,-1700) (200,-1700) "SynT"»
+  «wire (200,-1900) (200,-2100) "SynT"»
+  «wire (200,-2100) (300,-2100) "SynT"»
+  «wire (700,-2100) (800,-2100) "oc"»
+  «wire (800,-1900) (800,-1700) "oc"»
+  «wire (700,-1700) (800,-1700) "oc"»
+  «wire (700,-800) (800,-800) "ob"»
+  «wire (800,-600) (800,-400) "ob"»
+  «wire (800,-400) (700,-400) "ob"»
+  «wire (700,500) (800,500) "oa"»
+  «wire (800,700) (800,900) "oa"»
+  «wire (800,900) (700,900) "oa"»
+  «wire (800,1100) (700,1100) "THY1"»
+  «wire (200,-2300) (300,-2300) "THY2"»
+  «wire (700,-1500) (800,-1500) "THY5"»
+  «wire (700,-200) (800,-200) "THY3"»
+  «wire (300,-1000) (200,-1000) "THY6"»
+  «wire (300,300) (200,300) "THY4"»
+  «wire (-400,-600) (-1400,-600) "SynS"»
+  «wire (200,-400) (200,-600) "SynS"»
+  «wire (-900,700) (-1400,700) "SynR"»
+  «wire (200,900) (200,700) "a"»
+  «wire (-400,-1900) (-1400,-1900) "SynT"»
+  «wire (200,-1700) (200,-1900) "SynT"»
+  «wire (-400,700) (-700,700) "a"»
+  «wire (800,-2100) (800,-1900) "oc"»
+  «wire (1400,-1900) (1500,-1900) "oc"»
+  «wire (1400,700) (800,700) "oa"»
+  «wire (800,500) (800,700) "oa"»
+  «wire (2200,700) (2000,700) "SynS"»
+  «wire (1400,-600) (800,-600) "ob"»
+  «wire (800,-800) (800,-600) "ob"»
+  «wire (2200,-600) (2000,-600) "SynT"»
+  «wire (1600,700) (1400,700) "oa"»
+  «wire (1600,-600) (1400,-600) "ob"»
+  «wire (800,-1900) (1400,-1900) "oc"»
+  «wire (3100,1300) (3300,1300) "SynS"»
+  «wire (3300,1700) (3100,1700) "SynR"»
+  «wire (4000,1500) (3800,1500) "N01"»
+  «wire (3900,1100) (4000,1100) "GND"»
+  «wire (5000,500) (4900,500) "N02"»
+  «wire (4900,500) (4900,1300) "N02"»
+  «wire (4600,1300) (4900,1300) "N02"»
+  «wire (5000,300) (4700,300) "alpha"»
+  «wire (5400,-300) (5400,-100) "Step"»
+  «wire (5400,-900) (5400,-800) "GND"»
+  «wire (4700,300) (4500,300) "alpha"»
+  «wire (4900,1300) (7500,1300) "N02"»
+  «wire (7500,1300) (7500,500) "N02"»
+  «wire (7500,500) (7600,500) "N02"»
+  «wire (5400,-300) (5300,-300) "Step"»
+  «wire (5400,-400) (5400,-300) "Step"»
+  «wire (8000,-300) (8000,-100) "Step"»
+  «wire (6800,300) (6600,300) "N03"»
+  «wire (6600,300) (6600,200) "N03"»
+  «wire (7000,100) (7000,0) "alpha"»
+  «wire (7600,300) (7200,300) "N04"»
+  «wire (8400,300) (8600,300) "THY4"»
+  «wire (5800,300) (6000,300) "THY1"»
+  «wire (7000,0) (7100,0) "alpha"»
+  «wire (3100,-1900) (3300,-1900) "SynT"»
+  «wire (3300,-1500) (3100,-1500) "SynS"»
+  «wire (4000,-1700) (3800,-1700) "N05"»
+  «wire (3900,-2100) (4000,-2100) "GND"»
+  «wire (5000,-2700) (4900,-2700) "N06"»
+  «wire (4900,-2700) (4900,-1900) "N06"»
+  «wire (4600,-1900) (4900,-1900) "N06"»
+  «wire (5000,-2900) (4700,-2900) "alpha"»
+  «wire (5400,-3500) (5400,-3300) "Step"»
+  «wire (4900,-1900) (7500,-1900) "N06"»
+  «wire (7500,-1900) (7500,-2700) "N06"»
+  «wire (7500,-2700) (7600,-2700) "N06"»
+  «wire (8000,-3500) (8000,-3300) "Step"»
+  «wire (6800,-2900) (6600,-2900) "N07"»
+  «wire (6600,-2900) (6600,-3000) "N07"»
+  «wire (7000,-3100) (7000,-3200) "alpha"»
+  «wire (7600,-2900) (7200,-2900) "N08"»
+  «wire (8400,-2900) (8600,-2900) "THY6"»
+  «wire (5800,-2900) (6000,-2900) "THY3"»
+  «wire (7000,-3200) (7100,-3200) "alpha"»
+  «wire (3100,-4400) (3300,-4400) "SynR"»
+  «wire (3300,-4000) (3100,-4000) "SynT"»
+  «wire (4000,-4200) (3800,-4200) "N09"»
+  «wire (3900,-4600) (4000,-4600) "GND"»
+  «wire (5000,-5200) (4900,-5200) "N10"»
+  «wire (4900,-5200) (4900,-4400) "N10"»
+  «wire (4600,-4400) (4900,-4400) "N10"»
+  «wire (5000,-5400) (4700,-5400) "alpha"»
+  «wire (5400,-6000) (5400,-5800) "Step"»
+  «wire (4900,-4400) (7500,-4400) "N10"»
+  «wire (7500,-4400) (7500,-5200) "N10"»
+  «wire (7500,-5200) (7600,-5200) "N10"»
+  «wire (8000,-6000) (8000,-5800) "Step"»
+  «wire (6800,-5400) (6600,-5400) "N11"»
+  «wire (6600,-5400) (6600,-5500) "N11"»
+  «wire (7000,-5600) (7000,-5700) "alpha"»
+  «wire (7600,-5400) (7200,-5400) "N12"»
+  «wire (8400,-5400) (8600,-5400) "THY2"»
+  «wire (5800,-5400) (6000,-5400) "THY5"»
+  «wire (7000,-5700) (7100,-5700) "alpha"»
+  «wire (-100,700) (-400,700) "a"»
+  «wire (-100,-600) (-400,-600) "SynS"»
+  «wire (-100,-1900) (-400,-1900) "SynT"»
+  «wire (2200,700) (2200,100) "SynS"»
+  «wire (2200,100) (-100,100) "SynS"»
+  «wire (-100,100) (-100,-600) "SynS"»
+  «wire (200,-600) (-100,-600) "SynS"»
+  «wire (2200,-600) (2200,-1200) "SynT"»
+  «wire (2200,-1200) (-100,-1200) "SynT"»
+  «wire (-100,-1200) (-100,-1900) "SynT"»
+  «wire (200,-1900) (-100,-1900) "SynT"»
+  «wire (1900,-1900) (2400,-1900) "a"»
+  «wire (2400,-1900) (2400,1400) "a"»
+  «wire (2400,1400) (-100,1400) "a"»
+  «wire (-100,1400) (-100,700) "a"»
+  «wire (200,700) (-100,700) "a"»
+  «text (-150,-3750) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(oa,ob)\n.plot V(THY1)+5.5 V(THY2)+4.4\n+V(THY3)+3.3 V(THY4)+2.2\n+V(THY5)+1.1 V(THY6)"»
+  «text (-2800,1950) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, ac-ac, 3-Ph_AC_AC_Delta.psimsch\nby KSKelvin on 4-19-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+»
+

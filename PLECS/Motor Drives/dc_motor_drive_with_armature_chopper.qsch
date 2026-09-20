@@ -1,0 +1,385 @@
+ÿØÿÛ«schematic
+  «component (-3900,0) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "240"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-3300,300) 14 0
+    «symbol IGBT
+      «type: X»
+      «description: (PLECS) IGBT»
+      «library file: |.subckt IGBT C G E\nS1 N01 E G 0 SWi ON=s_init OFF=!s_init\nD1 C N01 Di\n.model SWi SW Ron=max(0.5m,Ron) Roff=5Meg Vt=0.5 Vh=0\n.model Di D Ron=0.5m Vfwd=Vf Roff=5Meg\n.ends IGBT»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-50) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,50) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (0,-150) (-45,-85) (-75,-135) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (-250,-200) 1 107 0 0x1000000 -1 -1 "XM1"»
+      «text (0,-200) 1 105 2 0x1000000 -1 -1 "IGBT"»
+      «text (50,150) 1 105 0 0x1000000 -1 -1 "Vf=<1>Forward voltage Vf (V)"»
+      «text (200,150) 1 105 0 0x1000000 -1 -1 "Ron=<0.05>On-ressistance Ron (ohms)"»
+      «text (350,150) 1 105 0 0x1000000 -1 -1 "s_init=<(0),1> 0:InitialOFF / 1:InitialON"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "C"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "E"»
+    »
+  »
+  «component (-2500,0) 0 0
+    «symbol Diode
+      «type: X»
+      «description: (PLECS) Diode»
+      «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (150,150) 1 7 0 0x1000000 -1 -1 "XD1"»
+      «text (150,300) 1 7 2 0x1000000 -1 -1 "Diode"»
+      «text (150,-200) 1 7 0 0x1000000 -1 -1 "Ron=<0.05>On-resistance (ohms)"»
+      «text (150,-50) 1 7 0 0x1000000 -1 -1 "Vf=<0.7>Forward voltage (V)"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (300,300) 0 0
+    «symbol Ammeter
+      «type: X»
+      «description: (PLECS) Ammeter»
+      «library file: |.subckt Ammeter + - Am\nV1 + - 0\nB1 Am 0 V=I(V1)\n.ends Ammeter»
+      «shorted pins: false»
+      «line (60,-60) (0,70) 0 0 0x1000000 -1 -1»
+      «line (-60,-60) (0,70) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-130,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (130,0) 0 0 0x1000000 -1 -1»
+      «line (-40,-20) (40,-20) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (40,130) (-40,130) (0,200) 0 0 0x1000000 0xff12 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "Am1"»
+      «text (100,-150) 1 7 2 0x1000000 -1 -1 "AMMETER"»
+      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "-"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "Am"»
+    »
+  »
+  «component (-5200,900) 0 0
+    «symbol Relay
+      «type: X»
+      «description: (PLECS) Relay»
+      «library file: |.subckt Relay in out\n¥1 Vdd Vss Q ¥ in 0 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT VT=(OnSwitchValue+OffSwitchValue)/2 VH=(OnSwitchValue-OffSwitchValue)/2 TTOL=TTOL\nV2 Vss 0 OffOutputValue\nB1 out 0 V=if(time>0,V(Q),if(InitialState,OnOutputValue,OffOutputValue))\nV1 Vdd 0 OnOutputValue\n.ends Relay»
+      «shorted pins: false»
+      «line (150,0) (-150,0) 0 0 0xffa0a1 -1 -1»
+      «line (0,-160) (0,160) 0 0 0xffa0a1 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «line (-50,130) (150,130) 0 0 0x1000000 -1 -1»
+      «line (-150,-130) (50,-130) 0 0 0x1000000 -1 -1»
+      «line (50,-130) (50,130) 0 0 0x1000000 -1 -1»
+      «line (-50,130) (-50,-130) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (0,450) 1 15 0 0x1000000 -1 -1 "X2"»
+      «text (0,300) 1 15 0 0x1000000 -1 -1 "RELAY"»
+      «text (-200,-300) 1 7 0 0x1000000 -1 -1 "OnSwitchValue=<1>Upper Threshold"»
+      «text (-200,-450) 1 7 0 0x1000000 -1 -1 "OffSwitchValue=<-1>LowerThreshold"»
+      «text (-200,-600) 1 7 0 0x1000000 -1 -1 "OnOutputValue=<1>On State Output"»
+      «text (-200,-750) 1 7 0 0x1000000 -1 -1 "OffOutputValue=<0>Off State Output"»
+      «text (-200,-900) 1 7 0 0x1000000 -1 -1 "InitialState=<(0;Off),1;On>Initial State"»
+      «text (-200,-1050) 1 7 2 0x1000000 -1 -1 "TTOL=<1µ>"»
+      «pin (-200,0) (0,0) 1 15 0 0x0 -1 "in"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (-5700,900) 12 0
+    «symbol Subtract(round)
+      «type: X»
+      «description: (PLECS) Subtract [+-] / Difference / Minus»
+      «library file: |.subckt Subtract in1 in2 out\nB1 out 0 V=V(in1)-V(in2)\n.ends Subtract»
+      «shorted pins: false»
+      «line (-50,-90) (50,-90) 0 0 0x1000000 -1 -1»
+      «line (-130,0) (-30,0) 0 0 0x1000000 -1 -1»
+      «line (-80,50) (-80,-50) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,0) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (-150,0) (-200,0) 0 0 0x1000000 -1 -1»
+      «ellipse (-150,150) (150,-150) 0 0 0 0x1000000 0xc8ffe6 -1 -1»
+      «text (0,250) 1 64 0 0x1000000 -1 -1 "X3"»
+      «text (0,400) 1 0 2 0x1000000 -1 -1 "SUBTRACT"»
+      «pin (-200,0) (20,0) 1 15 0 0x0 -1 "in1"»
+      «pin (0,-200) (-20,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (-8100,900) 0 0
+    «symbol Subtract(round)
+      «type: X»
+      «description: (PLECS) Subtract [+-] / Difference / Minus»
+      «library file: |.subckt Subtract in1 in2 out\nB1 out 0 V=V(in1)-V(in2)\n.ends Subtract»
+      «shorted pins: false»
+      «line (-50,-90) (50,-90) 0 0 0x1000000 -1 -1»
+      «line (-130,0) (-30,0) 0 0 0x1000000 -1 -1»
+      «line (-80,50) (-80,-50) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,0) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (-150,0) (-200,0) 0 0 0x1000000 -1 -1»
+      «ellipse (-150,150) (150,-150) 0 0 0 0x1000000 0xc8ffe6 -1 -1»
+      «text (0,250) 1 0 0 0x1000000 -1 -1 "X5"»
+      «text (0,400) 1 0 2 0x1000000 -1 -1 "SUBTRACT"»
+      «pin (-200,0) (20,0) 1 15 0 0x0 -1 "in1"»
+      «pin (0,-200) (-20,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (-8900,900) 0 0
+    «symbol Step
+      «type: X»
+      «description: (PLECS) Step»
+      «library file: |.subckt Step out\nB1 out 0 V=if(time<StepTime,Before,After)\n.ends Step»
+      «shorted pins: false»
+      «line (0,150) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (150,150) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "Xsrc1"»
+      «text (-200,450) 1 7 2 0x1000000 -1 -1 "Step"»
+      «text (-200,-300) 1 7 0 0x1000000 -1 -1 "StepTime=<1> Step Time (s)"»
+      «text (-200,-450) 1 7 0 0x1000000 -1 -1 "Before=<150>Inital Output"»
+      «text (-200,-600) 1 7 0 0x1000000 -1 -1 "After=<175>Final Output"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (-500,-1900) 2 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "V2"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "120"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (600,-900) 0 0
+    «symbol Step
+      «type: X»
+      «description: (PLECS) Step»
+      «library file: |.subckt Step out\nB1 out 0 V=if(time<StepTime,Before,After)\n.ends Step»
+      «shorted pins: false»
+      «line (0,150) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (150,150) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "Xsrc2"»
+      «text (-200,450) 1 7 2 0x1000000 -1 -1 "Step"»
+      «text (-200,-300) 1 7 0 0x1000000 -1 -1 "StepTime=<2>Step Time (s)"»
+      «text (-200,-450) 1 7 0 0x1000000 -1 -1 "Before=<10>Inital Output"»
+      «text (-200,-600) 1 7 0 0x1000000 -1 -1 "After=<30>Final Output"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (-1600,300) 2 0
+    «symbol Inductor
+      «type: L»
+      «description: (PLECS) Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «ellipse (-60,160) (-30,130) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "L2"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "0.005"»
+      «text (-230,0) 1 109 0 0x1000000 -1 -1 "IC=<0> Initial current (A)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-500,300) 0 0
+    «symbol DC-Machine
+      «type: X»
+      «description: (PLECS) DC Machine»
+      «library file: |.subckt DC-Machine a+ a- f+ f- wm Te\nRa a+ N01 Ra\nLa N01 N03 La IC=ia0\nB_Ea N02 a- V=Laf*I(If)*V(wm)\nRf N05 f+ Rf\nLf N04 N05 Lf IC=if0\nV´If N04 f- 0\nV´Ia N03 N02 0\nB_Te 0 wm I=Laf*I(If)*I(Ia)\nC1 wm 0 J IC=wm0\nB1 Te 0 V=Laf*I(If)*I(Ia)\nB_Friction wm 0 I=F*V(wm)\n.ends DC-Machine»
+      «shorted pins: false»
+      «line (-300,-400) (-180,-400) 0 0 0x1000000 -1 -1»
+      «line (300,-400) (180,-400) 0 0 0x1000000 -1 -1»
+      «line (400,-600) (300,-600) 0 0 0xff00ff -1 -1»
+      «line (400,-800) (300,-800) 0 0 0xff00ff -1 -1»
+      «line (-300,-300) (-180,-180) 0 0 0xff00ff -1 -1»
+      «line (175,-175) (300,-300) 0 0 0xff00ff -1 -1»
+      «line (-300,-300) (-300,-900) 0 0 0xff00ff -1 -1»
+      «line (-300,-900) (300,-900) 0 0 0xff00ff -1 -1»
+      «line (300,-900) (300,-300) 0 0 0xff00ff -1 -1»
+      «rect (-300,100) (300,-100) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «ellipse (-250,250) (250,-250) 0 0 0 0x1000000 0xc8ffe6 -1 -1»
+      «coil (180,-480) (-180,-320) 0 0 0 0x1000000 -1 -1»
+      «text (0,500) 1 15 0 0x1000000 -1 -1 "X1"»
+      «text (0,350) 1 15 0 0x1000000 -1 -1 "DC-Machine"»
+      «text (0,-1000) 1 15 0 0x1000000 -1 -1 "Ra=<0.57>Armature resistance (ohms)"»
+      «text (0,-1150) 1 15 0 0x1000000 -1 -1 "La=<0.0043>Armature inductance (H)"»
+      «text (0,-1300) 1 15 0 0x1000000 -1 -1 "Rf=<190>Field resistance (ohms)"»
+      «text (0,-1450) 1 15 0 0x1000000 -1 -1 "Lf=<0.2>Field inductance (H)"»
+      «text (0,-1600) 1 15 0 0x1000000 -1 -1 "Laf=<2>Field-armature mutual inductance (H)"»
+      «text (0,-1750) 1 15 0 0x1000000 -1 -1 "J=<0.0881>Inertia (Nms^2)"»
+      «text (0,-1900) 1 15 2 0x1000000 -1 -1 "F=<0>Friction coefficient (Nms)"»
+      «text (0,-2050) 1 15 2 0x1000000 -1 -1 "wm0=<0>Initial rotor speed (rad/s)"»
+      «text (0,-2200) 1 15 2 0x1000000 -1 -1 "ia0=<0>Initial armature current (A)"»
+      «text (0,-2350) 1 15 2 0x1000000 -1 -1 "if0=<0>Initial field current (A)"»
+      «pin (-300,0) (20,0) 1 15 0 0x0 -1 "a+"»
+      «pin (300,0) (20,0) 1 15 0 0x0 -1 "a-"»
+      «pin (-300,-400) (20,0) 1 15 0 0x0 -1 "f+"»
+      «pin (300,-400) (-20,0) 1 15 0 0x0 -1 "f-"»
+      «pin (400,-600) (-120,0) 1 11 0 0x0 -1 "wm"»
+      «pin (400,-800) (-120,0) 1 11 0 0x0 -1 "Te"»
+    »
+  »
+  «component (1400,-900) 12 0
+    «symbol Torque-Controlled
+      «type: G»
+      «description: (PLECS) Torque (Controlled) - Nm»
+      «shorted pins: false»
+      «line (0,200) (0,120) 0 0 0xff0080 -1 -1»
+      «line (0,-120) (0,-200) 0 0 0xff0080 -1 -1»
+      «line (0,-50) (0,80) 0 0 0xff0080 -1 -1»
+      «line (0,80) (-30,40) 0 0 0xff0080 -1 -1»
+      «line (0,80) (30,40) 0 0 0xff0080 -1 -1»
+      «ellipse (-120,-120) (120,120) 0 0 0 0xff0080 0x1000000 -1 -1»
+      «ellipse (-60,-70) (60,-20) 0 0 0 0xff0080 0x1000000 -1 -1»
+      «triangle (-200,-50) (-200,50) (-120,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (170,0) 1 75 0 0x1000000 -1 -1 "Gtau1"»
+      «text (170,150) 1 75 2 0x1000000 -1 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "+C"»
+      «pin (-200,-200) (0,0) 1 0 0 0x0 -1 "-C" "0"»
+    »
+  »
+  «component (-7100,900) 0 0
+    «symbol Continuous-PI-Controller
+      «type: X»
+      «description: (PLECS) Continuous PI Controller»
+      «library file: |.subckt Continuous-PI-Controller e u reset\nB1 ep 0 V=Kp*V(e)\nB3 ei 0 V=if(aw_method==0,idt(Ki*V(e),x0,V(Reset)), if(aw_method==1,idt(Ki*V(e)+Kbc*V(u,ud),x0,V(Reset)), Ki * idt( if( (V(u) >= up_limit & V(e)>0 ) | (V(u) <= low_limit & V(e)<0), 0, V(e) ), x0, V(Reset) ) ) )\nB4 ud 0 V=V(ep)+V(ei)\nB5 u 0 V=limit(V(ud),up_limit,low_limit)\n.ends Continuous-PI-Controller»
+      «shorted pins: false»
+      «line (-600,0) (-500,0) 0 0 0x1000000 -1 -1»
+      «line (-500,-200) (-500,200) 0 0 0x1000000 -1 -1»
+      «line (-350,-200) (-500,-200) 0 0 0x1000000 -1 -1»
+      «line (200,80) (200,200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (-100,-200) 0 0 0x1000000 -1 -1»
+      «line (200,-90) (200,-200) 0 0 0x1000000 -1 -1»
+      «line (200,60) (200,10) 0 0 0x1000000 -1 -1»
+      «line (225,35) (175,35) 0 0 0x1000000 -1 -1»
+      «line (0,-400) (0,-300) 0 0 0x1000000 -1 2»
+      «line (100,-200) (200,-200) 0 0 0x1000000 -1 -1»
+      «line (-350,200) (-500,200) 0 0 0x1000000 -1 -1»
+      «line (200,200) (-200,200) 0 0 0x1000000 -1 -1»
+      «line (225,-45) (175,-45) 0 0 0x1000000 -1 -1»
+      «line (200,-20) (200,-70) 0 0 0x1000000 -1 -1»
+      «line (395,-70) (445,-70) 0 0 0x1000000 -1 -1»
+      «line (525,70) (575,70) 0 0 0x1000000 -1 -1»
+      «line (525,70) (445,-70) 0 0 0x1000000 -1 -1»
+      «line (700,0) (600,0) 0 0 0x1000000 -1 -1»
+      «line (370,0) (290,0) 0 0 0x1000000 -1 -1»
+      «rect (-600,500) (700,-400) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «rect (-100,-100) (100,-300) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+      «rect (370,110) (600,-110) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+      «ellipse (115,80) (285,-90) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «ellipse (20,-140) (60,-170) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «ellipse (-475,-25) (-525,25) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «ellipse (-60,-230) (-20,-260) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «arc3p (40,-140) (0,-200) (60,-180) 0 0 0x1000000 -1 -1»
+      «arc3p (-40,-260) (0,-200) (-60,-220) 0 0 0x1000000 -1 -1»
+      «triangle (-350,300) (-350,100) (-200,200) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-350,-100) (-350,-300) (-200,-200) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (0,750) 1 0 0 0x1000000 -1 -1 "X4"»
+      «text (0,600) 1 0 0 0x1000000 -1 -1 "Continuous-PI-Controller"»
+      «text (-400,400) 0.794 7 0 0x1000000 -1 -1 "Kp=<5>Proportional gain"»
+      «text (-400,0) 0.794 7 0 0x1000000 -1 -1 "Ki=<50>Integral gain"»
+      «text (0,-500) 1 15 0 0x1000000 -1 -1 "x0=<0>Initial condition"»
+      «text (0,-650) 1 15 0 0x1000000 -1 -1 "up_limit=<50>Upper saturation limit"»
+      «text (0,-800) 1 15 0 0x1000000 -1 -1 "low_limit=<-50>Lower saturation limit"»
+      «text (0,-950) 1 15 0 0x1000000 -1 -1 "aw_method=<0;[none],1;[Back-Calculation],(2;[Conditional Integration])>Anti-windup method 0: none, 1:Back-Calculation, 2: Conditional Integration"»
+      «text (0,-1100) 1 15 2 0x1000000 -1 -1 "Kbc=<1>Back-calculation gain Kbc"»
+      «pin (-600,0) (20,0) 1 15 0 0x0 -1 "e"»
+      «pin (700,0) (-20,0) 1 15 0 0x0 -1 "u"»
+      «pin (0,-400) (0,0) 1 15 0 0x0 -1 "reset" "0"»
+    »
+  »
+  «net (0,-300) 1 14 0 "wm"»
+  «net (0,-500) 1 14 0 "Te"»
+  «net (-3900,-300) 1 13 0 "GND"»
+  «net (-2500,-300) 1 13 0 "GND"»
+  «net (2400,-300) 1 13 0 "GND"»
+  «net (200,-2000) 1 13 0 "GND"»
+  «net (1400,-1200) 1 13 0 "GND"»
+  «net (-600,1900) 1 14 0 "Iarmature"»
+  «net (-2500,300) 1 14 0 "Varmature"»
+  «junction (1400,-300)»
+  «junction (200,-1900)»
+  «junction (-2500,300)»
+  «wire (-100,-300) (0,-300) "wm"»
+  «wire (-100,-500) (0,-500) "Te"»
+  «wire (-3500,300) (-3900,300) "N01"»
+  «wire (-800,300) (-1400,300) "N02"»
+  «wire (-2500,300) (-3100,300) "Varmature"»
+  «wire (-3900,-200) (-3900,-300) "GND"»
+  «wire (-3900,300) (-3900,200) "N01"»
+  «wire (-2500,-200) (-2500,-300) "GND"»
+  «wire (-1800,300) (-2500,300) "Varmature"»
+  «wire (-2500,300) (-2500,200) "Varmature"»
+  «wire (500,300) (2400,300) "GND"»
+  «wire (2400,300) (2400,-300) "GND"»
+  «wire (300,500) (300,1900) "Iarmature"»
+  «wire (-600,1900) (-5700,1900) "Iarmature"»
+  «wire (-5000,900) (-3300,900) "N03"»
+  «wire (-3300,900) (-3300,600) "N03"»
+  «wire (-5700,1900) (-5700,1100) "Iarmature"»
+  «wire (-5400,900) (-5500,900) "N04"»
+  «wire (-7700,900) (-7900,900) "N05"»
+  «wire (1400,-300) (2100,-300) "wm"»
+  «wire (2100,-300) (2100,-2600) "wm"»
+  «wire (2100,-2600) (-8100,-2600) "wm"»
+  «wire (-8100,-2600) (-8100,700) "wm"»
+  «wire (-8300,900) (-8700,900) "N06"»
+  «wire (-200,-100) (200,-100) "GND"»
+  «wire (200,-100) (200,-1900) "GND"»
+  «wire (-700,-1900) (-1200,-1900) "N07"»
+  «wire (200,-1900) (-300,-1900) "GND"»
+  «wire (-1200,-1900) (-1200,-100) "N07"»
+  «wire (-1200,-100) (-800,-100) "N07"»
+  «wire (200,-2000) (200,-1900) "GND"»
+  «wire (100,300) (-200,300) "N08"»
+  «wire (1400,-700) (1400,-300) "wm"»
+  «wire (0,-300) (1400,-300) "wm"»
+  «wire (1400,-1200) (1400,-1100) "GND"»
+  «wire (1200,-900) (800,-900) "N09"»
+  «wire (300,1900) (-600,1900) "Iarmature"»
+  «wire (0,-500) (100,-500) "Te"»
+  «wire (-6400,900) (-5900,900) "N10"»
+  «rect (300,-100) (1900,-1850) 0 0 2 0x4000000 0x1000000 -1 0 -1»
+  «text (800,1200) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 3\n.plot V(Te)\n.plot V(wm)\n.plot V(Varmature)\n.plot V(Iarmature)"»
+  «text (450,-1700) 1 7 1 0x1000000 -1 -1 "ï»¿External Torque"»
+  «text (-7650,2500) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Motor Drives > DC Motor Drive with Armature Chopper\n(dc_motor_drive_with_armature_chopper.plecs)\nby KSKelvin on 9-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+»
+

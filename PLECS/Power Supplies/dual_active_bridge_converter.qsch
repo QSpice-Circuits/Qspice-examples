@@ -1,0 +1,796 @@
+ÿØÿÛ«schematic
+  «component (-1200,400) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "Vin"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-100,1000) 0 0
+    «symbol MOSFET-with-Diode
+      «type: X»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (200,150) 1 7 0 0x1000000 -1 -1 "XM1"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "MOSFET-WITH-DIODE"»
+      «text (201,-50) 1 7 0 0x1000000 -1 -1 "Ron=<Ron1>;On-ressistance Ron(ohms)"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (1600,1000) 0 0
+    «symbol MOSFET-with-Diode
+      «type: X»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (200,150) 1 7 0 0x1000000 -1 -1 "XM2"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "MOSFET-WITH-DIODE"»
+      «text (201,-50) 1 7 0 0x1000000 -1 -1 "Ron=<Ron1>;On-ressistance Ron(ohms)"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (-100,-400) 0 0
+    «symbol MOSFET-with-Diode
+      «type: X»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (200,150) 1 7 0 0x1000000 -1 -1 "XM3"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "MOSFET-WITH-DIODE"»
+      «text (201,-50) 1 7 0 0x1000000 -1 -1 "Ron=<Ron1>;On-ressistance Ron(ohms)"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (1600,-400) 0 0
+    «symbol MOSFET-with-Diode
+      «type: X»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (200,150) 1 7 0 0x1000000 -1 -1 "XM4"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "MOSFET-WITH-DIODE"»
+      «text (201,-50) 1 7 0 0x1000000 -1 -1 "Ron=<Ron1>;On-ressistance Ron(ohms)"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (3600,300) 0 0
+    «symbol ×-Device Transformer1
+      «type: ×»
+      «description: Transformer with 2 windings»
+      «shorted pins: false»
+      «line (-200,200) (-110,200) 0 0 0x1000000 -1 -1»
+      «line (10,200) (100,200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (-110,-200) 0 0 0x1000000 -1 -1»
+      «line (-110,200) (-110,170) 0 0 0x1000000 -1 -1»
+      «line (-110,-180) (-110,-200) 0 0 0x1000000 -1 -1»
+      «line (10,-180) (10,-200) 0 0 0x1000000 -1 -1»
+      «line (10,200) (10,170) 0 0 0x1000000 -1 -1»
+      «line (10,-200) (100,-200) 0 0 0x1000000 -1 -1»
+      «line (-50,200) (-50,-200) 0 1 0x1000000 -1 -1»
+      «ellipse (-165,180) (-125,140) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «ellipse (25,180) (65,140) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «coil (-150,170) (-70,-180) 0 0 0 0x1000000 -1 -1»
+      «coil (50,170) (-30,-180) 0 0 0 0x1000000 -1 -1»
+      «text (-50,198) 1 14 0 0x1000000 -1 -1 "×1"»
+      «text (-50,-308) 1 13 0 0x1000000 -1 -1 "Turns=<n_pri n_sec>"»
+      «text (-210,0) 0.63 32 1 0x1000000 -1 -1 "pri"»
+      «text (110,0) 0.63 96 1 0x1000000 -1 -1 "sec"»
+      «pin (-200,200) (0,0) 1 0 0 0x1000000 -1 "PRI+"»
+      «pin (-200,-200) (0,0) 1 0 0 0x1000000 -1 "PRI-"»
+      «pin (100,200) (0,0) 1 0 0 0x1000000 -1 "SEC+"»
+      «pin (100,-200) (0,0) 1 0 0 0x1000000 -1 "SEC-"»
+    »
+  »
+  «component (4700,1000) 0 0
+    «symbol MOSFET-with-Diode
+      «type: X»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (200,150) 1 7 0 0x1000000 -1 -1 "XM5"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "MOSFET-WITH-DIODE"»
+      «text (201,-50) 1 7 0 0x1000000 -1 -1 "Ron=<Ron2>;On-ressistance Ron(ohms)"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (6400,1000) 0 0
+    «symbol MOSFET-with-Diode
+      «type: X»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (200,150) 1 7 0 0x1000000 -1 -1 "XM6"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "MOSFET-WITH-DIODE"»
+      «text (201,-50) 1 7 0 0x1000000 -1 -1 "Ron=<Ron2>;On-ressistance Ron(ohms)"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (4700,-400) 0 0
+    «symbol MOSFET-with-Diode
+      «type: X»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (200,150) 1 7 0 0x1000000 -1 -1 "XM7"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "MOSFET-WITH-DIODE"»
+      «text (201,-50) 1 7 0 0x1000000 -1 -1 "Ron=<Ron2>;On-ressistance Ron(ohms)"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (2900,600) 2 0
+    «symbol Inductor
+      «type: L»
+      «description: (PLECS) Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «ellipse (-60,160) (-30,130) 0 0 0 0x1000000 0x3000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "L1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "Llk"»
+      «text (-230,0) 1 109 0 0x1000000 -1 -1 "IC=<0> Initial current (A)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (7400,700) 0 0
+    «symbol Capacitor
+      «type: C»
+      «description: (PLECS) Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (25,102) (75,98) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (48,75) (52,125) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "Co"»
+      «text (106,-300) 1 7 0 0x1000000 -1 -1 "IC=<0> Initial voltage (V)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (7400,-100) 0 0
+    «symbol R1
+      «type: R»
+      «description: Resistor(UK Style Symbol)»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (0,200) 0 0 0x1000000 -1 -1»
+      «rect (50,-150) (-50,150) 0 0 0 0x1000000 0x2000000 -1 0 -1»
+      «text (50,150) 1 7 0 0x1000000 -1 -1 "R1"»
+      «text (50,-150) 1 7 0 0x1000000 -1 -1 "Co_esr"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "+"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "-"»
+    »
+  »
+  «component (8300,200) 0 0
+    «symbol R1
+      «type: R»
+      «description: Resistor(UK Style Symbol)»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (0,200) 0 0 0x1000000 -1 -1»
+      «rect (50,-150) (-50,150) 0 0 0 0x1000000 0x2000000 -1 0 -1»
+      «text (50,150) 1 7 0 0x1000000 -1 -1 "R2"»
+      «text (50,-150) 1 7 0 0x1000000 -1 -1 "Rload"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "+"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "-"»
+    »
+  »
+  «component (9200,200) 0 0
+    «symbol R1
+      «type: R»
+      «description: Resistor(UK Style Symbol)»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (0,200) 0 0 0x1000000 -1 -1»
+      «rect (50,-150) (-50,150) 0 0 0 0x1000000 0x2000000 -1 0 -1»
+      «text (50,150) 1 7 0 0x1000000 -1 -1 "R3"»
+      «text (50,-150) 1 7 0 0x1000000 -1 -1 "Rload"»
+      «pin (0,-200) (0,0) 1 64 0 0x0 -1 "+"»
+      «pin (0,200) (0,0) 1 64 0 0x0 -1 "-"»
+    »
+  »
+  «component (8800,-800) 10 0
+    «symbol Switch
+      «type: X»
+      «description: (PLECS) Switch»
+      «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-100,150) 0 0 0x1000000 -1 -1»
+      «line (-120,0) (-80,0) 0 0 0x1000000 -1 -1»
+      «triangle (-200,-50) (-200,50) (-120,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (150,-150) 1 102 0 0x1000000 -1 -1 "XS1"»
+      «text (-200,200) 1 103 2 0x1000000 -1 -1 "SWITCH"»
+      «text (100,-300) 1 103 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «text (-500,200) 1 103 2 0x1000000 -1 -1 "extreme=<0,(1)> ;Extreme Ron/Roff value"»
+      «pin (0,200) (20,0) 1 15 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "-"»
+      «pin (-200,0) (-20,0) 1 15 0 0x0 -1 "C"»
+    »
+  »
+  «component (8100,-1400) 0 0
+    «symbol Step
+      «type: X»
+      «description: (PLECS) Step»
+      «library file: |.subckt Step out\nB1 out 0 V=if(time<StepTime,Before,After)\n.ends Step»
+      «shorted pins: false»
+      «line (0,150) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (150,150) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "Xsrc1"»
+      «text (-200,450) 1 7 2 0x1000000 -1 -1 "Step"»
+      «text (-200,-300) 1 7 0 0x1000000 -1 -1 "StepTime=<0.4>;Step Time (s)"»
+      «text (-200,-450) 1 7 0 0x1000000 -1 -1 "Before=<0> ;Inital Output"»
+      «text (-200,-600) 1 7 0 0x1000000 -1 -1 "After=<1> ;Final Output"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (4900,-3400) 0 0
+    «symbol Constant
+      «type: V»
+      «description: (PLECS) Constant»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
+      «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (0,250) 1 15 0 0x1000000 -1 -1 "V2"»
+      «text (0,0) 1 15 0 0x1000000 -1 -1 "0.5"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-" "0"»
+    »
+  »
+  «component (4400,-3700) 0 0
+    «symbol Constant
+      «type: V»
+      «description: (PLECS) Constant»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
+      «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (0,250) 1 15 0 0x1000000 -1 -1 "V3"»
+      «text (0,0) 1 15 0 0x1000000 -1 -1 "0"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-" "0"»
+    »
+  »
+  «component (7700,-3900) 0 0
+    «symbol NOT-B-source
+      «type: X»
+      «description: B-source NOT gate (Inverter)»
+      «library file: |.subckt NOT-B-source b0 ¬Q\nB1 ¬Q 0 V=(HI-LO)*(!(V(b0)>thres))+LO\n.ends NOT-B-source»
+      «shorted pins: false»
+      «line (200,0) (180,0) 0 0 0x1000000 -1 -1»
+      «ellipse (100,40) (180,-40) 0 0 0 0xc000 0x1000000 -1 -1»
+      «triangle (-100,100) (-100,-100) (100,0) 0 0 0xc000 0x1000000 -1 -1»
+      «text (100,120) 1 15 0 0x1000000 -1 -1 "X2"»
+      «text (50,300) 1 0 2 0x1000000 -1 -1 "NOT-B-SOURCE"»
+      «text (-100,-200) 1 7 2 0x1000000 -1 -1 "HI=<1>"»
+      «text (-100,-350) 1 7 2 0x1000000 -1 -1 "LO=<0>"»
+      «text (-100,-500) 1 7 2 0x1000000 -1 -1 "thres=<0.5>"»
+      «pin (-100,0) (0,0) 1 15 0 0x0 -1 "b0"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "¬Q"»
+    »
+  »
+  «component (7700,-4300) 0 0
+    «symbol NOT-B-source
+      «type: X»
+      «description: B-source NOT gate (Inverter)»
+      «library file: |.subckt NOT-B-source b0 ¬Q\nB1 ¬Q 0 V=(HI-LO)*(!(V(b0)>thres))+LO\n.ends NOT-B-source»
+      «shorted pins: false»
+      «line (200,0) (180,0) 0 0 0x1000000 -1 -1»
+      «ellipse (100,40) (180,-40) 0 0 0 0xc000 0x1000000 -1 -1»
+      «triangle (-100,100) (-100,-100) (100,0) 0 0 0xc000 0x1000000 -1 -1»
+      «text (100,120) 1 15 0 0x1000000 -1 -1 "X3"»
+      «text (50,300) 1 0 2 0x1000000 -1 -1 "NOT-B-SOURCE"»
+      «text (-100,-200) 1 7 2 0x1000000 -1 -1 "HI=<1>"»
+      «text (-100,-350) 1 7 2 0x1000000 -1 -1 "LO=<0>"»
+      «text (-100,-500) 1 7 2 0x1000000 -1 -1 "thres=<0.5>"»
+      «pin (-100,0) (0,0) 1 15 0 0x0 -1 "b0"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "¬Q"»
+    »
+  »
+  «component (6400,-400) 0 0
+    «symbol MOSFET-with-Diode
+      «type: X»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
+      «shorted pins: false»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,150) (-200,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,150) (-150,150) 0 0 0x1000000 -1 -1»
+      «line (-150,150) (-150,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (160,50) (40,50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (100,50) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (100,200) (0,200) 0 0 0x1000000 -1 -1»
+      «line (100,-200) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-220,0) 0 0 0x1000000 -1 -1»
+      «triangle (-150,0) (-55,25) (-55,-25) 0 0 0x1000000 0x3000000 -1 -1»
+      «triangle (100,50) (160,-50) (40,-50) 0 0 0x1000000 0x1000000 -1 -1»
+      «triangle (-300,-50) (-300,50) (-220,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (200,150) 1 7 0 0x1000000 -1 -1 "XM8"»
+      «text (0,350) 1 0 2 0x1000000 -1 -1 "MOSFET-WITH-DIODE"»
+      «text (201,-50) 1 7 0 0x1000000 -1 -1 "Ron=<Ron2>;On-ressistance Ron(ohms)"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> ;Initial Off (0) / Initial On (1)"»
+      «pin (0,200) (0,0) 1 15 0 0x0 -1 "D"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "G"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "S"»
+    »
+  »
+  «component (7800,1400) 2 0
+    «symbol IProbe-0Vsrc(large)
+      «type: V»
+      «description: Current Probe - with 0V voltage source by KSKelvin»
+      «shorted pins: false»
+      «line (150,130) (150,-150) 0 0 0x1000000 -1 -1»
+      «ellipse (-40,40) (40,-40) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «arc3p (0,-100) (0,100) (0,0) 0 0 0x1000000 -1 -1»
+      «triangle (150,-150) (100,-80) (200,-80) 0 0 0x1000000 0xff0012 -1 -1»
+      «text (200,-10) 1 110 0 0x1000000 -1 -1 "Iout"»
+      «text (-40,-10) 0.63 109 2 0x1000000 -1 -1 "0"»
+      «text (-135,-10) 0.681 109 3 0x1000000 -1 -1 "; hold shift to probe"»
+      «pin (0,100) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (600,-4000) 0 0
+    «symbol ZOH
+      «type: X»
+      «description: ZOH - Sample and Hold from Unit-Delay»
+      «library file: |.subckt ZOH OUT IN CLK\n¥1 Vdd Vss OUT ¥ IN CLK Vdd ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ LATCH IC=RNG REF=0.5+RNG TTOL=TTOL\nVdd Vdd 0 RNG\nVss Vss 0 -RNG\n.ends ZOH»
+      «shorted pins: false»
+      «line (-150,-10) (-100,-10) 0 0 0x1000000 -1 -1»
+      «line (-100,-10) (-100,-80) 0 0 0x1000000 -1 -1»
+      «line (-100,-80) (0,-80) 0 0 0x1000000 -1 -1»
+      «line (0,-10) (40,-10) 0 0 0x1000000 -1 -1»
+      «line (40,-10) (40,65) 0 0 0x1000000 -1 -1»
+      «line (40,65) (150,65) 0 0 0x1000000 -1 -1»
+      «line (-50,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (50,-200) 0 0 0x1000000 -1 -1»
+      «line (0,-10) (0,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «arc3p (-150,-10) (0,-10) (-75,-10) 0 1 0xffa0a1 -1 -1»
+      «arc3p (150,-10) (0,-10) (75,-10) 0 1 0xffa0a1 -1 -1»
+      «text (0,450) 1 0 0 0x1000000 -1 -1 "X4"»
+      «text (0,300) 1 0 0 0x1000000 -1 -1 "ZOH"»
+      «text (100,-450) 1 7 2 0x1000000 -1 -1 "RNG=<1e9>"»
+      «text (100,-300) 1 7 2 0x1000000 -1 -1 "TTOL=<1e-6>"»
+      «text (150,150) 1 0 1 0xff00ff -1 -1 "z"»
+      «text (-150,150) 1 0 1 0xff00ff -1 -1 "s"»
+      «pin (200,0) (20,0) 1 15 0 0x0 -1 "OUT"»
+      «pin (-200,0) (-20,0) 1 15 0 0x0 -1 "IN"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "CLK"»
+    »
+  »
+  «component (1200,-4900) 0 0
+    «symbol Source-Clock
+      «type: X»
+      «description: Source Clock for digital library»
+      «library file: |.subckt Source-Clock CLK Ts\nV1 CLK 0 pulse 0 1 0 1/CLKfreq/1e5 1/CLKfreq/1e5 duty/CLKfreq 1/CLKfreq\nB1 Ts 0 V=1/CLKfreq\n.ends Source-Clock»
+      «shorted pins: false»
+      «line (-600,-130) (-600,-200) 0 0 0x1000000 -1 -1»
+      «line (-600,200) (-600,130) 0 0 0x1000000 -1 -1»
+      «line (-700,-50) (-500,-50) 0 0 0x1000000 -1 -1»
+      «line (-665,-50) (-665,30) 0 0 0x1000000 -1 -1»
+      «line (-605,-50) (-605,30) 0 0 0x1000000 -1 -1»
+      «line (-545,-50) (-545,30) 0 0 0x1000000 -1 -1»
+      «line (-630,80) (-570,80) 0 0 0x1000000 -1 -1»
+      «line (-600,110) (-600,50) 0 0 0x1000000 -1 -1»
+      «line (-630,-90) (-570,-90) 0 0 0x1000000 -1 -1»
+      «line (-470,0) (-400,-100) 0 0 0x1000000 -1 -1»
+      «line (-300,-100) (-400,-100) 0 0 0x1000000 -1 -1»
+      «ellipse (-730,130) (-470,-130) 0 0 0 0x1000000 0xffe6c8 -1 -1»
+      «triangle (-670,-200) (-530,-200) (-600,-270) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (-750,100) 1 11 0 0x1000000 -1 -1 "X5"»
+      «text (-1250,400) 1 0 2 0x1000000 -1 -1 "SOURCE-CLOCK"»
+      «text (-750,-50) 1 11 0 0x0 -1 -1 "CLKfreq=<1/Ts>"»
+      «text (-750,250) 1 11 2 0x1000000 -1 -1 "duty=<0.1>"»
+      «pin (-600,200) (-20,0) 1 15 0 0x0 -1 "CLK"»
+      «pin (-300,-100) (0,0) 1 9 0 0x0 -1 "Ts"»
+    »
+  »
+  «component (-400,-4000) 0 0
+    «symbol Subtract(small)
+      «type: X»
+      «description: Subtract / Difference / Minus»
+      «library file: |.subckt subtract pos neg error\nE1 error 0 pos neg 1\n.ends subtract»
+      «shorted pins: false»
+      «line (90,0) (170,0) 0 0 0x1000000 -1 -1»
+      «line (130,40) (130,-40) 0 0 0x1000000 -1 -1»
+      «line (160,-80) (240,-80) 0 0 0x1000000 -1 -1»
+      «line (0,0) (70,0) 0 0 0x1000000 -1 -1»
+      «line (200,-200) (200,-130) 0 0 0x1000000 -1 -1»
+      «line (400,0) (330,0) 0 0 0x1000000 -1 -1»
+      «ellipse (70,130) (330,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,220) 1 15 0 0x1000000 -1 -1 "X7"»
+      «text (700,-150) 1 0 2 0x1000000 -1 -1 "SUBTRACT"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "neg"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "error"»
+    »
+  »
+  «component (-800,-4000) 0 0
+    «symbol Constant
+      «type: V»
+      «description: (PLECS) Constant»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
+      «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (0,250) 1 15 0 0x1000000 -1 -1 "V5"»
+      «text (0,0) 1 15 0 0x1000000 -1 -1 "Vout"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-" "0"»
+    »
+  »
+  «component (1800,-4000) 0 0
+    «symbol z-domain-TF-2ndOrder
+      «type: X»
+      «description: z-domain Transfer Function (2nd-Order)»
+      «library file: |.subckt z-domain-TF-2ndOrder x0 CLK y0\nVdd Vdd 0 RNG\nVss Vss 0 -RNG\nB1 y0 0 V=(b0*V(x0)+b1*V(x1)+b2*V(x2)-a1*V(y1)-a2*V(y2))/a0\n¥1 Vdd Vss x1 ¥ x0 CLK Vdd ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ LATCH IC=RNG REF=0.5+RNG TTOL=TTOL\n¥2 Vdd Vss x2 ¥ x1 CLK Vdd ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ LATCH IC=RNG REF=0.5+RNG TTOL=TTOL\n¥3 Vdd Vss y1 ¥ y0 CLK Vdd ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ LATCH IC=RNG REF=0.5+RNG TTOL=TTOL\n¥4 Vdd Vss y2 ¥ y1 CLK Vdd ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ LATCH IC=RNG REF=0.5+RNG TTOL=TTOL\n.ends z-domain-TF-2ndOrder»
+      «shorted pins: false»
+      «line (-640,-10) (480,-10) 0 0 0x1000000 -1 -1»
+      «line (550,50) (600,0) 0 0 0x1000000 -1 -1»
+      «line (600,0) (550,-50) 0 0 0x1000000 -1 -1»
+      «rect (-700,-400) (600,200) 0 0 0 0xff0000 0xffe6c8 -1 0 -1»
+      «triangle (-700,-360) (-700,-240) (-630,-300) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (-700,450) 1 7 0 0x1000000 -1 -1 "X6"»
+      «text (-700,300) 1 7 0 0x1000000 -1 -1 "z-Domain-TF-2ndOrder"»
+      «text (-80,100) 1 0 1 0x1000000 -1 -1 "b0*z²+b1*z+b2"»
+      «text (-80,-100) 1 0 1 0x1000000 -1 -1 "a0*z²+a1*z+a2"»
+      «text (-700,-1550) 1 7 2 0x1000000 -1 -1 "RNG=<1e9>"»
+      «text (-700,-1400) 1 7 2 0x1000000 -1 -1 "TTOL=<1u>"»
+      «text (-700,-950) 1 7 0 0x1000000 -1 -1 "a0=<a0>"»
+      «text (-700,-1100) 1 7 0 0x1000000 -1 -1 "a1=<a1>"»
+      «text (-700,-1250) 1 7 0 0x1000000 -1 -1 "a2=<a2>"»
+      «text (-700,-500) 1 7 0 0x1000000 -1 -1 "b0=<b0>"»
+      «text (-700,-650) 1 7 0 0x1000000 -1 -1 "b1=<b1>"»
+      «text (-700,-800) 1 7 0 0x1000000 -1 -1 "b2=<b2>"»
+      «text (550,150) 1 0 1 0xff00ff -1 -1 "z"»
+      «pin (-700,0) (20,0) 1 15 0 0x0 -1 "x0"»
+      «pin (-700,-300) (-20,0) 1 15 0 0x0 -1 "CLK"»
+      «pin (600,0) (0,0) 1 15 0 0x0 -1 "y0"»
+    »
+  »
+  «component (3100,-4000) 0 0
+    «symbol Offset
+      «type: X»
+      «description: Machine generated symbol for OFFSET»
+      «library file: |.subckt Offset in out\nB1 out 0 V=V(in)+offset\n.ends Offset»
+      «shorted pins: false»
+      «rect (-300,200) (300,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (2,299) 1 15 0 0x1000000 -1 -1 "X8"»
+      «text (0,450) 1 0 2 0x1000000 -1 -1 "OFFSET"»
+      «text (0,-300) 1 15 0 0x1000000 -1 -1 "Offset=<-0.5>Offset"»
+      «text (0,0) 0.857 15 1 0x1000000 -1 -1 "u+offset"»
+      «pin (-300,0) (0,0) 1 15 0 0x0 -1 "in"»
+      «pin (300,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (3900,-4000) 0 0
+    «symbol Gain
+      «type: X»
+      «description: (PLECS) Gain»
+      «library file: |.subckt Gain in out\nE1 out 0 in 0 K\n.ends Gain»
+      «shorted pins: false»
+      «line (-80,50) (-80,-60) 0 0 0x1000000 -1 -1»
+      «line (-10,50) (-80,-20) 0 0 0x1000000 -1 -1»
+      «line (-10,-60) (-60,0) 0 0 0x1000000 -1 -1»
+      «triangle (-200,200) (-200,-200) (200,0) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (0,250) 1 15 0 0x1000000 -1 -1 "X9"»
+      «text (0,-250) 1 0 0 0x1000000 -1 -1 "GAIN"»
+      «text (0,-400) 1 0 0 0x1000000 -1 -1 "K=<0.5>Gain"»
+      «pin (-200,0) (0,0) 1 15 0 0x0 -1 "in"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (6300,-3700) 0 0
+    «symbol Variable-Phase-PWM
+      «type: X»
+      «description: (PLECS) Variable Phase PWM»
+      «library file: |.subckt Variable-Phase-PWM m ph1 ph2 s1 s2\nB1 master 0 V=if(CarrierType==1,SawTooth(1/f,0), TriangleWave(1/f,0))\nB2 latch 0 V=V(master)<0.02\nB3 ph1-zoh 0 V=idt(0,V(ph1),V(latch))\nB4 ph2-zoh 0 V=idt(0,V(ph2),V(latch))\nB5 saw1 0 V=if(CarrierType==1,SawTooth(1/f,V(ph1-zoh))*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min, TriangleWave(1/f,V(ph1-zoh))*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min)\nB6 saw2 0 V=if(CarrierType==1,SawTooth(1/f,V(ph2-zoh))*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min, TriangleWave(1/f,V(ph2-zoh))*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min)\nB7 s1 0 V=if(V(m)>V(saw1),OutputValues_max,OutputValues_min)\nB8 s2 0 V=if(V(m)>V(saw2),OutputValues_max,OutputValues_min)\n.func SawTooth(Tper,Ph)=(time+(1-wrap1(Ph))*Tper)/Tper-trunc((time+(1-wrap1(Ph))*Tper)/Tper)\n.func TriangleWave(Tper,Ph)=2.0*fabs((time+(1-wrap1(Ph))*Tper)/Tper-round((time+(1-wrap1(Ph))*Tper)/Tper))\n.func wrap1(Ph)=mod(Ph,1)/1\n.func mod(x,y)=x-y*trunc(x/y)\n.ends Variable-Phase-PWM»
+      «shorted pins: false»
+      «rect (-600,-500) (600,500) 0 0 0 0xff0000 0xc8ffe6 -1 0 -1»
+      «text (0,750) 1 15 0 0x1000000 -1 -1 "X10"»
+      «text (0,600) 1 15 0 0x1000000 -1 -1 "Variable-Phase-PWM"»
+      «text (0,-600) 1 15 0 0x1000000 -1 -1 "CarrierType=<1;[Sawtooth],(2;[Symmetric])>Carrier Type"»
+      «text (0,-750) 1 15 0 0x1000000 -1 -1 "f=<f>Carrier frequency (Hz)"»
+      «text (0,-900) 1 15 0 0x1000000 -1 -1 "CarrierLimits_min=<0>Carrier limits [min]"»
+      «text (0,-1050) 1 15 0 0x1000000 -1 -1 "CarrierLimits_max=<1>Carrier limits [max]"»
+      «text (0,-1200) 1 15 0 0x1000000 -1 -1 "OutputValues_min=<0>Output values [off]"»
+      «text (0,-1350) 1 15 0 0x1000000 -1 -1 "OutputValues_max=<1>Output values [on]"»
+      «pin (-600,300) (20,0) 1 7 0 0x0 -1 "m"»
+      «pin (-600,0) (20,0) 1 7 0 0x0 -1 "ph1(p.u.)"»
+      «pin (-600,-300) (20,0) 1 7 0 0x0 -1 "ph2(p.u.)"»
+      «pin (600,0) (-20,0) 1 11 0 0x0 -1 "s1"»
+      «pin (600,-300) (-20,0) 1 11 0 0x0 -1 "s2"»
+    »
+  »
+  «net (-500,1000) 1 11 0 "S14"»
+  «net (1200,-400) 1 11 0 "S14"»
+  «net (1200,1000) 1 11 0 "S23"»
+  «net (-500,-400) 1 11 0 "S23"»
+  «net (4300,1000) 1 11 0 "S58"»
+  «net (6000,-400) 1 11 0 "S58"»
+  «net (6000,1000) 1 11 0 "S67"»
+  «net (4300,-400) 1 11 0 "S67"»
+  «net (6400,-900) 1 13 0 "GND"»
+  «net (8300,1400) 1 14 0 "Vout"»
+  «net (8100,-3700) 1 7 0 "S14"»
+  «net (8100,-3900) 1 7 0 "S23"»
+  «net (8100,-4100) 1 7 0 "S58"»
+  «net (8100,-4300) 1 7 0 "S67"»
+  «net (-1200,-900) 1 13 0 "GND"»
+  «net (2500,600) 1 14 0 "pri+"»
+  «net (2500,0) 1 14 0 "pri-"»
+  «net (5400,-3400) 1 14 0 "m"»
+  «net (5400,-3700) 1 14 0 "ph1"»
+  «net (5400,-4000) 1 14 0 "ph2"»
+  «net (-200,-4400) 1 13 0 "Vout"»
+  «net (2600,-4000) 1 14 0 "c"»
+  «junction (8300,1400)»
+  «junction (8300,-800)»
+  «junction (7400,1400)»
+  «junction (7400,-800)»
+  «junction (7400,-3700)»
+  «junction (7400,-4100)»
+  «junction (6400,1400)»
+  «junction (6400,0)»
+  «junction (6400,-800)»
+  «junction (4700,600)»
+  «junction (1600,0)»
+  «junction (600,-4300)»
+  «junction (-100,1400)»
+  «junction (-100,600)»
+  «junction (-100,-800)»
+  «junction (-1200,-800)»
+  «wire (-1200,600) (-1200,1400) "N01"»
+  «wire (-1200,-800) (-1200,200) "GND"»
+  «wire (-100,1400) (1600,1400) "N01"»
+  «wire (1600,-600) (1600,-800) "GND"»
+  «wire (1600,1400) (1600,1200) "N01"»
+  «wire (1600,0) (1600,-200) "pri-"»
+  «wire (-100,-800) (-1200,-800) "GND"»
+  «wire (-100,1200) (-100,1400) "N01"»
+  «wire (-1200,1400) (-100,1400) "N01"»
+  «wire (1600,-800) (-100,-800) "GND"»
+  «wire (-100,600) (-100,800) "pri+"»
+  «wire (-100,-800) (-100,-600) "GND"»
+  «wire (3100,600) (3400,600) "N02"»
+  «wire (-100,-200) (-100,600) "pri+"»
+  «wire (2500,600) (2700,600) "pri+"»
+  «wire (3400,600) (3400,500) "N02"»
+  «wire (3400,100) (3400,0) "pri-"»
+  «wire (2500,0) (1600,0) "pri-"»
+  «wire (1600,800) (1600,0) "pri-"»
+  «wire (3700,100) (3700,0) "N03"»
+  «wire (3700,500) (3700,600) "N04"»
+  «wire (-400,1000) (-500,1000) "S14"»
+  «wire (1300,-400) (1200,-400) "S14"»
+  «wire (1300,1000) (1200,1000) "S23"»
+  «wire (-400,-400) (-500,-400) "S23"»
+  «wire (4700,1200) (4700,1400) "N05"»
+  «wire (4700,600) (4700,800) "N04"»
+  «wire (4700,-800) (4700,-600) "GND"»
+  «wire (4700,1400) (6400,1400) "N05"»
+  «wire (6400,1400) (6400,1200) "N05"»
+  «wire (6400,-800) (4700,-800) "GND"»
+  «wire (3700,600) (4700,600) "N04"»
+  «wire (4700,-200) (4700,600) "N04"»
+  «wire (6400,0) (3700,0) "N03"»
+  «wire (6400,800) (6400,0) "N03"»
+  «wire (4400,1000) (4300,1000) "S58"»
+  «wire (6100,-400) (6000,-400) "S58"»
+  «wire (6100,1000) (6000,1000) "S67"»
+  «wire (4400,-400) (4300,-400) "S67"»
+  «wire (6400,-800) (7400,-800) "GND"»
+  «wire (7400,100) (7400,500) "N06"»
+  «wire (7400,-800) (7400,-300) "GND"»
+  «wire (7400,1400) (6400,1400) "N05"»
+  «wire (7400,900) (7400,1400) "N05"»
+  «wire (6400,-900) (6400,-800) "GND"»
+  «wire (7900,1400) (8300,1400) "Vout"»
+  «wire (8300,0) (8300,-800) "GND"»
+  «wire (8300,1400) (8300,400) "Vout"»
+  «wire (8300,-800) (7400,-800) "GND"»
+  «wire (9000,-800) (9200,-800) "N07"»
+  «wire (8300,-800) (8600,-800) "GND"»
+  «wire (9200,400) (9200,1400) "Vout"»
+  «wire (9200,-800) (9200,0) "N07"»
+  «wire (9200,1400) (8300,1400) "Vout"»
+  «wire (8300,-1400) (8800,-1400) "N08"»
+  «wire (8800,-1400) (8800,-1000) "N08"»
+  «wire (5400,-3400) (5100,-3400) "m"»
+  «wire (7400,-3700) (8100,-3700) "S14"»
+  «wire (7400,-3700) (7400,-3900) "S14"»
+  «wire (6900,-3700) (7400,-3700) "S14"»
+  «wire (7900,-3900) (8100,-3900) "S23"»
+  «wire (7400,-3900) (7600,-3900) "S14"»
+  «wire (7400,-4100) (8100,-4100) "S58"»
+  «wire (7400,-4100) (7400,-4300) "S58"»
+  «wire (6900,-4000) (7000,-4000) "S58"»
+  «wire (7900,-4300) (8100,-4300) "S67"»
+  «wire (7400,-4300) (7600,-4300) "S58"»
+  «wire (7000,-4000) (7100,-4100) "S58"»
+  «wire (5400,-3700) (4600,-3700) "ph1"»
+  «wire (-1200,-900) (-1200,-800) "GND"»
+  «wire (6400,-200) (6400,0) "N03"»
+  «wire (6400,-800) (6400,-600) "GND"»
+  «wire (7400,1400) (7700,1400) "N05"»
+  «wire (-100,600) (2500,600) "pri+"»
+  «wire (3400,0) (2500,0) "pri-"»
+  «wire (5700,-3400) (5400,-3400) "m"»
+  «wire (5700,-3700) (5400,-3700) "ph1"»
+  «wire (5700,-4000) (5400,-4000) "ph2"»
+  «wire (600,-4300) (600,-4200) "N09"»
+  «wire (600,-4700) (600,-4300) "N09"»
+  «wire (600,-4300) (1100,-4300) "N09"»
+  «wire (1100,-4000) (800,-4000) "N10"»
+  «wire (400,-4000) (0,-4000) "N11"»
+  «wire (-400,-4000) (-600,-4000) "N12"»
+  «wire (-200,-4200) (-200,-4400) "Vout"»
+  «wire (2600,-4000) (2400,-4000) "c"»
+  «wire (2600,-4000) (2800,-4000) "c"»
+  «wire (5400,-4000) (4100,-4000) "ph2"»
+  «wire (3700,-4000) (3400,-4000) "N13"»
+  «wire (7100,-4100) (7400,-4100) "S58"»
+  «rect (-1250,-2650) (8550,-5500) 0 0 2 0x4000000 0x1000000 -1 0 -1»
+  «text (9850,-1250) 1 7 0 0x1000000 -1 -1 "ï»¿.param f = 250e3;              % switching frequency (Hz)\n.param Pinitial=1000;\n\n// Circuit parameters\n.param Vin = 95;               % input voltage (V)\n.param Vout = 380;             % output voltage (V)\n.param Ron1=30e-3;\n.param Ron2=65e-3\n.param Llk = 2.052e-6;         % leakage inductance (H)\n.param Co = 30e-6;             % output capacitance (F)\n.param Co_esr = 3.2e-3;			% output capacitance ESR (ohms)\n.param n_pri = 4;      % number of turns on the primary side\n.param n_sec = 16;     % number of turns on the secondary side\n.param Rload = Vout^2/Pinitial; % load resistance (ohms)\n\n// Digital PI controller\n.param Kp = 0.11173*0.015; 		% proportional gain\n.param Ki = 0.11173;       		% integral gain\n.param Kd = 0;             		% derivative gain\n.param N = 0;\n.param Ts = 50/f;         		% sample time (s)\n.param b0 = Kp*(1+N*Ts) + Ki*Ts*(1+N*Ts) + Kd*N;\n.param b1 = -(Kp*(2+N*Ts) + Ki*Ts + 2*Kd*N);\n.param b2 = Kp + Kd*N;\n.param a0 = 1+N*Ts;\n.param a1 = -(2+N*Ts);\n.param a2 = 1;"»
+  «text (-1000,-1700) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.8\n.option listparams\n.save V(Vout) I(Iout) I(C1) V(pri+) V(pri-)\n.plot V(pri+,pri-)\n.plot I(C1)\n.plot I(Iout)\n.plot Vout*1V V(Vout)"»
+  «text (-1100,-2800) 1 7 1 0x1000000 -1 -1 "ï»¿Phase Shift Controller"»
+  «text (-1250,1750) 1 7 1 0x1000000 -1 -1 "ï»¿Dual Active Bridge"»
+  «text (-1250,2450) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Power Supplies > Dual Active Bridge\n(dual_active_bridge_converter.plecs)\nby KSKelvin on 8-2-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+»
+
