@@ -11,9 +11,9 @@ This repository is designed to help engineers, students, and hobbyists quickly l
 
 ## 📌 Repository Contents
 
-* LTspice - Ported [LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) Educational Examples to Qspice
-* PLECS - Ported [PLECS](https://www.plexim.com/products/plecs) Demo Models to Qspice
-* PSIM - Ported [PSIM](https://www.siemens.com/en-us/products/simcenter/systems-simulation/psim/) Examples to Qspice
+* LTspice-Educational - Ported [LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) Educational Examples to Qspice
+* PLECS-DemoModels - Ported [PLECS](https://www.plexim.com/products/plecs) Demo Models to Qspice
+* PSIM-Examples - Ported [PSIM](https://www.siemens.com/en-us/products/simcenter/systems-simulation/psim/) Examples to Qspice
 * Valentin Volodin - Ported Valentin Volodin [ValVol.lib](https://valvol.xyz/models.php)
 
 ---
