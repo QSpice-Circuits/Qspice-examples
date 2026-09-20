@@ -1,0 +1,173 @@
+ÿØÿÛ«schematic
+  «component (-1400,300) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "AC 1"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-800,600) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "141"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (-500,300) 0 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "L2"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "mc(10µ,tol)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (500,300) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C2"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "mc(1n,tol)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (3100,300) 0 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "L1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "mc(10µ,tol)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (4100,300) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "mc(1n,tol)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (5200,300) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R2"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "141"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (1300,600) 2 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "L3"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "mc(40µ,tol)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (2300,600) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C3"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "mc(250p,tol)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «net (-1400,0) 1 13 0 "GND"»
+  «net (-1400,600) 1 14 0 "IN"»
+  «net (-500,0) 1 13 0 "GND"»
+  «net (500,0) 1 13 0 "GND"»
+  «net (3100,0) 1 13 0 "GND"»
+  «net (4100,0) 1 13 0 "GND"»
+  «net (5200,0) 1 13 0 "GND"»
+  «net (5100,600) 1 14 0 "OUT"»
+  «junction (4100,600)»
+  «junction (3100,600)»
+  «junction (500,600)»
+  «junction (-500,600)»
+  «wire (-1400,600) (-1400,500) "IN"»
+  «wire (-1000,600) (-1400,600) "IN"»
+  «wire (-600,600) (-500,600) "N01"»
+  «wire (-500,600) (-500,500) "N01"»
+  «wire (-1400,0) (-1400,100) "GND"»
+  «wire (-500,0) (-500,100) "GND"»
+  «wire (500,500) (500,600) "N01"»
+  «wire (500,0) (500,100) "GND"»
+  «wire (500,600) (-500,600) "N01"»
+  «wire (3100,600) (3100,500) "OUT"»
+  «wire (3100,0) (3100,100) "GND"»
+  «wire (4100,500) (4100,600) "OUT"»
+  «wire (4100,0) (4100,100) "GND"»
+  «wire (4100,600) (3100,600) "OUT"»
+  «wire (5200,500) (5200,600) "OUT"»
+  «wire (5200,0) (5200,100) "GND"»
+  «wire (5100,600) (4100,600) "OUT"»
+  «wire (5200,600) (5100,600) "OUT"»
+  «wire (1100,600) (500,600) "N01"»
+  «wire (3100,600) (2500,600) "OUT"»
+  «wire (2100,600) (1500,600) "N02"»
+  «text (-1450,-400) 1 7 0 0x1000000 -1 -1 "ï»¿.param tol=5/100 ; +/-5% tolerance"»
+  «text (-1450,-600) 1 7 0 0x1000000 -1 -1 "ï»¿.step param X 0 20 1 ; dummy parameter to cycle Monte Carlo runs"»
+  «text (-1450,-870) 1 7 0 0x1000000 -1 -1 "ï»¿.ac oct 100 300K 10Meg\n.plot V(OUT)"»
+  «text (850,1050) 1 7 1 0x1000000 -1 -1 "ï»¿Monte Carlo Simulation in LTspice"»
+  «text (-400,-2300) 1 7 1 0x1000000 -1 -1 "ï»¿mc(val, tol) is a function that uses a random number generator \n                     to return a value between val-tol*val and val+tol*val\n \nOther functions of interest:\n \nflat(x): a function that uses a random number generator \n         to return a value between -x and x;\n \ngauss(x): a function that uses a random number generator \n          to return a value with a Gaussian distribution\n          and sigma x."»
+»
+

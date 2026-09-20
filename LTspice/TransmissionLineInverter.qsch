@@ -1,0 +1,81 @@
+ÿØÿÛ«schematic
+  «component (-400,100) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "Pulse 0 1 0 1n 1n 10n"»
+      «text (100,-350) 1 7 0 0x1000000 -1 -1 "Rser=50"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (2000,300) 0 0
+    «symbol T
+      «type: T»
+      «description: Lossless Transmission Line»
+      «shorted pins: false»
+      «rect (-400,100) (400,50) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-400,-50) (400,-100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (0,100) 1 14 0 0x1000000 -1 -1 "T1"»
+      «text (0,-100) 1 13 0 0x1000000 -1 -1 "Td=<50n>"»
+      «text (0,-300) 1 13 0 0x1000000 -1 -1 "Z0=<50>"»
+      «pin (-400,100) (0,0) 1 0 0 0x0 -1 "L1"»
+      «pin (-400,-100) (0,0) 1 0 0 0x0 -1 "L2"»
+      «pin (400,100) (0,0) 1 0 0 0x0 -1 "R1"»
+      «pin (400,-100) (0,0) 1 0 0 0x0 -1 "R2"»
+    »
+  »
+  «component (2000,-700) 0 0
+    «symbol T
+      «type: T»
+      «description: Lossless Transmission Line»
+      «shorted pins: false»
+      «rect (-400,100) (400,50) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-400,-50) (400,-100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (0,100) 1 14 0 0x1000000 -1 -1 "T2"»
+      «text (0,-100) 1 13 0 0x1000000 -1 -1 "Td=<30n>"»
+      «text (0,-300) 1 13 0 0x1000000 -1 -1 "Z0=<150>"»
+      «pin (-400,100) (0,0) 1 0 0 0x0 -1 "L1"»
+      «pin (-400,-100) (0,0) 1 0 0 0x0 -1 "L2"»
+      «pin (400,100) (0,0) 1 0 0 0x0 -1 "R1"»
+      «pin (400,-100) (0,0) 1 0 0 0x0 -1 "R2"»
+    »
+  »
+  «net (-400,-200) 1 13 0 "GND"»
+  «net (1600,-900) 1 13 0 "GND"»
+  «net (2400,-900) 1 13 0 "GND"»
+  «net (2600,400) 1 7 0 "GND"»
+  «net (1400,-200) 1 11 0 "GND"»
+  «net (2700,-200) 1 7 0 "OUT"»
+  «net (-100,400) 1 14 0 "IN"»
+  «junction (2500,-200)»
+  «junction (1500,-200)»
+  «wire (-400,300) (-400,400) "IN"»
+  «wire (-400,-200) (-400,-100) "GND"»
+  «wire (-100,400) (1600,400) "IN"»
+  «wire (2600,400) (2400,400) "GND"»
+  «wire (2400,-900) (2400,-800) "GND"»
+  «wire (1600,-900) (1600,-800) "GND"»
+  «wire (1600,-600) (1500,-600) "GND"»
+  «wire (1500,-200) (1500,200) "GND"»
+  «wire (1500,200) (1600,200) "GND"»
+  «wire (2400,200) (2500,200) "OUT"»
+  «wire (2500,-200) (2500,-600) "OUT"»
+  «wire (2500,-600) (2400,-600) "OUT"»
+  «wire (1400,-200) (1500,-200) "GND"»
+  «wire (1500,-600) (1500,-200) "GND"»
+  «wire (2500,-200) (2700,-200) "OUT"»
+  «wire (2500,200) (2500,-200) "OUT"»
+  «wire (-400,400) (-100,400) "IN"»
+  «text (-450,-750) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 500n 0 1n\n.plot V(OUT)\n.plot V(IN)"»
+  «text (-1100,2000) 1 7 1 0x1000000 -1 -1 "ï»¿This examples illustrates the fundamental difference between a SPICE\ntransmission line element and a length of coax.  The SPICE transmission\nline element supports a single transmission line mode whereas a cable\nwill have any many modes as it has independent conductors.  A piece of\ncoax has two conductors, a central conductor and an outer shield, giving\nrise to two modes.\n \nTo model both modes of a length of coax, you will need two SPICE\ntransmission line elements.  One for the normal(differential) mode and\nthe other for the common mode.  Below, T1 is the normal mode and T2 is\nthe mode between the shield and the rest of the world.  These modes\nwith have different propagation speeds and impedances.  If both modes\nare modeled, then you can simulate a transmission line inverter."»
+»
+
