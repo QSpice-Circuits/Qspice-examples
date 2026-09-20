@@ -11,7 +11,7 @@ This repository is designed to help engineers, students, and hobbyists quickly l
 
 ## 📌 Repository Contents
 
-| Category / Folder | Description | Source / Reference |
+| Category / Folder | Description | Reference |
 | :--- | :--- | :--- |
 | **KSKelvin-Examples** | KSKelvin circuit examples <br> - Qspice native devices, Symbols-KSKelvin devices examples | [Symbols-KSKelvin](https://github.com/KSKelvin-Github/Qspice/tree/main/Symbols-KSKelvin)|
 | **LTspice-Educational** | Ported educational circuit examples | [LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) |
