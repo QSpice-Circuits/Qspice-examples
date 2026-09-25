@@ -1,0 +1,309 @@
+ÿØÿÛ«schematic
+  «component (-4200,-100) 0 0
+    «symbol Switch
+      «type: X»
+      «description: (PLECS) Switch»
+      «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
+      «shorted pins: false»
+      «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-100,150) 0 0 0x1000000 -1 -1»
+      «line (-120,0) (-80,0) 0 0 0x1000000 -1 -1»
+      «triangle (-200,-50) (-200,50) (-120,0) 0 0 0x1000000 0xff12 -1 -1»
+      «text (100,100) 1 7 0 0x1000000 -1 -1 "XS1"»
+      «text (400,250) 1 0 2 0x1000000 -1 -1 "SWITCH"»
+      «text (100,-50) 1 7 0 0x1000000 -1 -1 "s_init=<(0),1> Initial Off (0) / Initial On (1)"»
+      «text (100,-200) 1 7 2 0x1000000 -1 -1 "extreme=<0,(1)> Extreme Ron/Roff value"»
+      «pin (0,200) (20,0) 1 15 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 15 0 0x0 -1 "-"»
+      «pin (-200,0) (-20,0) 1 15 0 0x0 -1 "C"»
+    »
+  »
+  «component (-3700,300) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R5"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "3"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-3700,-500) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R6"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "9"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-3000,300) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C2"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "182.94µ"»
+      «text (-300,0) 1 109 0 0x1000000 -1 -1 "IC=0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-3000,-500) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C3"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "15.42µ"»
+      «text (-300,0) 1 109 0 0x1000000 -1 -1 "IC=0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-6200,-100) 0 0
+    «symbol Relay
+      «type: X»
+      «description: (PLECS) Relay»
+      «library file: |.subckt Relay in out\nV2 Vss 0 min(OnOutputValue,OffOutputValue)\nV1 Vdd 0 max(OnOutputValue,OffOutputValue)\n¥2 Vdd Vss Q ¬Q in 0 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT VT=(OnSwitchValue+OffSwitchValue)/2 VH=(OnSwitchValue-OffSwitchValue)/2 TTOL=TTOL\nB1 out 0 V=if(time<=0,if(InitialState,OnOutputValue,OffOutputValue), if(OnOutputValue>OffOutputvalue,V(Q), V(¬Q)))\n.ends Relay»
+      «shorted pins: false»
+      «line (150,0) (-150,0) 0 0 0xffa0a1 -1 -1»
+      «line (0,-160) (0,160) 0 0 0xffa0a1 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «line (-50,130) (150,130) 0 0 0x1000000 -1 -1»
+      «line (-150,-130) (50,-130) 0 0 0x1000000 -1 -1»
+      «line (50,-130) (50,130) 0 0 0x1000000 -1 -1»
+      «line (-50,130) (-50,-130) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (0,450) 1 15 0 0x1000000 -1 -1 "X3"»
+      «text (0,300) 1 15 0 0x1000000 -1 -1 "RELAY"»
+      «text (-200,-300) 1 7 0 0x1000000 -1 -1 "OnSwitchValue=<.75*1800>Upper Threshold"»
+      «text (-200,-450) 1 7 0 0x1000000 -1 -1 "OffSwitchValue=<.5*1800>LowerThreshold"»
+      «text (-200,-600) 1 7 0 0x1000000 -1 -1 "OnOutputValue=<0>On State Output"»
+      «text (-200,-750) 1 7 0 0x1000000 -1 -1 "OffOutputValue=<1>Off State Output"»
+      «text (-200,-900) 1 7 0 0x1000000 -1 -1 "InitialState=<(0;Off),1;On>Initial State"»
+      «text (-200,-1050) 1 7 2 0x1000000 -1 -1 "TTOL=<1µ>"»
+      «pin (-200,0) (0,0) 1 15 0 0x0 -1 "in"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (-5300,-1600) 0 0
+    «symbol Voltage-Source-AC
+      «type: X»
+      «description: (PLECS) Voltage Source AC»
+      «library file: |.subckt Voltage-Source-AC + -\nV1 + - SIN 0 V w/2/pi 0 0 phi/pi*180\n.ends Voltage-Source-AC»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (0,0) (60,0) (30,0) 0 0 0x1000000 -1 -1»
+      «arc3p (0,0) (-60,0) (-30,0) 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "XV1"»
+      «text (100,300) 1 7 2 0x1000000 -1 -1 "VOLTAGE-SOURCE-AC"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "V=<110*sqrt(2)>Amplitude (V)"»
+      «text (100,-300) 1 7 0 0x1000000 -1 -1 "w=<2*pi*60>Frequency (rad/s)"»
+      «text (100,-450) 1 7 0 0x1000000 -1 -1 "phi=<pi/2>Phase (rad)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-4500,-1200) 2 0
+    «symbol IProbe-0Vsrc(large)
+      «type: V»
+      «description: Current Probe - with 0V voltage source by KSKelvin»
+      «shorted pins: false»
+      «line (150,130) (150,-150) 0 0 0x1000000 -1 -1»
+      «ellipse (-40,40) (40,-40) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «arc3p (0,-100) (0,100) (0,0) 0 0 0x1000000 -1 -1»
+      «triangle (150,-150) (100,-80) (200,-80) 0 0 0x1000000 0xff0012 -1 -1»
+      «text (200,-10) 1 110 0 0x1000000 -1 -1 "Isupply"»
+      «text (-40,-10) 0.63 109 2 0x1000000 -1 -1 "0"»
+      «text (-135,-10) 0.681 109 3 0x1000000 -1 -1 "; hold shift to probe"»
+      «pin (0,100) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-3400,-1600) 2 0
+    «symbol IProbe-0Vsrc(large)
+      «type: V»
+      «description: Current Probe - with 0V voltage source by KSKelvin»
+      «shorted pins: false»
+      «line (150,130) (150,-150) 0 0 0x1000000 -1 -1»
+      «ellipse (-40,40) (40,-40) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «arc3p (0,-100) (0,100) (0,0) 0 0 0x1000000 -1 -1»
+      «triangle (150,-150) (100,-80) (200,-80) 0 0 0x1000000 0xff0012 -1 -1»
+      «text (200,-10) 1 110 0 0x1000000 -1 -1 "Imain"»
+      «text (-40,-10) 0.63 109 2 0x1000000 -1 -1 "0"»
+      «text (-135,-10) 0.681 109 3 0x1000000 -1 -1 "; hold shift to probe"»
+      «pin (0,100) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-2500,-900) 0 0
+    «symbol IProbe-0Vsrc(large)
+      «type: V»
+      «description: Current Probe - with 0V voltage source by KSKelvin»
+      «shorted pins: false»
+      «line (150,130) (150,-150) 0 0 0x1000000 -1 -1»
+      «ellipse (-40,40) (40,-40) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «arc3p (0,-100) (0,100) (0,0) 0 0 0x1000000 -1 -1»
+      «triangle (150,-150) (100,-80) (200,-80) 0 0 0x1000000 0xff0012 -1 -1»
+      «text (250,80) 1 7 0 0x1000000 -1 -1 "Iaux"»
+      «text (250,-119) 0.63 7 2 0x1000000 -1 -1 "0"»
+      «text (250,-210) 0.681 7 3 0x1000000 -1 -1 "; hold shift to probe"»
+      «pin (0,100) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-7200,-100) 0 0
+    «symbol Gain
+      «type: E»
+      «description: Gain»
+      «shorted pins: false»
+      «triangle (300,0) (-200,300) (-200,-300) 0 0 0x1000000 0xffe6c8 -1 -1»
+      «text (-50,300) 1 7 0 0x1000000 -1 -1 "E1"»
+      «text (0,10) 1 15 0 0x1000000 -1 -1 "30/pi"»
+      «pin (300,0) (0,0) 1 0 0 0x0 -1 ""»
+      «pin (-100,-200) (0,0) 1 0 0 0x0 -1 "" "0"»
+      «pin (-200,0) (0,0) 1 0 0 0x0 -1 ""»
+      «pin (-200,-200) (0,0) 1 0 0 0x0 -1 "" "0"»
+    »
+  »
+  «component (-3700,-1200) 2 0
+    «symbol Jumper1(S)
+      «type: V»
+      «description: Jumper - 0V Voltage Source»
+      «shorted pins: false»
+      «line (0,-50) (0,-100) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,90) (0,10) 0 0 0x1000000 -1 -1»
+      «ellipse (-30,150) (30,90) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «ellipse (-30,10) (30,-50) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (30,50) 1 110 2 0x1000000 -1 -1 "VJ1"»
+      «text (-30,50) 1 109 2 0x1000000 -1 -1 "0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-2700,-1800) 0 0
+    «symbol 2ph-Induction-Machine
+      «type: X»
+      «description: (PLECS) 2-phase Induction Machine»
+      «library file: |.subckt 2ph-Induction-Machine mains+ mains- aux+ aux- wm Te\nV´iqs mains+ N01 0\nR1 N01 N03 Rs_main\nL1 N03 N02 Lls_main IC=0\nL2 N02 mains- Lm IC=0\nL3 N02 N04 Llr IC=0\nR2 N04 N06 Rr\nV´iqr N05 N06 0\nV´ids aux+ N07 0\nR3 N07 N09 Rs_aux\nL4 N09 N08 Lls_aux IC=0\nL5 N08 aux- Lm*n^2 IC=0\nL6 N08 N10 Llr*n^2 IC=0\nR4 N10 N12 Rr*n^2\nV´idr N11 N12 0\nB3 0 N13 I=(I(iqs)*I(idr)-I(ids)*I(iqr))*Lm*p*n\nV´Te N13 wm 0\nB4 Te 0 V=I(Te)\nC1 wm 0 J IC=wm0\nB1 N05 mains- V=(Lm*n^2*(I(ids)+I(idr))+Llr*n^2*I(idr))*V(wm)*p/n\nB5 0 wm I=-F*V(wm)\nB2 aux- N11 V=(Lm*(I(iqs)+I(iqr))+Llr*I(iqr))*V(wm)*p*n\n.ends 2ph-Induction-Machine»
+      «shorted pins: false»
+      «line (400,-400) (300,-400) 0 0 0xff00ff -1 -1»
+      «line (400,-600) (300,-600) 0 0 0xff00ff -1 -1»
+      «line (-300,-300) (-250,-250) 0 0 0xff00ff -1 -1»
+      «line (250,-245) (300,-300) 0 0 0xff00ff -1 -1»
+      «line (-300,-300) (-300,-700) 0 0 0xff00ff -1 -1»
+      «line (-300,-700) (300,-700) 0 0 0xff00ff -1 -1»
+      «line (300,-700) (300,-300) 0 0 0xff00ff -1 -1»
+      «line (-400,200) (-285,200) 0 0 0x1000000 -1 -1»
+      «line (-400,-200) (-285,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,400) (-200,285) 0 0 0x1000000 -1 -1»
+      «line (200,400) (200,285) 0 0 0x1000000 -1 -1»
+      «ellipse (-425,300) (-375,250) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «ellipse (-350,350) (350,-350) 0 0 0 0x1000000 0xc8ffe6 -1 -1»
+      «ellipse (-230,230) (230,-230) 0 0 0 0x1000000 0xc8ffe6 -1 -1»
+      «ellipse (250,425) (300,375) 0 0 0 0x1000000 0xff0012 -1 -1»
+      «text (0,0) 1 15 0 0x1000000 -1 -1 "X1"»
+      «text (0,-800) 1 15 0 0x1000000 -1 -1 "2PH-INDUCTION-MACHINE"»
+      «text (0,-950) 1 15 0 0x1000000 -1 -1 "Rs_main=<2.02> Stator resistance Rs [main]"»
+      «text (0,-1100) 1 15 0 0x1000000 -1 -1 "Rs_aux=<7.14> Stator resistance Rs [aux]"»
+      «text (0,-1250) 1 15 0 0x1000000 -1 -1 "Lls_main=<7.40e-3> Stator leakage inductance [main]"»
+      «text (0,-1400) 1 15 0 0x1000000 -1 -1 "Lls_aux=<8.54e-3> Stator leakage inductance [aux]"»
+      «text (0,-1550) 1 15 0 0x1000000 -1 -1 "n=<1.18> Stator aux vs main turns ratio"»
+      «text (0,-1700) 1 15 0 0x1000000 -1 -1 "Rr=<4.12> Rotor resistance"»
+      «text (0,-1850) 1 15 0 0x1000000 -1 -1 "Llr=<5.62e-3> Rotor leakage inductance"»
+      «text (0,-2000) 1 15 0 0x1000000 -1 -1 "Lm=<177.2e-3> Magnetizing inductance"»
+      «text (0,-2150) 1 15 0 0x1000000 -1 -1 "J=<1.46e-2> Inertia (Nms^2)"»
+      «text (0,-2300) 1 15 2 0x1000000 -1 -1 "F=<0> Friction coefficient (Nms)"»
+      «text (0,-2600) 1 15 2 0x1000000 -1 -1 "wm0=<0> Initial rotor speed (rad/s)"»
+      «text (0,-2450) 1 15 2 0x1000000 -1 -1 "p=<2> Number of pole pairs"»
+      «text (0,-2750) 1 15 2 0x1000000 -1 -1 "thm0=<0> Initial rotor position (rad/s)"»
+      «pin (-400,200) (20,0) 1 15 0 0x0 -1 "main+"»
+      «pin (-400,-200) (20,0) 1 15 0 0x0 -1 "main-"»
+      «pin (200,400) (20,0) 1 15 0 0x0 -1 "aux+"»
+      «pin (-200,400) (-20,0) 1 15 0 0x0 -1 "aux-"»
+      «pin (400,-400) (-120,10) 1 11 0 0x0 -1 "wm"»
+      «pin (400,-600) (-120,0) 1 11 0 0x0 -1 "Te"»
+    »
+  »
+  «net (-3700,-1600) 1 14 0 "m+"»
+  «net (-3700,-2000) 1 14 0 "m-"»
+  «net (-6700,-100) 1 14 0 "RPM"»
+  «net (-5000,-100) 1 14 0 "Q"»
+  «net (-2100,-2200) 1 14 0 "wm"»
+  «net (-2100,-2400) 1 7 0 "Te"»
+  «net (-2500,-1200) 1 7 0 "a+"»
+  «net (-2900,-1200) 1 14 0 "a-"»
+  «junction (-2500,-500)»
+  «junction (-4000,-2000)»
+  «junction (-4200,-500)»
+  «junction (-4200,-1200)»
+  «wire (-5300,-1400) (-5300,-1200) "N01"»
+  «wire (-4200,-300) (-4200,-500) "m+"»
+  «wire (-4200,300) (-4200,100) "N02"»
+  «wire (-2800,-500) (-2500,-500) "N03"»
+  «wire (-3500,-500) (-3200,-500) "N04"»
+  «wire (-4200,-500) (-3900,-500) "m+"»
+  «wire (-2800,300) (-2500,300) "N03"»
+  «wire (-3500,300) (-3200,300) "N05"»
+  «wire (-4200,300) (-3900,300) "N02"»
+  «wire (-2500,300) (-2500,-500) "N03"»
+  «wire (-4200,-500) (-4200,-1200) "m+"»
+  «wire (-4400,-1200) (-4200,-1200) "m+"»
+  «wire (-6700,-100) (-6900,-100) "RPM"»
+  «wire (-6400,-100) (-6700,-100) "RPM"»
+  «wire (-4400,-100) (-5000,-100) "Q"»
+  «wire (-5000,-100) (-6000,-100) "Q"»
+  «wire (-2500,-1200) (-2500,-1400) "a+"»
+  «wire (-3700,-2000) (-3100,-2000) "m-"»
+  «wire (-5300,-2000) (-4000,-2000) "m-"»
+  «wire (-3500,-1600) (-3700,-1600) "m+"»
+  «wire (-4200,-1200) (-4200,-1600) "m+"»
+  «wire (-2900,-1400) (-2900,-1200) "a-"»
+  «wire (-3900,-1200) (-4000,-1200) "m-"»
+  «wire (-4000,-1200) (-4000,-2000) "m-"»
+  «wire (-3700,-2000) (-4000,-2000) "m-"»
+  «wire (-2300,-2400) (-2100,-2400) "Te"»
+  «wire (-5300,-1800) (-5300,-2000) "m-"»
+  «wire (-4200,-1600) (-3700,-1600) "m+"»
+  «wire (-2500,-1000) (-2500,-1200) "a+"»
+  «wire (-4600,-1200) (-5300,-1200) "N01"»
+  «wire (-3100,-1600) (-3300,-1600) "N06"»
+  «wire (-2500,-500) (-2500,-800) "N03"»
+  «wire (-7400,-100) (-7600,-100) "wm"»
+  «wire (-7600,-100) (-7600,900) "wm"»
+  «wire (-7600,900) (-1700,900) "wm"»
+  «wire (-1700,900) (-1700,-2200) "wm"»
+  «wire (-2300,-2200) (-2100,-2200) "wm"»
+  «wire (-1700,-2200) (-2100,-2200) "wm"»
+  «wire (-2900,-1200) (-3600,-1200) "a-"»
+  «text (-6050,-3350) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 1\n.option maxstep=0.1m\n.plot V(RPM)\n.plot V(Te)\n.plot V(Q)\n.plot I(Isupply) I(Imain) I(Iaux)\n.plot V(m+,m-) V(a+,a-)"»
+  «text (-7600,1750) 1 7 1 0x1000000 -1 -1 "ï»¿2ph_induction_matchine.plecs from Bryan_Lieblick\nhttps://forum.plexim.com/t/need-a-single-phase-induction-machine-model/2737/2\n\nPorted to Qspice by KSKelvin on 9-25-2026\n - download Symobl-KSKelvin : https://github.com/KSKelvin-Github/Qspice/"»
+  «text (-7600,-4450) 1 7 1 0x1000000 -1 -1 "ï»¿Reference: P.C. Krause, O. Wasynczuk, S.D. Sudhoff, "Analysis of Electric Machinery\nand Drive Systems" 2nd ed., Wiley Interscience, pp. 361-394 "»
+»
+
