@@ -333,6 +333,6 @@
   «text (-2450,600) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.0008 uic"»
   «text (-2450,50) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vo)\n.plot V(gate)\n.plot V(Saw) V(Vm) \n.plot V(iref)/1V*1A I(L1)"»
   «text (-2400,2050) 1.6 7 1 0x1000000 -1 -1 "ï»¿Average Current-Mode Control"»
-  «text (-2400,1650) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, average current-mode.sch\nby KSKelvin on 4-10-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2400,1650) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, average current-mode.sch\nby KSKelvin on 4-10-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

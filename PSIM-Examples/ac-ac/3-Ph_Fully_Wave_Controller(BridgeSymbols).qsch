@@ -975,6 +975,6 @@
   «wire (-100,-600) (-400,-600) "SynS"»
   «wire (-100,-1900) (-400,-1900) "SynT"»
   «text (-150,-3750) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(oa,ob)\n.plot V(THY1)+5.5 V(THY2)+4.4\n+V(THY3)+3.3 V(THY4)+2.2\n+V(THY5)+1.1 V(THY6)"»
-  «text (-2850,1650) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, ac-ac, 3-Ph_Fully_Wave_Controller.psimsch\nby KSKelvin on 4-19-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2850,1650) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-ac, 3-Ph_Fully_Wave_Controller.psimsch\nby KSKelvin on 4-19-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

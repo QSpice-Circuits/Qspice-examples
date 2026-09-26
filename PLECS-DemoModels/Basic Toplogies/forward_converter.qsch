@@ -19,7 +19,7 @@
   «component (0,-1100) 0 0
     «symbol MOSFET
       «type: X»
-      «description: (PLECS) MOSFET [Ideal]»
+      «description: (PWL) MOSFET [Ideal]»
       «library file: |.subckt MOSFET D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=max(1m,Ron) Roff=10Meg Vt=0.5 Vh=0\n.ends MOSFET»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -44,7 +44,7 @@
   «component (2900,700) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -76,7 +76,7 @@
   «component (500,700) 0 0
     «symbol
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -131,7 +131,7 @@
   «component (-900,-300) 0 0
     «symbol Diode
       «type: X»
-      «description: (PLECS) Diode»
+      «description: (PWL) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -149,7 +149,7 @@
   «component (1300,1200) 6 0
     «symbol Diode
       «type: X»
-      «description: (PLECS) Diode»
+      «description: (PWL) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -167,7 +167,7 @@
   «component (1700,800) 0 0
     «symbol Diode
       «type: X»
-      «description: (PLECS) Diode»
+      «description: (PWL) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -185,7 +185,7 @@
   «component (2400,1200) 2 0
     «symbol
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -265,7 +265,7 @@
   «component (-800,-1100) 0 0
     «symbol Pulse-Generator
       «type: X»
-      «description: (PLECS) Pulse Geneator»
+      «description: (PWL) Pulse Geneator»
       «library file: |.subckt Pulse-Generator out\nV1 out 0 pulse Lo Hi remainder(Delay,1/f) 1p 1p DutyCycle/f 1/f DC if(remainder(Delay,1/f)<=0,Hi,Lo)\n.func remainder(x,y)=x-y*round(x/y)\n.ends Pulse-Generator»
       «shorted pins: false»
       «line (-150,-150) (-100,-150) 0 0 0x1000000 -1 -1»
@@ -341,6 +341,6 @@
   «wire (1700,100) (1700,200) "GND"»
   «text (-1300,1800) 1 7 1 0x1000000 -1 -1 "ï»¿Single-transistor forward converter"»
   «text (1050,-850) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.002\n.plot V(OUT)\n.plot I(Id2) I(Id3)\n.plot I(Isw1) I(Id1)"»
-  «text (-1300,2350) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Basic Topologies > Forward Converter (forward_converter.plecs)\nby KSKelvin on 7-24-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1300,2350) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as demo from PLECS, Basic Topologies > Forward Converter (forward_converter.plecs)\nby KSKelvin on 7-24-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

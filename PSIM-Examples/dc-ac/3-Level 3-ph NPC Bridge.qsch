@@ -784,6 +784,6 @@
   «wire (-400,-700) (-400,-500) "sa3"»
   «wire (-200,-400) (-200,-600) "sa4"»
   «text (2050,-3800) 1 7 0 0x1000000 -1 -1 "ï»¿.option fastmath=0\n.plot V(a,c)\n.plot V(sa1)+3.3 V(sa2)+2.2 V(sa3)+1.1 V(sa4)"»
-  «text (-2550,2100) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, 3-Level 3-ph NPC Bridge.psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2550,2100) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, 3-Level 3-ph NPC Bridge.psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

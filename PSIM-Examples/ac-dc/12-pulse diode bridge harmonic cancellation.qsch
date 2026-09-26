@@ -576,7 +576,7 @@
   «wire (1700,300) (1700,-1600) "N06"»
   «text (1700,4500) 1.6 7 1 0x1000000 -1 -1 "ï»¿Harmonic Cancellation of 12-pulse Rectifier"»
   «text (-900,-700) 1 7 0 0x1000000 -1 -1 "ï»¿.option fastmath=0"»
-  «text (1700,4100) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, ac-dc, 12-pulse diode bridge harmonic cancellation.psimsch\nby KSKelvin on 3-26-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (1700,4100) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, 12-pulse diode bridge harmonic cancellation.psimsch\nby KSKelvin on 3-26-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
   «text (3550,1100) 1 7 1 0x1000000 -1 -1 "ï»¿theta = 0 degree"»
   «text (3600,-2450) 1 7 1 0x1000000 -1 -1 "ï»¿theta = 30 degree"»
   «text (-900,-1150) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vdc+,Vdc-)\n.plot I(L1) I(L2) I(L3)"»

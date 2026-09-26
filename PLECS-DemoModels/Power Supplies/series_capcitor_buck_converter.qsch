@@ -19,7 +19,7 @@
   «component (1000,-3400) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -50,7 +50,7 @@
   «component (2900,-4600) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -81,7 +81,7 @@
   «component (1000,-4900) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -112,7 +112,7 @@
   «component (1000,-6100) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -143,7 +143,7 @@
   «component (1600,-4100) 2 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -189,7 +189,7 @@
   «component (4200,-4100) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -235,7 +235,7 @@
   «component (4200,-5600) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -267,7 +267,7 @@
   «component (3200,-6100) 0 0
     «symbol Switch
       «type: X»
-      «description: (PLECS) Switch»
+      «description: (PWL) Switch»
       «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
@@ -301,7 +301,7 @@
   «component (4200,-6600) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -317,7 +317,7 @@
   «component (2200,-6100) 0 0
     «symbol Step
       «type: X»
-      «description: (PLECS) Step»
+      «description: (PWL) Step»
       «library file: |.subckt Step out\nB1 out 0 V=if(time<StepTime,Before,After)\n.ends Step»
       «shorted pins: false»
       «line (0,150) (0,-150) 0 0 0x1000000 -1 -1»
@@ -335,7 +335,7 @@
   «component (5700,-4400) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -409,7 +409,7 @@
   «component (5800,-6900) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -427,7 +427,7 @@
   «component (800,-9000) 0 0
     «symbol Comparator
       «type: X»
-      «description: (PLECS) Comparator [output does not change if both inputs are equal]»
+      «description: (PWL) Comparator [output does not change if both inputs are equal]»
       «library file: |.subckt Comparator in+ in- Q\nB2 memory 0 V=state(1,V(Q))\nB1 Q 0 V=if(V(in+)==V(in-),V(memory), if(V(in+)>V(in-),1,0) )\n¥1 N01 0 ¥3 ¥ Q ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR TTOL=TTOL\nV1 N01 0 1\n.ends Comparator»
       «shorted pins: false»
       «line (-90,100) (-160,100) 0 0 0x1000000 -1 4»
@@ -445,7 +445,7 @@
   «component (-400,-8900) 0 0
     «symbol Constant
       «type: V»
-      «description: (PLECS) Constant»
+      «description: (PWL) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -497,7 +497,7 @@
   «component (4600,-10300) 8 0
     «symbol Pulse-Delay
       «type: X»
-      «description: (PLECS) Pulse Delay»
+      «description: (PWL) Pulse Delay»
       «library file: |.subckt Pulse-Delay in out\nØ´X1 «N01´d Vcc´d» «Q´d» «0» DelayedPulseTrain float delay=T_d float ttol=1n\nV1 Vcc 0 1\nB1 out 0 V=if(time<=0,y_init,V(Q))\nB2 N01 0 V=if(time<=0,y_init,V(in))\n.ends Pulse-Delay»
       «shorted pins: false»
       «line (-170,-130) (170,-130) 0 0 0x1000000 -1 -1»
@@ -523,7 +523,7 @@
   «component (5600,-9100) 0 0
     «symbol Gain
       «type: X»
-      «description: (PLECS) Gain»
+      «description: (PWL) Gain»
       «library file: |.subckt Gain in out\nE1 out 0 in 0 K\n.ends Gain»
       «shorted pins: false»
       «line (-80,50) (-80,-60) 0 0 0x1000000 -1 -1»
@@ -540,7 +540,7 @@
   «component (6200,-9100) 0 0
     «symbol Subtract(round)
       «type: X»
-      «description: (PLECS) Subtract [+-] / Difference / Minus»
+      «description: (PWL) Subtract [+-] / Difference / Minus»
       «library file: |.subckt Subtract in1 in2 out\nB1 out 0 V=V(in1)-V(in2)\n.ends Subtract»
       «shorted pins: false»
       «line (-50,-90) (50,-90) 0 0 0x1000000 -1 -1»
@@ -560,7 +560,7 @@
   «component (5600,-10000) 0 0
     «symbol Constant
       «type: V»
-      «description: (PLECS) Constant»
+      «description: (PWL) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -573,7 +573,7 @@
   «component (7700,-10300) 0 0
     «symbol Pulse-Delay
       «type: X»
-      «description: (PLECS) Pulse Delay»
+      «description: (PWL) Pulse Delay»
       «library file: |.subckt Pulse-Delay in out\nØ´X1 «N01´d Vcc´d» «Q´d» «0» DelayedPulseTrain float delay=T_d float ttol=1n\nV1 Vcc 0 1\nB1 out 0 V=if(time<=0,y_init,V(Q))\nB2 N01 0 V=if(time<=0,y_init,V(in))\n.ends Pulse-Delay»
       «shorted pins: false»
       «line (-170,-130) (170,-130) 0 0 0x1000000 -1 -1»
@@ -599,7 +599,7 @@
   «component (8400,-10900) 0 0
     «symbol Pulse-Delay
       «type: X»
-      «description: (PLECS) Pulse Delay»
+      «description: (PWL) Pulse Delay»
       «library file: |.subckt Pulse-Delay in out\nØ´X1 «N01´d Vcc´d» «Q´d» «0» DelayedPulseTrain float delay=T_d float ttol=1n\nV1 Vcc 0 1\nB1 out 0 V=if(time<=0,y_init,V(Q))\nB2 N01 0 V=if(time<=0,y_init,V(in))\n.ends Pulse-Delay»
       «shorted pins: false»
       «line (-170,-130) (170,-130) 0 0 0x1000000 -1 -1»
@@ -625,7 +625,7 @@
   «component (6900,-9100) 0 0
     «symbol Compare-to-Constant[greater]
       «type: X»
-      «description: (PLECS) [>]»
+      «description: (PWL) [>]»
       «library file: |.subckt Compare-to-Constant in Q\nB1 Q 0 V=V(in)>thres\n.ends Compare-to-Constant»
       «shorted pins: false»
       «rect (-200,100) (200,-100) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -640,7 +640,7 @@
   «component (6900,-9700) 0 0
     «symbol Compare-to-Constant[less]
       «type: X»
-      «description: (PLECS) [<]»
+      «description: (PWL) [<]»
       «library file: |.subckt Compare-to-Constant in Q\nB1 Q 0 V=V(in)<thres\n.ends Compare-to-Constant»
       «shorted pins: false»
       «rect (-200,100) (200,-100) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -655,7 +655,7 @@
   «component (3500,-9300) 0 0
     «symbol SR-Flip-flop
       «type: X»
-      «description: (PLECS) SR Flip-flop [level trigger]»
+      «description: (PWL) SR Flip-flop [level trigger]»
       «library file: |.subckt SR-Flip-flop S R Q ¬Q\nB1 Q 0 V=if(((V(S)>thres)&(V(R)<=thres)),1, if(((V(S)<=thres)&(V(R)>thres)),0, if(((V(S)<=thres)&(V(R)<thres)),V(memory),V(dominate)) ) )\nB2 memory 0 V=if(time<=0,x_init,state(1,V(Q)))\nB3 ¬Q 0 V=!V(Q)\nB4 dominate 0 V=if(dominate==-1,V(memory),if(dominate==0,0,1))\n.ends SR-Flip-flop»
       «shorted pins: false»
       «rect (-300,300) (300,-300) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -673,7 +673,7 @@
   «component (2100,-10300) 8 0
     «symbol Monoflop
       «type: X»
-      «description: (PLECS) Monoflop»
+      «description: (PWL) Monoflop»
       «library file: |.subckt Monoflop in out\nV1 Q 0 Pulse 0 1 0 1p 1p Duration Trigger=V(trigger)\nB1 trigger 0 V=if(Trigger==0,V(in)-state(1,V(in))>0, V(in)-state(1,V(in))<0)\nB2 out 0 V=if(Trigger==2,V(Q)+V(in)>0.5,V(Q))\n.ends Monoflop»
       «shorted pins: false»
       «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
@@ -698,7 +698,7 @@
   «component (3500,-10300) 8 0
     «symbol Edge-Detection
       «type: X»
-      «description: (PLECS) Edge Detection»
+      «description: (PWL) Edge Detection»
       «library file: |.subckt Edge-Detection in out\nB1 out 0 V=if(Direction==0,V(rising)+V(falling), if(Direction==-1,V(falling),V(rising)) )\nB2 rising 0 V=if(V(in)>state(1,V(in)),1,0)\nB3 falling 0 V=if(V(in)<state(1,V(in)),1,0)\n.ends Edge-Detection»
       «shorted pins: false»
       «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
@@ -854,6 +854,6 @@
   «text (400,-11100) 1 7 1 0x1000000 -1 -1 "ï»¿COT Controller"»
   «text (7250,-7800) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 7e-3\n.plot V(Vout)\n.plot V(VSWA) V(VSWB)\n.plot V(CS+,CS-)\n.plot I(L1) I(L3) I(C1)"»
   «text (2550,-3200) 1 7 1 0x1000000 -1 -1 "ï»¿Series capacitor buck converter "»
-  «text (-50,-2250) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Power Supplies > Series Capacitor Buck Converter\n(series_capcitor_buck_converter.plecs)\nby KSKelvin on 8-2-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-50,-2250) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as demo from PLECS, Power Supplies > Series Capacitor Buck Converter\n(series_capcitor_buck_converter.plecs)\nby KSKelvin on 8-2-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

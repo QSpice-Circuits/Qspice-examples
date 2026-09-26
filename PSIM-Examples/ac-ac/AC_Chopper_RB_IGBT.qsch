@@ -543,7 +543,7 @@
   «wire (4300,-2800) (4700,-2800) "SW1"»
   «wire (4700,-3200) (4500,-3200) "SW2"»
   «text (1050,-1300) 1 7 1 0x1000000 -1 -1 "ï»¿Duty cycle adjusted\nby the K value"»
-  «text (-850,1850) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, ac-ac, AC_Chopper_RB_IGBT.psimsch\nby KSKelvin on 4-19-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
-  «text (-850,2250) 1.6 7 1 0x1000000 -1 -1 "ï»¿AC Chopper based on RB-IGBTÂ´s"»
+  «text (-850,1850) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-ac, AC_Chopper_RB_IGBT.psimsch\nby KSKelvin on 4-19-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-850,2250) 1.6 7 1 0x1000000 -1 -1 "ï»¿AC Chopper Functional based on RB-IGBTÂ´s"»
 »
 

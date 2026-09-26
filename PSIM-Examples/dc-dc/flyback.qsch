@@ -252,6 +252,6 @@
   «wire (1200,3000) (800,3000) "N04"»
   «text (-1600,4600) 1.6 7 1 0x1000000 -1 -1 "ï»¿Flyback Converter"»
   «text (-1900,2450) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 5e-5 0 2e-8\n.plot V(Vo)\n.plot V(gate)"»
-  «text (-1600,4200) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, flyback.sch\nby KSKelvin on 10-5-2025\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1600,4200) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, flyback.sch\nby KSKelvin on 10-5-2025\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

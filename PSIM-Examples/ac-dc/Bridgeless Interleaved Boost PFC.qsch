@@ -1242,6 +1242,6 @@
   «text (-550,-7050) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vo)\n.plot V(iL1) V(iL2)\n.plot V(Vmul)"»
   «text (-300,2450) 1.6 7 1 0x1000000 -1 -1 "ï»¿Bridgeless Interleaved Boost PFC Circuit"»
   «text (-300,2200) 1 7 1 0x1000000 -1 -1 "ï»¿[by F. Musavi (Delta-Q Technologies Co.),  W. Eberle and W.G. Dunford (University of British Columbia)]"»
-  «text (-300,1800) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, ac-dc, Bridgeless Interleaved Boost PFC.sch\nby KSKelvin on 4-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-300,1800) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, Bridgeless Interleaved Boost PFC.sch\nby KSKelvin on 4-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

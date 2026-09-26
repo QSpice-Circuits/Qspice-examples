@@ -19,7 +19,7 @@
   «component (-100,1000) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -50,7 +50,7 @@
   «component (1600,1000) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -81,7 +81,7 @@
   «component (-100,-400) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -112,7 +112,7 @@
   «component (1600,-400) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -171,7 +171,7 @@
   «component (4700,1000) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -202,7 +202,7 @@
   «component (6400,1000) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -233,7 +233,7 @@
   «component (4700,-400) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -264,7 +264,7 @@
   «component (2900,600) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -280,7 +280,7 @@
   «component (7400,700) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -340,7 +340,7 @@
   «component (8800,-800) 10 0
     «symbol Switch
       «type: X»
-      «description: (PLECS) Switch»
+      «description: (PWL) Switch»
       «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
@@ -360,7 +360,7 @@
   «component (8100,-1400) 0 0
     «symbol Step
       «type: X»
-      «description: (PLECS) Step»
+      «description: (PWL) Step»
       «library file: |.subckt Step out\nB1 out 0 V=if(time<StepTime,Before,After)\n.ends Step»
       «shorted pins: false»
       «line (0,150) (0,-150) 0 0 0x1000000 -1 -1»
@@ -378,7 +378,7 @@
   «component (4900,-3400) 0 0
     «symbol Constant
       «type: V»
-      «description: (PLECS) Constant»
+      «description: (PWL) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -391,7 +391,7 @@
   «component (4400,-3700) 0 0
     «symbol Constant
       «type: V»
-      «description: (PLECS) Constant»
+      «description: (PWL) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -440,7 +440,7 @@
   «component (6400,-400) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -565,7 +565,7 @@
   «component (-800,-4000) 0 0
     «symbol Constant
       «type: V»
-      «description: (PLECS) Constant»
+      «description: (PWL) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -622,7 +622,7 @@
   «component (3900,-4000) 0 0
     «symbol Gain
       «type: X»
-      «description: (PLECS) Gain»
+      «description: (PWL) Gain»
       «library file: |.subckt Gain in out\nE1 out 0 in 0 K\n.ends Gain»
       «shorted pins: false»
       «line (-80,50) (-80,-60) 0 0 0x1000000 -1 -1»
@@ -639,7 +639,7 @@
   «component (6300,-3700) 0 0
     «symbol Variable-Phase-PWM
       «type: X»
-      «description: (PLECS) Variable Phase PWM»
+      «description: (PWL) Variable Phase PWM»
       «library file: |.subckt Variable-Phase-PWM m ph1 ph2 s1 s2\nB1 master 0 V=if(CarrierType==1,SawTooth(1/f,0), TriangleWave(1/f,0))\nB2 latch 0 V=V(master)<0.02\nB3 ph1-zoh 0 V=idt(0,V(ph1),V(latch))\nB4 ph2-zoh 0 V=idt(0,V(ph2),V(latch))\nB5 saw1 0 V=if(CarrierType==1,SawTooth(1/f,V(ph1-zoh))*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min, TriangleWave(1/f,V(ph1-zoh))*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min)\nB6 saw2 0 V=if(CarrierType==1,SawTooth(1/f,V(ph2-zoh))*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min, TriangleWave(1/f,V(ph2-zoh))*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min)\nB7 s1 0 V=if(V(m)>V(saw1),OutputValues_max,OutputValues_min)\nB8 s2 0 V=if(V(m)>V(saw2),OutputValues_max,OutputValues_min)\n.func SawTooth(Tper,Ph)=(time+(1-wrap1(Ph))*Tper)/Tper-trunc((time+(1-wrap1(Ph))*Tper)/Tper)\n.func TriangleWave(Tper,Ph)=2.0*fabs((time+(1-wrap1(Ph))*Tper)/Tper-round((time+(1-wrap1(Ph))*Tper)/Tper))\n.func wrap1(Ph)=mod(Ph,1)/1\n.func mod(x,y)=x-y*trunc(x/y)\n.ends Variable-Phase-PWM»
       «shorted pins: false»
       «rect (-600,-500) (600,500) 0 0 0 0xff0000 0xc8ffe6 -1 0 -1»
@@ -791,6 +791,6 @@
   «text (-1000,-1700) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.8\n.option listparams\n.save V(Vout) I(Iout) I(C1) V(pri+) V(pri-)\n.plot V(pri+,pri-)\n.plot I(C1)\n.plot I(Iout)\n.plot Vout*1V V(Vout)"»
   «text (-1100,-2800) 1 7 1 0x1000000 -1 -1 "ï»¿Phase Shift Controller"»
   «text (-1250,1750) 1 7 1 0x1000000 -1 -1 "ï»¿Dual Active Bridge"»
-  «text (-1250,2450) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Power Supplies > Dual Active Bridge\n(dual_active_bridge_converter.plecs)\nby KSKelvin on 8-2-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1250,2450) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as demo from PLECS, Power Supplies > Dual Active Bridge\n(dual_active_bridge_converter.plecs)\nby KSKelvin on 8-2-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

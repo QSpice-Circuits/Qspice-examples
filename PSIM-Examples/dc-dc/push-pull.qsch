@@ -494,6 +494,6 @@
   «wire (-4100,-1900) (-4100,-1800) "N08"»
   «text (-4400,300) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.001 0 0 2e-7 uic\n.option trtol=0.01\n.plot V(Vo)\n.plot I(L1)\n.plot V(Vs+,Vs-)\n.plot V(G1) V(G2)"»
   «text (-4250,1850) 1.6 7 1 0x1000000 -1 -1 "ï»¿Push-Pull Converter"»
-  «text (-4250,1450) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, push-pull.sch\nby KSKelvin on 4-14-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-4250,1450) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, push-pull.sch\nby KSKelvin on 4-14-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

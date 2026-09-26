@@ -274,6 +274,6 @@
   «wire (-200,1600) (-1300,1600) "Vo"»
   «wire (-1700,1600) (-3500,1600) "Vs"»
   «text (-1700,-1550) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Pulses) V(Synchronism)\n.plot V(Vs) V(Vo)"»
-  «text (-4050,2400) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, ac-dc, 1-Ph_half_wave_rectifier.psimsch\nby KSKelvin on 3-25-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-4050,2400) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, 1-Ph_half_wave_rectifier.psimsch\nby KSKelvin on 3-25-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

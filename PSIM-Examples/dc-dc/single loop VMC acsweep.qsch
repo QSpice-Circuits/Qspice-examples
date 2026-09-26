@@ -480,6 +480,6 @@
   «wire (800,-800) (600,-800) "N10"»
   «text (-450,-3000) 1 7 1 0x1000000 -1 -1 "ï»¿; transient analysis\n.tran 0.02 uic\n.plot V(Vo)"»
   «text (1200,-3000) 1 7 0 0x1000000 -1 -1 "ï»¿; bode analysis\n.bode Vpert 5m 100 100K 0.1 uic ;debug\n.option bodeampfreq=0"»
-  «text (-1000,2050) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, single loop VMC acsweep.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1000,2050) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, single loop VMC acsweep.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

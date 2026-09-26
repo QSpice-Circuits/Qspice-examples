@@ -478,7 +478,7 @@
   «wire (-3000,-400) (-3000,500) "Vref"»
   «rect (3850,3150) (5500,1800) 0 0 2 0x4000000 0x1000000 -1 0 -1»
   «text (3300,-450) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 20\n.plot I(Ia)\n.plot V(Speed)\n.plot V(Vref)"»
-  «text (-3000,4350) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, motor drive, DC motor drive.psimsch\nby KSKelvin on 9-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-3000,4350) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, motor drive, DC motor drive.psimsch\nby KSKelvin on 9-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
   «text (4850,2950) 1 7 1 0x1000000 -1 -1 "ï»¿MLOAD"»
 »
 

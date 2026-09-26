@@ -786,6 +786,6 @@
   «wire (2300,-3200) (4300,-3200) "s5"»
   «wire (1700,-1400) (1500,-1400) "Vma"»
   «text (-4300,-400) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(VDC+,VDC-)\n.plot V(s1)\n.plot V(Va)"»
-  «text (-2550,2200) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, ac-dc, pwm rectifier.psimsch\nby KSKelvin on 4-17-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2550,2200) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, pwm rectifier.psimsch\nby KSKelvin on 4-17-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

@@ -198,6 +198,6 @@
   «wire (1300,0) (1300,100) "N03"»
   «text (-2350,-2050) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Iac_THD)\n.plot V(Iac) V(Iac_fund)"»
   «text (-300,-2100) 1 7 0 0x1000000 -1 -1 "ï»¿.four 60 V(Iac)\n.meas THD param V(Iac_THD)*100"»
-  «text (-2950,1250) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, ac-dc, Single-phase diode rectifier with THD block.psimsch\nby KSKelvin on 4-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2950,1250) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, Single-phase diode rectifier with THD block.psimsch\nby KSKelvin on 4-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

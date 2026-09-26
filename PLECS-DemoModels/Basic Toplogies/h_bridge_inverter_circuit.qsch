@@ -2,7 +2,7 @@
   «component (0,1700) 0 0
     «symbol Voltage-Source-Controlled
       «type: E»
-      «description: (PLECS) Voltage Source (Controlled)»
+      «description: (PWL) Voltage Source (Controlled)»
       «shorted pins: false»
       «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
       «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
@@ -34,7 +34,7 @@
   «component (3700,2000) 2 0
     «symbol
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -80,7 +80,7 @@
   «component (-900,-200) 0 0
     «symbol Combinatorial-Logic-2in4out
       «type: X»
-      «description: (PLECS) Combinatorial Logic 2 IN 4 OUT»
+      «description: (PWL) Combinatorial Logic 2 IN 4 OUT»
       «library file: |.subckt Combinatorial-Logic-2in4out in0 in1 out0 out1 out2 out3\nB1 logic0 0 V=if(V(in0),1,0)\nB2 logic1 0 V=if(V(in1),1,0)\nB3 out0 0 V=if(!V(logic0)&!V(logic1),A00, if(V(logic0)&!V(logic1),A10, if(!V(logic0)&V(logic1),A20, A30 ) ) )\nB4 out1 0 V=if(!V(logic0)&!V(logic1),A01, if(V(logic0)&!V(logic1),A11, if(!V(logic0)&V(logic1),A21, A31 ) ) )\nB5 out2 0 V=if(!V(logic0)&!V(logic1),A02, if(V(logic0)&!V(logic1),A12, if(!V(logic0)&V(logic1),A22, A32 ) ) )\nB6 out3 0 V=if(!V(logic0)&!V(logic1),A03, if(V(logic0)&!V(logic1),A13, if(!V(logic0)&V(logic1),A23, A33 ) ) )\n.ends Combinatorial-Logic-2in4out»
       «shorted pins: false»
       «rect (-400,400) (400,-400) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -102,7 +102,7 @@
   «component (-3100,-100) 0 0
     «symbol Pulse-Generator-2out
       «type: X»
-      «description: (PLECS) Pulse Geneator (2 Outputs)»
+      «description: (PWL) Pulse Geneator (2 Outputs)»
       «library file: |.subckt Pulse-Generator-2out out1 out2\nV1 out1 0 pulse Lo Hi remainder(Delay1,1/f) 1p 1p DutyCycle/f 1/f DC if(remainder(Delay1,1/f)<=0,Hi,Lo)\nV2 out2 0 pulse Lo Hi remainder(Delay2,1/f) 1p 1p DutyCycle/f 1/f DC if(remainder(Delay2,1/f)<=0,Hi,Lo)\n.func remainder(x,y)=x-y*round(x/y)\n.ends Pulse-Generator-2out»
       «shorted pins: false»
       «line (-150,-150) (-100,-150) 0 0 0x1000000 -1 -1»
@@ -130,7 +130,7 @@
   «component (900,2500) 0 0
     «symbol Switch
       «type: X»
-      «description: (PLECS) Switch»
+      «description: (PWL) Switch»
       «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
@@ -150,7 +150,7 @@
   «component (2500,1000) 0 0
     «symbol Switch
       «type: X»
-      «description: (PLECS) Switch»
+      «description: (PWL) Switch»
       «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
@@ -170,7 +170,7 @@
   «component (2500,2500) 0 0
     «symbol Switch
       «type: X»
-      «description: (PLECS) Switch»
+      «description: (PWL) Switch»
       «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
@@ -190,7 +190,7 @@
   «component (900,1100) 0 0
     «symbol Switch
       «type: X»
-      «description: (PLECS) Switch»
+      «description: (PWL) Switch»
       «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
@@ -267,6 +267,6 @@
   «wire (-2300,-200) (-2100,-400) "in1"»
   «wire (-2100,-400) (-1500,-400) "in1"»
   «text (2150,-750) 1 7 0 0x1000000 -1 -1 "ï»¿.tran .1\n.plot I(L1)\n.plot I(Iin)\n.plot V(Vm+,Vm-)\n.plot V(g1) V(g2)+1.1 V(g3)+2.2 V(g4)+3.3"»
-  «text (-3450,3650) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Basic Topologies > H-Bridge Inverter Circuit (h_bridge_inverter_circuit.plecs)\nby KSKelvin on 7-24-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-3450,3650) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as demo from PLECS, Basic Topologies > H-Bridge Inverter Circuit (h_bridge_inverter_circuit.plecs)\nby KSKelvin on 7-24-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

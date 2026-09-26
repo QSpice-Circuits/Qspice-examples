@@ -2,7 +2,7 @@
   «component (-700,500) 0 0
     «symbol Voltage-Source-Controlled
       «type: E»
-      «description: (PLECS) Voltage Source (Controlled)»
+      «description: (PWL) Voltage Source (Controlled)»
       «shorted pins: false»
       «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
       «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
@@ -22,7 +22,7 @@
   «component (-2200,500) 0 0
     «symbol Step
       «type: X»
-      «description: (PLECS) Step»
+      «description: (PWL) Step»
       «library file: |.subckt Step out\nB1 out 0 V=if(time<StepTime,Before,After)\n.ends Step»
       «shorted pins: false»
       «line (0,150) (0,-150) 0 0 0x1000000 -1 -1»
@@ -54,7 +54,7 @@
   «component (300,500) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -72,7 +72,7 @@
   «component (1300,700) 0 0
     «symbol Op-Amp
       «type: X»
-      «description: (PLECS) Op-Amp»
+      «description: (PWL) Op-Amp»
       «library file: |.subckt Op-Amp IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=A*V(IN+,IN-)\nR1 IN+ IN- 1e15\n.ends Op-Amp»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
@@ -122,7 +122,7 @@
   «component (4000,400) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -140,7 +140,7 @@
   «component (5000,500) 0 0
     «symbol Op-Amp
       «type: X»
-      «description: (PLECS) Op-Amp»
+      «description: (PWL) Op-Amp»
       «library file: |.subckt Op-Amp IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=A*V(IN+,IN-)\nR1 IN+ IN- 1e15\n.ends Op-Amp»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
@@ -162,7 +162,7 @@
   «component (2800,1100) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -180,7 +180,7 @@
   «component (-700,-2000) 0 0
     «symbol Voltage-Source-Controlled
       «type: E»
-      «description: (PLECS) Voltage Source (Controlled)»
+      «description: (PWL) Voltage Source (Controlled)»
       «shorted pins: false»
       «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
       «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
@@ -214,7 +214,7 @@
   «component (300,-2000) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -260,7 +260,7 @@
   «component (2400,-1900) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -278,7 +278,7 @@
   «component (3400,-1800) 0 0
     «symbol Op-Amp
       «type: X»
-      «description: (PLECS) Op-Amp»
+      «description: (PWL) Op-Amp»
       «library file: |.subckt Op-Amp IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=A*V(IN+,IN-)\nR1 IN+ IN- 1e15\n.ends Op-Amp»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
@@ -300,7 +300,7 @@
   «component (1200,-1200) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -397,6 +397,6 @@
   «text (-900,1450) 1 7 1 0x1000000 -1 -1 "ï»¿3rd order Bessel low pass with f_c = 100 Hz"»
   «text (500,2200) 1 7 1 0x1000000 -1 -1 "ï»¿Two equivalent 3rd order low pass filters"»
   «text (-950,-600) 1 7 1 0x1000000 -1 -1 "ï»¿Simplified 3rd order Bessel low pass with f_c = 100 Hz"»
-  «text (-1900,3000) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Electronics > Low Pass Filter (low_pass_filter.plecs)\nby KSKelvin on 7-26-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1900,3000) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as demo from PLECS, Electronics > Low Pass Filter (low_pass_filter.plecs)\nby KSKelvin on 7-26-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

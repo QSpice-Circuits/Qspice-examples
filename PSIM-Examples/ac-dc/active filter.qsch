@@ -1401,7 +1401,7 @@
   «text (-1250,-1100) 1 7 0 0x1000000 -1 -1 "ï»¿.option fastmath=0"»
   «text (-1300,-1550) 1 7 0 0x1000000 -1 -1 "ï»¿.plot I(i_La)  I(L_sa) I(Linvaf)"»
   «text (3250,950) 0.8 7 1 0x1000000 -1 -1 "ï»¿trick: requires loss in non-linear load section for stability\nset 100m for diode in rectifier bridge"»
-  «text (1100,3650) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, ac-dc, active filter.sch\nby KSKelvin on 3-27-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (1100,3650) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, active filter.sch\nby KSKelvin on 3-27-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
   «text (1100,4050) 1.6 7 1 0x1000000 -1 -1 "ï»¿3-phase Active Filter"»
   «text (4100,3150) 1.6 7 1 0x1000000 -1 -1 "ï»¿Nonlinear Load"»
   «text (9200,-3750) 1.6 7 1 0x1000000 -1 -1 "ï»¿Active Filter"»

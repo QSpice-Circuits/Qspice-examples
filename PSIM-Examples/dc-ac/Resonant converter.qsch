@@ -284,6 +284,6 @@
   «wire (-1300,-600) (-1100,-600) "s1"»
   «wire (-1300,-1000) (-1100,-1000) "s2"»
   «text (250,-1500) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vload)\n.plot V(Vres)\n.plot V(s1) V(s2)"»
-  «text (-2350,2450) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, Resonant converter.psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2350,2450) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, Resonant converter.psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

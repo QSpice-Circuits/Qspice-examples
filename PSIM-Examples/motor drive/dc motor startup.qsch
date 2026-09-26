@@ -115,6 +115,6 @@
   «wire (300,-400) (200,-400) "Te"»
   «wire (800,-200) (500,-200) "wm"»
   «text (-2350,-1950) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 1\n.plot V(wm)/2/pi*60\n.plot V(Te)\n.plot I(Ia)"»
-  «text (-2350,900) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, motor drive, dc motor startup.psimsch\nby KSKelvin on 9-17-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2350,900) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, motor drive, dc motor startup.psimsch\nby KSKelvin on 9-17-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

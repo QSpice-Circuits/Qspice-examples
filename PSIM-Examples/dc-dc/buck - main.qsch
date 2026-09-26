@@ -165,6 +165,6 @@
   «wire (-300,-300) (-300,500) "gate"»
   «text (150,-450) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 10m 0 1e-6\n.plot I(L1)\n.plot V(Vo)"»
   «text (-1250,2050) 1.6 7 1 0x1000000 -1 -1 "ï»¿Buck Converter"»
-  «text (-1250,1650) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, buck - main.psimsch\nby KSKelvin on 4-10-2025\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1250,1650) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, buck - main.psimsch\nby KSKelvin on 4-10-2025\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

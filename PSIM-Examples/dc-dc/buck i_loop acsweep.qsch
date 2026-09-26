@@ -460,7 +460,7 @@
   «text (-2450,700) 1 7 1 0x1000000 -1 -1 "ï»¿.tran 2m uic"»
   «text (-2450,150) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vo)\n.plot V(gate)\n.plot V(Saw) V(Vm) \n.plot V(iref)/1V*1A I(L1)"»
   «text (-2400,2200) 1.6 7 1 0x1000000 -1 -1 "ï»¿Loop Transfer Function of a Buck Converter (switchmode)"»
-  «text (-2400,1750) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, buck i_loop acsweep.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2400,1750) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, buck i_loop acsweep.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
   «text (2600,-1900) 1 7 0 0x1000000 -1 -1 "ï»¿.option maxstep=1/20K/100"»
 »
 

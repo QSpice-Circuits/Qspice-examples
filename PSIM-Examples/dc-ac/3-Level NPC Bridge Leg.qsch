@@ -404,6 +404,6 @@
   «wire (-600,-2100) (-1200,-2100) "s2"»
   «wire (-1900,500) (-1800,500) "GND"»
   «text (-1100,-3050) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vo)\n.plot V(s1)+3.3 V(s2)+2.2 V(s3)+1.1 V(s4)"»
-  «text (-3400,2050) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, 3-Level NPC Bridge Leg.psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-3400,2050) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, 3-Level NPC Bridge Leg.psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

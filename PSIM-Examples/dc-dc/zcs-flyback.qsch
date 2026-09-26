@@ -428,6 +428,6 @@
   «text (1150,-1050) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 0.0011 1m 1e-7\n.option trtol=0.01"»
   «text (1150,-1650) 1 7 0 0x1000000 -1 -1 "ï»¿.plot I(Id)\n.plot V(d)\n.plot V(Vo+,Vo-)"»
   «text (-2150,2250) 1.6 7 1 0x1000000 -1 -1 "ï»¿Zero-Currrent-Switching Flyback Converter"»
-  «text (-2150,1800) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, zcs-flyback.sch\nby KSKelvin on 5-10-2025\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2150,1800) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, zcs-flyback.sch\nby KSKelvin on 5-10-2025\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

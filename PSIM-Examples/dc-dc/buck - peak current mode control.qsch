@@ -373,7 +373,7 @@
   «wire (-1200,-1300) (-1200,-1200) "N07"»
   «wire (-300,0) (-100,0) "gate"»
   «text (-4800,2100) 1.6 7 1 0x1000000 -1 -1 "ï»¿Buck Converter with Peak Current Mode Control with Slope Compensation"»
-  «text (-4800,1650) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, buck - peak current mode control.psimsch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-4800,1650) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, buck - peak current mode control.psimsch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
   «text (-3850,-1450) 1 7 1 0x1000000 -1 -1 "ï»¿Slope compensation"»
   «text (1250,-1750) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vo)\n.plot V(gate)\n.plot V(iL1) V(Vm)"»
 »

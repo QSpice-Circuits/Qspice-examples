@@ -751,6 +751,6 @@
   «text (2850,-1950) 1 7 0 0x1000000 -1 -1 "ï»¿K1 L1 L2 L3 1"»
   «text (2680,-3100) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vo)\n.plot I(L4)"»
   «text (-3550,1650) 1.6 7 1 0x1000000 -1 -1 "ï»¿DC-DC Full Bridge Power Supply"»
-  «text (-3550,1200) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, dc fullbridge.sch\nby KSKelvin on 3-28-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-3550,1200) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, dc fullbridge.sch\nby KSKelvin on 3-28-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

@@ -480,6 +480,6 @@
   «wire (-2500,-2000) (-1200,-2000) "Vm"»
   «text (-2550,2200) 1.6 7 1 0x1000000 -1 -1 "ï»¿IGBT Single-Phase Inverter"»
   «text (1350,-3550) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vinv+,Vinv-)\n.plot V(S1)+1.1 V(S2)\n.plot V(Vcarr) V(Vm)"»
-  «text (-2550,1800) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, IGBT_single-phase inverter.psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2550,1800) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, IGBT_single-phase inverter.psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

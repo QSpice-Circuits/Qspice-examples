@@ -76,7 +76,7 @@
   «component (-200,-400) 0 0
     «symbol Op-Amp-with-Limited-Output
       «type: X»
-      «description: (PLECS) Op-Amp with Limited Output»
+      «description: (PWL) Op-Amp with Limited Output»
       «library file: |.subckt Op-Amp-with-Limited-Output IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=limit(A*V(IN+,IN-),Vmin,Vmax)\nR1 IN+ IN- 1e15\n.ends Op-Amp-with-Limited-Output»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
@@ -150,7 +150,7 @@
   «component (100,-3400) 0 0
     «symbol Op-Amp
       «type: X»
-      «description: (PLECS) Op-Amp»
+      «description: (PWL) Op-Amp»
       «library file: |.subckt Op-Amp IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=A*V(IN+,IN-)\nR1 IN+ IN- 1e15\n.ends Op-Amp»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
@@ -203,7 +203,7 @@
   «component (4900,-3400) 0 0
     «symbol Op-Amp
       «type: X»
-      «description: (PLECS) Op-Amp»
+      «description: (PWL) Op-Amp»
       «library file: |.subckt Op-Amp IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=A*V(IN+,IN-)\nR1 IN+ IN- 1e15\n.ends Op-Amp»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
@@ -334,6 +334,6 @@
   «text (-1850,1050) 1 7 1 0x1000000 -1 -1 "ï»¿Multivibrator with Comparator\n(C_in required for decoupling of negative feedback)"»
   «text (-2100,-2250) 1 7 1 0x1000000 -1 -1 "ï»¿Inverting Integrator"»
   «text (2700,-2200) 1 7 1 0x1000000 -1 -1 "ï»¿Inverting Differentiator"»
-  «text (-1850,1700) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Electronics > Operational Amplifier Circuits (operation_amplifier_circuits.plecs)\nby KSKelvin on 7-26-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1850,1700) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as demo from PLECS, Electronics > Operational Amplifier Circuits (operation_amplifier_circuits.plecs)\nby KSKelvin on 7-26-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

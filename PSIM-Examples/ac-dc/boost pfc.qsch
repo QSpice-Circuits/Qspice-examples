@@ -484,6 +484,6 @@
   «wire (5400,-300) (2300,-300) "gate"»
   «text (-1700,-750) 1 7 0 0x1000000 -1 -1 "ï»¿.plot I(L1)\n.plot I(Iin) V(Vin)"»
   «text (-700,2050) 1.6 7 1 0x1000000 -1 -1 "ï»¿Boost Power Factor Correction Circuit"»
-  «text (-700,1650) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, ac-dc, boost pfc.sch\nby KSKelvin on 3-25-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-700,1650) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, boost pfc.sch\nby KSKelvin on 3-25-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

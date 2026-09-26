@@ -376,6 +376,6 @@
   «text (-3850,1350) 1.6 7 1 0x1000000 -1 -1 "ï»¿Buck Converter with Synchronous Rectifier"»
   «text (650,-1600) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 3e-5 0 2e-8\n.plot V(Vo)\n.plot V(Q2)\n.plot V(Q1)"»
   «text (-3550,-2850) 1 7 1 0x1000000 -1 -1 "ï»¿compensate monostable time delay"»
-  «text (-3850,900) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, sync rectifier.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-3850,900) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, sync rectifier.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

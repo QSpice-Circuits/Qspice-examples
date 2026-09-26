@@ -447,6 +447,6 @@
   «text (-1750,450) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vo)\n.plot V(Intg)\n.plot I(Ir)"»
   «text (-300,2750) 1 7 1 0x1000000 -1 -1 "ï»¿KSK: body diode Vfwd=1m to help convergence"»
   «text (3250,2500) 1 7 1 0x1000000 -1 -1 "ï»¿Duty cycle adjusted by the gain of E2"»
-  «text (-950,3250) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, ac-ac, AC_Chopper.psimsch\nby KSKelvin on 3-27-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-950,3250) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-ac, AC_Chopper.psimsch\nby KSKelvin on 3-27-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

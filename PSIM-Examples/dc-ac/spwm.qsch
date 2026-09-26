@@ -540,6 +540,6 @@
   «wire (-700,-4100) (-1300,-4100) "ref-c"»
   «text (-1200,1350) 2 7 1 0x1000000 -1 -1 "ï»¿Voltage Source Inverter with Sinusoidal PWM "»
   «text (3350,-3750) 1 7 0 0x1000000 -1 -1 "ï»¿.plot I(RL1a) I(RL1b) I(RL1c)\n.plot V(carr) V(ref-a) V(ref-b) V(ref-c)"»
-  «text (-1200,900) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, spwm.sch\nby KSKelvin on 3-27-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1200,900) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, spwm.sch\nby KSKelvin on 3-27-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

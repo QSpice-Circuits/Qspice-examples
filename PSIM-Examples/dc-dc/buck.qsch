@@ -373,6 +373,6 @@
   «wire (2900,-100) (2700,-100) "N06"»
   «text (150,-450) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 0.01 0 5e-6\n.plot I(L1) I(L2)\n.plot V(Vo1) V(Vo2)"»
   «text (-750,2000) 1.6 7 1 0x1000000 -1 -1 "ï»¿Buck Converter"»
-  «text (-750,1600) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, buck.psimsch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-750,1600) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, buck.psimsch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

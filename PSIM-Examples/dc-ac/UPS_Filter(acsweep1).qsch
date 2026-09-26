@@ -105,6 +105,6 @@
   «wire (700,-200) (700,-100) "GND"»
   «text (-900,-550) 1 7 0 0x1000000 -1 -1 "ï»¿.ac dec 20 50 10K\n.plot V(Vo)"»
   «text (-1950,1900) 1.6 7 1 0x1000000 -1 -1 "ï»¿AC Sweep analysis of an UPS filter considering the load connected"»
-  «text (-1950,1500) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, UPS_Filter(acsweep1).psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1950,1500) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, UPS_Filter(acsweep1).psimsch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

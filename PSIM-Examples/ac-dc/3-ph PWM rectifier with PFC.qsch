@@ -967,6 +967,6 @@
   «wire (-5400,-5200) (-5100,-5200) "N25"»
   «text (3300,-3950) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vdc)\n.plot V(van) V(ia)\n.plot I(L1) I(L2) I(L3)"»
   «text (-2400,2500) 2 7 1 0x1000000 -1 -1 "ï»¿3-phase PWM Rectifier with Power Factor Correction"»
-  «text (-2400,2050) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, ac-dc, 3-ph PWM rectifier with PFC.psimsch\nby KSKelvin on 3-23-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2400,2050) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, 3-ph PWM rectifier with PFC.psimsch\nby KSKelvin on 3-23-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

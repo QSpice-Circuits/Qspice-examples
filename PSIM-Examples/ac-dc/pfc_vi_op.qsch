@@ -690,7 +690,7 @@
   «wire (-1600,-2600) (-1600,-900) "fb"»
   «text (5320,2770) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vcarr) V(Vm)\n.plot I(Iac)/1A*1V V(Vac)\n.plot I(Ld)"»
   «text (-1550,3600) 1.6 7 1 0x1000000 -1 -1 "ï»¿Power factor correction circuit with\ninner/outer loops (op. amp.)"»
-  «text (-1550,3000) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, ac-dc, pfc_vi_op.psimsch\nby KSKelvin on 3-25-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1550,3000) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, pfc_vi_op.psimsch\nby KSKelvin on 3-25-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
   «text (-1000,2500) 1 7 1 0x1000000 -1 -1 "ï»¿remove Lin for convergence in Qspice"»
 »
 

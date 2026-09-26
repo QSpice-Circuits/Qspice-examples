@@ -1758,6 +1758,6 @@
   «wire (2000,2200) (2000,3300) "s6"»
   «text (-3050,1800) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(inva,ref)\n.plot V(s1)+5.5 V(s2)+4.4 V(s3)+3.3 \n+V(s4)+2.2 V(s5)+1.1 V(s6)"»
   «text (-1000,6200) 1.6 7 1 0x1000000 -1 -1 "ï»¿Current Source Inverter with On-Line Gating Generation "»
-  «text (-1000,5750) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, csi3.sch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1000,5750) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, csi3.sch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

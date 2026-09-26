@@ -19,7 +19,7 @@
   «component (-3300,300) 14 0
     «symbol IGBT
       «type: X»
-      «description: (PLECS) IGBT»
+      «description: (PWL) IGBT»
       «library file: |.subckt IGBT C G E\nS1 N01 E G 0 SWi ON=s_init OFF=!s_init\nD1 C N01 Di\n.model SWi SW Ron=max(0.5m,Ron) Roff=5Meg Vt=0.5 Vh=0\n.model Di D Ron=0.5m Vfwd=Vf Roff=5Meg\n.ends IGBT»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -44,7 +44,7 @@
   «component (-2500,0) 0 0
     «symbol Diode
       «type: X»
-      «description: (PLECS) Diode»
+      «description: (PWL) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -62,7 +62,7 @@
   «component (300,300) 0 0
     «symbol Ammeter
       «type: X»
-      «description: (PLECS) Ammeter»
+      «description: (PWL) Ammeter»
       «library file: |.subckt Ammeter + - Am\nV1 + - 0\nB1 Am 0 V=I(V1)\n.ends Ammeter»
       «shorted pins: false»
       «line (60,-60) (0,70) 0 0 0x1000000 -1 -1»
@@ -81,37 +81,10 @@
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "Am"»
     »
   »
-  «component (-5200,900) 0 0
-    «symbol Relay
-      «type: X»
-      «description: (PLECS) Relay»
-      «library file: |.subckt Relay in out\n¥1 Vdd Vss Q ¥ in 0 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT VT=(OnSwitchValue+OffSwitchValue)/2 VH=(OnSwitchValue-OffSwitchValue)/2 TTOL=TTOL\nV2 Vss 0 OffOutputValue\nB1 out 0 V=if(time>0,V(Q),if(InitialState,OnOutputValue,OffOutputValue))\nV1 Vdd 0 OnOutputValue\n.ends Relay»
-      «shorted pins: false»
-      «line (150,0) (-150,0) 0 0 0xffa0a1 -1 -1»
-      «line (0,-160) (0,160) 0 0 0xffa0a1 -1 -1»
-      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
-      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
-      «line (-50,130) (150,130) 0 0 0x1000000 -1 -1»
-      «line (-150,-130) (50,-130) 0 0 0x1000000 -1 -1»
-      «line (50,-130) (50,130) 0 0 0x1000000 -1 -1»
-      «line (-50,130) (-50,-130) 0 0 0x1000000 -1 -1»
-      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
-      «text (0,450) 1 15 0 0x1000000 -1 -1 "X2"»
-      «text (0,300) 1 15 0 0x1000000 -1 -1 "RELAY"»
-      «text (-200,-300) 1 7 0 0x1000000 -1 -1 "OnSwitchValue=<1>Upper Threshold"»
-      «text (-200,-450) 1 7 0 0x1000000 -1 -1 "OffSwitchValue=<-1>LowerThreshold"»
-      «text (-200,-600) 1 7 0 0x1000000 -1 -1 "OnOutputValue=<1>On State Output"»
-      «text (-200,-750) 1 7 0 0x1000000 -1 -1 "OffOutputValue=<0>Off State Output"»
-      «text (-200,-900) 1 7 0 0x1000000 -1 -1 "InitialState=<(0;Off),1;On>Initial State"»
-      «text (-200,-1050) 1 7 2 0x1000000 -1 -1 "TTOL=<1µ>"»
-      «pin (-200,0) (0,0) 1 15 0 0x0 -1 "in"»
-      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
-    »
-  »
   «component (-5700,900) 12 0
     «symbol Subtract(round)
       «type: X»
-      «description: (PLECS) Subtract [+-] / Difference / Minus»
+      «description: (PWL) Subtract [+-] / Difference / Minus»
       «library file: |.subckt Subtract in1 in2 out\nB1 out 0 V=V(in1)-V(in2)\n.ends Subtract»
       «shorted pins: false»
       «line (-50,-90) (50,-90) 0 0 0x1000000 -1 -1»
@@ -131,7 +104,7 @@
   «component (-8100,900) 0 0
     «symbol Subtract(round)
       «type: X»
-      «description: (PLECS) Subtract [+-] / Difference / Minus»
+      «description: (PWL) Subtract [+-] / Difference / Minus»
       «library file: |.subckt Subtract in1 in2 out\nB1 out 0 V=V(in1)-V(in2)\n.ends Subtract»
       «shorted pins: false»
       «line (-50,-90) (50,-90) 0 0 0x1000000 -1 -1»
@@ -151,7 +124,7 @@
   «component (-8900,900) 0 0
     «symbol Step
       «type: X»
-      «description: (PLECS) Step»
+      «description: (PWL) Step»
       «library file: |.subckt Step out\nB1 out 0 V=if(time<StepTime,Before,After)\n.ends Step»
       «shorted pins: false»
       «line (0,150) (0,-150) 0 0 0x1000000 -1 -1»
@@ -186,7 +159,7 @@
   «component (600,-900) 0 0
     «symbol Step
       «type: X»
-      «description: (PLECS) Step»
+      «description: (PWL) Step»
       «library file: |.subckt Step out\nB1 out 0 V=if(time<StepTime,Before,After)\n.ends Step»
       «shorted pins: false»
       «line (0,150) (0,-150) 0 0 0x1000000 -1 -1»
@@ -204,7 +177,7 @@
   «component (-1600,300) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -220,7 +193,7 @@
   «component (-500,300) 0 0
     «symbol DC-Machine
       «type: X»
-      «description: (PLECS) DC Machine»
+      «description: (PWL) DC Machine»
       «library file: |.subckt DC-Machine a+ a- f+ f- wm Te\nRa a+ N01 Ra\nLa N01 N03 La IC=ia0\nB_Ea N02 a- V=Laf*I(If)*V(wm)\nRf N05 f+ Rf\nLf N04 N05 Lf IC=if0\nV´If N04 f- 0\nV´Ia N03 N02 0\nB_Te 0 wm I=Laf*I(If)*I(Ia)\nC1 wm 0 J IC=wm0\nB1 Te 0 V=Laf*I(If)*I(Ia)\nB_Friction wm 0 I=F*V(wm)\n.ends DC-Machine»
       «shorted pins: false»
       «line (-300,-400) (-180,-400) 0 0 0x1000000 -1 -1»
@@ -258,7 +231,7 @@
   «component (1400,-900) 12 0
     «symbol Torque-Controlled
       «type: G»
-      «description: (PLECS) Torque (Controlled) - Nm»
+      «description: (PWL) Torque (Controlled) - Nm»
       «shorted pins: false»
       «line (0,200) (0,120) 0 0 0xff0080 -1 -1»
       «line (0,-120) (0,-200) 0 0 0xff0080 -1 -1»
@@ -279,7 +252,7 @@
   «component (-7100,900) 0 0
     «symbol Continuous-PI-Controller
       «type: X»
-      «description: (PLECS) Continuous PI Controller»
+      «description: (PWL) Continuous PI Controller»
       «library file: |.subckt Continuous-PI-Controller e u reset\nB1 ep 0 V=Kp*V(e)\nB3 ei 0 V=if(aw_method==0,idt(Ki*V(e),x0,V(Reset)), if(aw_method==1,idt(Ki*V(e)+Kbc*V(u,ud),x0,V(Reset)), Ki * idt( if( (V(u) >= up_limit & V(e)>0 ) | (V(u) <= low_limit & V(e)<0), 0, V(e) ), x0, V(Reset) ) ) )\nB4 ud 0 V=V(ep)+V(ei)\nB5 u 0 V=limit(V(ud),up_limit,low_limit)\n.ends Continuous-PI-Controller»
       «shorted pins: false»
       «line (-600,0) (-500,0) 0 0 0x1000000 -1 -1»
@@ -324,6 +297,33 @@
       «pin (-600,0) (20,0) 1 15 0 0x0 -1 "e"»
       «pin (700,0) (-20,0) 1 15 0 0x0 -1 "u"»
       «pin (0,-400) (0,0) 1 15 0 0x0 -1 "reset" "0"»
+    »
+  »
+  «component (-5200,900) 0 0
+    «symbol Relay
+      «type: X»
+      «description: (PWL) Relay»
+      «library file: |.subckt Relay in out\nV2 Vss 0 min(OnOutputValue,OffOutputValue)\nV1 Vdd 0 max(OnOutputValue,OffOutputValue)\n¥2 Vdd Vss Q ¬Q in 0 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT VT=(OnSwitchValue+OffSwitchValue)/2 VH=(OnSwitchValue-OffSwitchValue)/2 TTOL=TTOL\nB1 out 0 V=if(time<=0,if(InitialState,OnOutputValue,OffOutputValue), if(OnOutputValue>OffOutputvalue,V(Q), V(¬Q)))\n.ends Relay»
+      «shorted pins: false»
+      «line (150,0) (-150,0) 0 0 0xffa0a1 -1 -1»
+      «line (0,-160) (0,160) 0 0 0xffa0a1 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «line (-50,130) (150,130) 0 0 0x1000000 -1 -1»
+      «line (-150,-130) (50,-130) 0 0 0x1000000 -1 -1»
+      «line (50,-130) (50,130) 0 0 0x1000000 -1 -1»
+      «line (-50,130) (-50,-130) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
+      «text (0,450) 1 15 0 0x1000000 -1 -1 "X2"»
+      «text (0,300) 1 15 0 0x1000000 -1 -1 "RELAY"»
+      «text (-200,-300) 1 7 0 0x1000000 -1 -1 "OnSwitchValue=<1>Upper Threshold"»
+      «text (-200,-450) 1 7 0 0x1000000 -1 -1 "OffSwitchValue=<-1>LowerThreshold"»
+      «text (-200,-600) 1 7 0 0x1000000 -1 -1 "OnOutputValue=<1>On State Output"»
+      «text (-200,-750) 1 7 0 0x1000000 -1 -1 "OffOutputValue=<0>Off State Output"»
+      «text (-200,-900) 1 7 0 0x1000000 -1 -1 "InitialState=<(0;Off),1;On>Initial State"»
+      «text (-200,-1050) 1 7 2 0x1000000 -1 -1 "TTOL=<1µ>"»
+      «pin (-200,0) (0,0) 1 15 0 0x0 -1 "in"»
+      «pin (200,0) (0,0) 1 15 0 0x0 -1 "out"»
     »
   »
   «net (0,-300) 1 14 0 "wm"»
@@ -380,6 +380,6 @@
   «rect (300,-100) (1900,-1850) 0 0 2 0x4000000 0x1000000 -1 0 -1»
   «text (800,1200) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 3\n.plot V(Te)\n.plot V(wm)\n.plot V(Varmature)\n.plot V(Iarmature)"»
   «text (450,-1700) 1 7 1 0x1000000 -1 -1 "ï»¿External Torque"»
-  «text (-7650,2500) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Motor Drives > DC Motor Drive with Armature Chopper\n(dc_motor_drive_with_armature_chopper.plecs)\nby KSKelvin on 9-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-7650,2500) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as demo from PLECS, Motor Drives > DC Motor Drive with Armature Chopper\n(dc_motor_drive_with_armature_chopper.plecs)\nby KSKelvin on 9-18-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

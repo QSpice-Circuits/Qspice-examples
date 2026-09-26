@@ -434,6 +434,6 @@
   «wire (5100,0) (5100,1300) "S21"»
   «text (5600,200) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.5\n.option maxstep=1/10K/100\n.plot V(Load)\n.plot -I(V2)\n.plot V(pri+,pri-) V(sec+,sec-)\n.plot V(s11) V(s21)"»
   «text (-900,4500) 1.6 7 1 0x1000000 -1 -1 "ï»¿DAB with Phase Shift Control"»
-  «text (-900,4050) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, DAB with Phase Shift Controller.psimsch\nby KSKelvin on 4-11-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-900,4050) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, DAB with Phase Shift Controller.psimsch\nby KSKelvin on 4-11-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

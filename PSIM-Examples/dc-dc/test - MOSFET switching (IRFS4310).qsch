@@ -192,6 +192,6 @@
   «text (1300,-290) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.0002 uic\n.option maxstep=2e-9\n.option feather=0.2"»
   «text (1300,-900) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(D,S)\n.plot I(Idrain)\n.plot I(Rg)"»
   «text (-1100,2300) 1.6 7 1 0x1000000 -1 -1 "ï»¿Test circuit for MOSFET switching (IR IRFS4310)"»
-  «text (-1100,1900) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, test - MOSFET switching (IRFS4310).psimsch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1100,1900) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, test - MOSFET switching (IRFS4310).psimsch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

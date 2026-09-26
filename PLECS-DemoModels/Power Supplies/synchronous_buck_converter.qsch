@@ -19,7 +19,7 @@
   «component (4500,-400) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -50,7 +50,7 @@
   «component (4500,-1600) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PLECS) MOSFET with Diode [Ideal]»
+      «description: (PWL) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -81,7 +81,7 @@
   «component (5000,-1000) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PLECS) Inductor»
+      «description: (PWL) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -111,7 +111,7 @@
   «component (6000,-1300) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PLECS) Capacitor»
+      «description: (PWL) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -157,7 +157,7 @@
   «component (7300,-1300) 8 0
     «symbol Switch
       «type: X»
-      «description: (PLECS) Switch»
+      «description: (PWL) Switch»
       «library file: |.subckt Switch + - C\nS1 + - C 0 SWi ON=s_init OFF=!s_init\n.model SWi SW Ron=Ron Roff=Roff Vt=0.5 Vh=0\n.param Ron=if(extreme,1µ,1m)\n.param Roff=if(extreme,1G,10Meg)\n.ends Switch»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 -1»
@@ -191,7 +191,7 @@
   «component (8400,-1300) 8 0
     «symbol Pulse-Generator
       «type: X»
-      «description: (PLECS) Pulse Geneator»
+      «description: (PWL) Pulse Geneator»
       «library file: |.subckt Pulse-Generator out\nV1 out 0 pulse Lo Hi remainder(Delay,1/f) 1p 1p DutyCycle/f 1/f DC if(remainder(Delay,1/f)<=0,Hi,Lo)\n.func remainder(x,y)=x-y*round(x/y)\n.ends Pulse-Generator»
       «shorted pins: false»
       «line (-150,-150) (-100,-150) 0 0 0x1000000 -1 -1»
@@ -217,7 +217,7 @@
   «component (3000,-1600) 0 0
     «symbol Blanking-Time
       «type: X»
-      «description: (PLECS) Blanking Time»
+      «description: (PWL) Blanking Time»
       «library file: |.subckt Blanking-Time i o\nØ´X1 «i´d N01´d» «i_delay´d» «0» DelayedPulseTrain float delay=tb float ttol=TTOL\nV1 N01 0 1\nB1 o 0 V=V(i)&V(i_delay)\n.ends Blanking-Time»
       «shorted pins: false»
       «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -232,7 +232,7 @@
   «component (1200,-1600) 0 0
     «symbol Symmetrical-PWM-Natural
       «type: X»
-      «description: (PLECS) Symmetrical PWM [Natural Sampling]»
+      «description: (PWL) Symmetrical PWM [Natural Sampling]»
       «library file: |.subckt Symmetrical-PWM-Natural m s\n.subckt Xsrc1•Triangular-Wave out\nV1 out 0 pulse Min Max (Delay-trunc(Delay*f))-1/f EffDutyCycle/f (1-EffDutyCycle)/f 0 1/f\n.param EffDutyCycle=limit(0.01,DutyCycle,0.99)\n.ends Triangular-Wave\nXsrc1 carrier Xsrc1•Triangular-wave Min=carrier_limits_min Max=carrier_limits_max f=fc DutyCycle=0.5 Delay=Tmode/fc\nB1 s 0 V=if(V(m)>=V(carrier),output_values_on,output_values_off)\n¥1 N02 N03 N01 ¥ s ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR TTOL=TTOL\nV1 N02 0 output_values_on\nV2 N03 0 output_values_off\n.param Tmode=if(sampling==1,0.5, if(sampling==0,0.25,0) )\n.ends Symmetrical-PWM-Natural»
       «shorted pins: false»
       «rect (-300,200) (300,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -252,7 +252,7 @@
   «component (3000,-2600) 0 0
     «symbol Blanking-Time
       «type: X»
-      «description: (PLECS) Blanking Time»
+      «description: (PWL) Blanking Time»
       «library file: |.subckt Blanking-Time i o\nØ´X1 «i´d N01´d» «i_delay´d» «0» DelayedPulseTrain float delay=tb float ttol=TTOL\nV1 N01 0 1\nB1 o 0 V=V(i)&V(i_delay)\n.ends Blanking-Time»
       «shorted pins: false»
       «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -285,7 +285,7 @@
   «component (500,-4200) 0 0
     «symbol Constant
       «type: V»
-      «description: (PLECS) Constant»
+      «description: (PWL) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -298,7 +298,7 @@
   «component (2400,-4400) 0 0
     «symbol Subtract
       «type: X»
-      «description: (PLECS) Subtract [+-] / Difference / Minus»
+      «description: (PWL) Subtract [+-] / Difference / Minus»
       «library file: |.subckt Subtract in1 in2 out\nB1 out 0 V=V(in1)-V(in2)\n.ends Subtract»
       «shorted pins: false»
       «line (-150,-100) (-50,-100) 0 0 0x1000000 -1 -1»
@@ -315,7 +315,7 @@
   «component (3700,-4400) 0 0
     «symbol Continuous-PID-Controller-Antiwindup-BackCal
       «type: X»
-      «description: (PLECS) Continuous PID Controller with Anti-Windup Back Calculation»
+      «description: (PWL) Continuous PID Controller with Anti-Windup Back Calculation»
       «library file: |.subckt Continuous-PID-Controller-Antiwindup-BackCal e u reset\nB1 ep 0 V=Kp*V(e)\nB3 ei 0 V=idt(Ki*V(e)+Kb*V(u,ud),x0,V(Reset))\nB2 ed 0 V=Kf*(Kd*V(e)-idt(V(ed)))\nB4 ud 0 V=V(ep)+V(ed)+V(ei)\nB5 u 0 V=limit(V(ud),up_limit,low_limit)\n.ends Continuous-PID-Controller-Antiwindup-BackCal»
       «shorted pins: false»
       «line (-800,0) (-600,0) 0 0 0x1000000 -1 -1»
@@ -405,7 +405,7 @@
   «component (6300,-4500) 12 0
     «symbol Signal-Switch [!=]
       «type: X»
-      «description: (PLECS) Signal Switch [u!=0]»
+      «description: (PWL) Signal Switch [u!=0]»
       «library file: |.subckt Signal-Switch u Meet NotMeet out\nB1 out 0 V=if(V(dir),V(Meet),V(NotMeet))\nB2 dir 0 V=if(Criteria==0,V(u)!=0, if(Criteria==1,V(u)>=thres,V(u)>thres))\n.ends Signal-Switch»
       «shorted pins: false»
       «line (200,0) (100,0) 0 0 0x1000000 -1 -1»
@@ -448,7 +448,7 @@
   «component (2800,-7400) 0 0
     «symbol Constant
       «type: V»
-      «description: (PLECS) Constant»
+      «description: (PWL) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -461,7 +461,7 @@
   «component (2300,-7800) 0 0
     «symbol Relational-Operator[Less]
       «type: X»
-      «description: (PLECS) [<]»
+      «description: (PWL) [<]»
       «library file: |.subckt Relational-Operator A B Q\nB1 Q 0 V=V(A)<V(B)\n.ends Relational-Operator»
       «shorted pins: false»
       «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -477,7 +477,7 @@
   «component (4600,-6600) 0 0
     «symbol Ramp-FinalOutput
       «type: X»
-      «description: (PLECS) Ramp [With Final output param]»
+      «description: (PWL) Ramp [With Final output param]»
       «library file: |.subckt Ramp-FinalOutput out\nB1 ramp 0 V=if(time<start,X0,slope*(time-start)+X0)\nB2 out 0 V=if(slope>0 & XFinal>0,min(XFinal,V(ramp)), if(slope<0 & XFinal<0,max(XFinal,V(ramp)),V(ramp)) )\n.ends Ramp-FinalOutput»
       «shorted pins: false»
       «line (150,150) (0,-150) 0 0 0x1000000 -1 -1»
@@ -582,6 +582,6 @@
   «text (1950,-3250) 1 7 1 0x1000000 -1 -1 "ï»¿Voltage Compensator"»
   «text (5950,-8000) 1 7 1 0x1000000 -1 -1 "ï»¿Soft Start"»
   «text (550,-200) 1 7 1 0x1000000 -1 -1 "ï»¿Synchronous buck converter"»
-  «text (550,600) 1 7 1 0x1000000 -1 -1 "ï»¿Based on demo from PLECS, Power Supplies > Synchronous Buck Converter\n(synchronous_buck_converter.plecs)\nby KSKelvin on 8-1-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (550,600) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as demo from PLECS, Power Supplies > Synchronous Buck Converter\n(synchronous_buck_converter.plecs)\nby KSKelvin on 8-1-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

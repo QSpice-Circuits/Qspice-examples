@@ -1504,6 +1504,6 @@
   «text (950,-7750) 1 7 1 0x1000000 -1 -1 "ï»¿D3 with Vfwd=0.55"»
   «text (3900,1550) 1 7 1 0x1000000 -1 -1 "ï»¿.option fastmath=0"»
   «text (-1050,4300) 1.6 7 1 0x1000000 -1 -1 "ï»¿600-W Phase-Shifted Full-Bridge DC Power Supply: Voltage Feedback Control"»
-  «text (-1050,3850) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, phase-shifted full-bridge dc power supply (600W 200kHz).sch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1050,3850) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, phase-shifted full-bridge dc power supply (600W 200kHz).sch\nby KSKelvin on 4-16-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

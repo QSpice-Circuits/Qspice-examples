@@ -356,6 +356,6 @@
   «wire (1200,-1300) (1200,700) "N05"»
   «text (-2250,2500) 2 7 1 0x1000000 -1 -1 "ï»¿Single-Phase Inverter"»
   «text (1400,-550) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(carr) V(m)\n.plot V(Vinv+,Vinv-) I(R1)"»
-  «text (-2250,2050) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, single-phase inverter.psimsch\nby KSKelvin on 3-27-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2250,2050) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, single-phase inverter.psimsch\nby KSKelvin on 3-27-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

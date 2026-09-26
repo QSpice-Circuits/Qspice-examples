@@ -212,7 +212,7 @@
   «wire (200,900) (100,900) "N01"»
   «text (-350,-850) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 0.2m 0.1m 5e-7 uic\n.plot I(Lr) \n.plot I(Cr)\n.plot V(G)\n.plot V(D,S)"»
   «text (-1650,2750) 1.6 7 1 0x1000000 -1 -1 "ï»¿ZCS Resonant-switch converter"»
-  «text (-1650,2350) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, zcs-resonant-switch.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1650,2350) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, zcs-resonant-switch.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
   «text (-350,-250) 1 7 0 0x1000000 -1 -1 "ï»¿.option trtol=0.0001 ;eliminate trap ringing"»
 »
 

@@ -633,6 +633,6 @@
   «wire (4900,-2900) (5100,-2900) "N07"»
   «text (-1350,-4350) 1 7 1 0x1000000 -1 -1 "ï»¿Â¥9, Â¥10, Â¥11 and Â¥12 for logic delay compensation"»
   «text (2000,-150) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(s1)+3.3 V(s2)+1.1 V(s3) V(s4)+2.2\n.plot V(Vload)"»
-  «text (-1650,550) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, 3-level T-Type Bridge Leg_Test.psimsch\nby KSKelvin on 4-9-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1650,550) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, 3-level T-Type Bridge Leg_Test.psimsch\nby KSKelvin on 4-9-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

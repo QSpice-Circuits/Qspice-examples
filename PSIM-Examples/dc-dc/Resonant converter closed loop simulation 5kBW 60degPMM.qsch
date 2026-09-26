@@ -1000,6 +1000,6 @@
   «text (5400,-4050) 1 7 0 0x1000000 -1 -1 "ï»¿.option fastmath=0"»
   «text (2900,-2950) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vgs4) V(Vgs3)+1.1 V(Vgs2)+2.2 V(Vgs1)+3.3\n.plot I(Ids1)\n.plot V(Vo)"»
   «text (-550,-5200) 1 7 1 0x1000000 -1 -1 "ï»¿Â¥1 to Â¥4 is to compensate delay in gate\nto prevent glitch gating in Vgs2 and Vgs4"»
-  «text (-1450,2250) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, Resonant converter closed loop simulation 5kBW 60degPMM.psimsch\nby KSKelvin on 4-15-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1450,2250) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, Resonant converter closed loop simulation 5kBW 60degPMM.psimsch\nby KSKelvin on 4-15-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

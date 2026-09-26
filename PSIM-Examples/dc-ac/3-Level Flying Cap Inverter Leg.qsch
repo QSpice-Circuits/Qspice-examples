@@ -402,6 +402,6 @@
   «wire (-1000,-3200) (-800,-3200) "Vcarr2"»
   «wire (-1200,-3500) (-1200,-3400) "N08"»
   «text (1650,-2750) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vcarr1) V(Vcarr2) V(Vam) \n.plot V(Vo)"»
-  «text (-2050,1700) 1 7 1 0x1000000 -1 -1 "ï»¿Based on example from PSIM, dc-ac, 3-Level Flying Cap Inverter Leg.psimsch\nby KSKelvin on 4-9-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-2050,1700) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-ac, 3-Level Flying Cap Inverter Leg.psimsch\nby KSKelvin on 4-9-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 

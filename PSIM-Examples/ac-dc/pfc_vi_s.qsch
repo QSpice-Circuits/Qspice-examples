@@ -538,7 +538,7 @@
   «wire (1700,2100) (1300,2100) "N08"»
   «text (-3130,670) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(Vcarr) V(Vm)\n.plot I(Iac)/1A*1V V(Vac)\n.plot I(Ld)"»
   «text (-3150,3550) 1.6 7 1 0x1000000 -1 -1 "ï»¿Power factor correction circuit with\ninner/outer loops (s-domain transfer function)"»
-  «text (-3150,2950) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, ac-dc, pfc_vi_s.psimsch\nby KSKelvin on 3-25-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-3150,2950) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, ac-dc, pfc_vi_s.psimsch\nby KSKelvin on 3-25-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
   «text (-1000,2500) 1 7 1 0x1000000 -1 -1 "ï»¿remove Lin for convergence in Qspice"»
 »
 

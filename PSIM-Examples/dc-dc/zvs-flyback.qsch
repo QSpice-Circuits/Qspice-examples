@@ -426,6 +426,6 @@
   «text (1150,-1050) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 0.00025 0.2m 5e-8\n.option trtol=0.01 ; eliminate trap oscillation"»
   «text (1150,-1750) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(d,Vo-)\n.plot I(D1) I(Id)\n.plot V(d)\n.plot V(g)"»
   «text (-1750,2400) 1.6 7 1 0x1000000 -1 -1 "ï»¿Zero-Voltage-Switching Flyback Converter"»
-  «text (-1750,1950) 1 7 1 0x1000000 -1 -1 "ï»¿based on example from PSIM, dc-dc, zvs-flyback.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
+  «text (-1750,1950) 1 7 1 0x1000000 -1 -1 "ï»¿Functional equivalence as example from PSIM, dc-dc, zvs-flyback.sch\nby KSKelvin on 4-13-2026\nCustom Symbol download: https://github.com/KSKelvin-Github/Qspice"»
 »
 
