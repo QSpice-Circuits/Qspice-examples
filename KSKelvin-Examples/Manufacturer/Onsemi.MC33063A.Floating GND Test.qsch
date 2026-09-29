@@ -1,0 +1,224 @@
+ÿØÿÛ«schematic
+  «component (-100,100) 0 0
+    «symbol MC33063A
+      «type: X»
+      «description: MC33063A from LTspice Wiki (Port to Qspice)»
+      «library file: |.SUBCKT MC33063A SwC SwE Osc Com Inv Vcc Ipk DrC\n.param tdt=10n\nC1 Vcc COM 20p\nGI1 Vcc ref Vcc ref table(0 0 2.5 2m8 3.5 3m1 40 3m4)\nD1 COM ref 1V25\nE1 C 0 ref COM 1\n¥A1 Q1V 0 B ¥ ref Inv Q1V ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=0 Vh=1m\n¥A2 Q1V 0 A 2 COM Osc Q1V ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=-0.9 Vh=0.35 trise=50n tfall=0u9\n¥A3 Q1V 0 R ¥ 2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.1-(0))\n¥A4 Q1V 0 S ¥ A ¥ B ¥ C ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Ref=(0.9-(0)) td=0u2\n¥A5 Q1V 0 Q ¥ S R ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP\nI2 S R pulse(5 0 0 1n)\nG1 COM 3 ref COM 0m5\nR1 COM 3 10k\nC2 Osc 3 12p\nS1 COM 3 R 0 bump\nXS2 COM Osc R 0 sink\nGI3 Vcc Osc Vcc Osc table(2 0 3 35u)\nR2 1 Vcc 10k\nC3 1 Ipk 10p\nXS3 Osc Vcc 1 Ipk comp\nC4 DrC COM 10p\nXS4 DrB Vcc Q 0 drive\nR3 DrE SwE 100\nQ1 SwC DrE SwE 0 sw\nD2 COM Osc Dsub\nR4 COM 1 1e7\nQ2 DrC DrB DrE 0 sw m=85m\n.model Dsub d Ron=1 Vfwd=0.6 Epsilon=0.2\n.model 1V25 d Ron=1 Roff=466 Vrev=1.25 revEpsilon=10m\n.subckt comp + - +C -C Ilimit=15m\nS1 + N001 +C -C SWq\nI1 N002 N001 Ilimit Vsat=100m\nI2 N001 N003 Ilimit Vsat=100m\nD1 - N002 Di\nD2 N003 - Di\n.model Di D Ron=1m Roff=10Meg Vfwd=0\n.model SWq SW level 2 Vt=290m Vh=-100m Ron=300 Roff=1e7\n.ends comp\n.subckt sink + - +C -C Vser=0.1 Ilimit=255u\nS1 + N001 +C -C SWq\nVS1 N002 N001 Vser\nIS1 N003 N002 Ilimit Vsat=100m\nDS1 - N003 Di\n.model Di D Ron=1m Roff=100Meg Vfwd=0\n.model SWq SW level 2 Vt=0.1 Vh=-1m Ron=1k Roff=1e7\n.ends sink\n.model bump sw level 2 Vt=0.1 Vh=-1m Ron=1e7 Roff=1k\n.subckt drive + - +C -C Ilimit=0m7\nS1 + N001 +C -C SWq\nI1 N002 N001 Ilimit Vsat=100m\nI2 N001 N003 Ilimit Vsat=100m\nD1 - N002 Di\nD2 N003 - Di\n.model Di D Ron=1m Roff=10Meg Vfwd=0\n.model SWq SW level 2 Vt=300m Vh=-10m Ron=200 Roff=1e8\n.ends drive\n.model sw npn Is=50f Bf=130 Br=10 Ikf=1.5 Rb=1 Re=30m Rc=0.4 Cje=100p Cjc=20p\nVQ1 Q1V 0 1\n.ENDS MC33063A»
+      «shorted pins: false»
+      «rect (-500,-800) (500,800) 0 0 0 0xff0000 0x4000000 -1 0 -1»
+      «text (0,1016) 1 15 0 0x1000000 -1 -1 "X1"»
+      «text (0,884) 1 15 0 0x1000000 -1 -1 "MC33063A"»
+      «pin (500,600) (-30,0) 1 11 0 0x0 -1 "SwC"»
+      «pin (500,200) (-30,0) 1 11 0 0x0 -1 "SwE"»
+      «pin (500,-200) (-30,0) 1 11 0 0x0 -1 "Osc"»
+      «pin (500,-600) (-30,0) 1 11 0 0x0 -1 "Com"»
+      «pin (-500,-600) (30,0) 1 7 0 0x0 -1 "Inv"»
+      «pin (-500,-200) (30,0) 1 7 0 0x0 -1 "Vcc"»
+      «pin (-500,200) (30,0) 1 7 0 0x0 -1 "Ipk"»
+      «pin (-500,600) (30,0) 1 7 0 0x0 -1 "DrC"»
+    »
+  »
+  «component (-1500,200) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "249m"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1500,-600) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "6.5"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1100,-1100) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R2"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "8k66"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-400,-1100) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R3"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "1k00"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (700,-300) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C1"»
+      «text (100,-100) 1 7 0 0x1000000 -1 -1 "1n5"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (1200,-100) 0 0
+    «symbol
+      «type: D»
+      «description: Autogenerated symbol»
+      «library file: |.model 1N5819 D(Is=31.7u Rs=.051 N=1.373 Cjo=110p M=.35 Eg=.69 Xti=2 Iave=1 Vpk=40 mfg=OnSemi type=Schottky)»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «line (-100,40) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (100,80) (100,120) 0 0 0x1000000 -1 -1»
+      «line (100,120) (70,120) 0 0 0x1000000 -1 -1»
+      «line (-70,40) (-100,40) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (100,200) 1 7 0 0x1000000 -1 -1 "D1"»
+      «text (100,-200) 1 7 0 0x1000000 -1 -1 "1N5819"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (1700,300) 2 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "L1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "88µ"»
+      «text (450,-50) 1 109 0 0x1000000 -1 -1 "Rser=1 Rpar=1K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (2200,-100) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C2"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "1m"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (2800,-100) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R4"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "500"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «net (-800,700) 1 14 0 "C"»
+  «net (-800,-100) 1 14 0 "+5V"»
+  «net (-1500,-1200) 1 13 0 "GND"»
+  «net (400,-1100) 1 14 0 "-12V"»
+  «net (2900,300) 1 7 0 "GND"»
+  «net (700,300) 1 14 0 "E"»
+  «net (-800,-500) 1 14 0 "Inv"»
+  «net (700,-100) 1 14 0 "Osc"»
+  «junction (2800,300)»
+  «junction (2800,-500)»
+  «junction (2200,300)»
+  «junction (2200,-500)»
+  «junction (1200,300)»
+  «junction (1200,-500)»
+  «junction (700,-500)»
+  «junction (-800,-1100)»
+  «junction (-1500,700)»
+  «junction (-1500,500)»
+  «junction (-1500,-100)»
+  «junction (-1500,-1100)»
+  «wire (400,700) (700,700) "C"»
+  «wire (700,700) (700,1300) "C"»
+  «wire (700,1300) (-1500,1300) "C"»
+  «wire (-1500,1300) (-1500,700) "C"»
+  «wire (-800,700) (-600,700) "C"»
+  «wire (-1500,700) (-800,700) "C"»
+  «wire (-800,-100) (-1500,-100) "+5V"»
+  «wire (-1500,500) (-1500,700) "C"»
+  «wire (-1500,-100) (-1500,0) "+5V"»
+  «wire (-600,300) (-800,300) "C"»
+  «wire (-600,-100) (-800,-100) "+5V"»
+  «wire (-1500,-400) (-1500,-100) "+5V"»
+  «wire (-1500,-1100) (-1500,-800) "GND"»
+  «wire (-1500,-1200) (-1500,-1100) "GND"»
+  «wire (-1500,-1100) (-1300,-1100) "GND"»
+  «wire (-800,-500) (-800,-1100) "Inv"»
+  «wire (-900,-1100) (-800,-1100) "Inv"»
+  «wire (-600,-500) (-800,-500) "Inv"»
+  «wire (-800,-1100) (-600,-1100) "Inv"»
+  «wire (-200,-1100) (400,-1100) "-12V"»
+  «wire (400,-500) (700,-500) "-12V"»
+  «wire (400,-100) (700,-100) "Osc"»
+  «wire (1200,300) (1500,300) "E"»
+  «wire (700,-500) (1200,-500) "-12V"»
+  «wire (1200,100) (1200,300) "E"»
+  «wire (700,300) (1200,300) "E"»
+  «wire (1200,-500) (1200,-300) "-12V"»
+  «wire (2200,100) (2200,300) "GND"»
+  «wire (2200,-500) (2200,-300) "-12V"»
+  «wire (2200,300) (1900,300) "GND"»
+  «wire (2800,300) (2200,300) "GND"»
+  «wire (2800,-300) (2800,-500) "-12V"»
+  «wire (2900,300) (2800,300) "GND"»
+  «wire (2800,300) (2800,100) "GND"»
+  «wire (1200,-500) (2200,-500) "-12V"»
+  «wire (2800,-500) (2200,-500) "-12V"»
+  «wire (2800,-500) (2800,-1100) "-12V"»
+  «wire (2800,-1100) (400,-1100) "-12V"»
+  «wire (400,300) (700,300) "E"»
+  «wire (-1500,500) (-1000,500) "C"»
+  «wire (-1500,400) (-1500,500) "C"»
+  «wire (-1000,500) (-800,300) "C"»
+  «text (1100,1150) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 100m uic\n.plot V(E) V(-12V)\n.plot V(Osc,-12V)"»
+  «text (-1500,2100) 1 7 1 0x1000000 -1 -1 "ï»¿LTwiki LTspice MC33063 behavioral model\nhttps://ltwiki.org/index.php?title=Simulating_the_MC34063_in_Inverter_Configuration_with_an_Accurate_TL431A_Model\nMC33063A_rev2.zip - Floating GND Test.asc\n\nPorted to Qspice with modified MC33063A.cir for Qspice syntax by KSKelvin on 9-29-2026\n- modified MC33063A.cir is MC33063A-Qspice-260929.cir , this schematic with embedded subckt"»
+»
+
