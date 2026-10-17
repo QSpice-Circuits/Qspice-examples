@@ -1,0 +1,787 @@
+ÿØÿÛ«schematic
+  «component (-1900,1300) 6 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (-130,0) 1 46 0 0x1000000 -1 -1 "V4"»
+      «text (-320,-1400) 1 45 0 0x1000000 -1 -1 "PULSE(0 10 0.5m 100µ 100µ 1 2)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1900,900) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,200) 1 110 0 0x1000000 -1 -1 "R31"»
+      «text (270,-200) 1 109 0 0x1000000 -1 -1 "69.8K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1900,500) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,100) 1 110 0 0x1000000 -1 -1 "R23"»
+      «text (270,-150) 1 109 0 0x1000000 -1 -1 "1K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1900,-300) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,150) 1 110 0 0x1000000 -1 -1 "C12"»
+      «text (320,-200) 1 109 0 0x1000000 -1 -1 "0.1µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1900,-700) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,200) 1 110 0 0x1000000 -1 -1 "R30"»
+      «text (270,-200) 1 109 0 0x1000000 -1 -1 "69.8K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1900,-1500) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C11"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "0.1µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-2900,100) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C8"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "0.01µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-3500,100) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R24"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "1.9K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-3900,500) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R25"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "17.2K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-4400,100) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V2"»
+      «text (-50,-550) 1 7 0 0x1000000 -1 -1 "PULSE(0 24 0 1m 1m 1 2)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-300,2000) 2 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "L1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "15µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-300,2600) 2 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "L2"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "15µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (1800,1300) 0 0
+    «symbol
+      «type: MN»
+      «description: Autogenerated symbol»
+      «library file: |.model SUD40N10-25 VDMOS(Rg=3 Rd=10m Rs=5m Vto=2.3 Kp=70 lambda=.01 Cgdmax=2n Cgdmin=100p Cgs=1.9n Cjo=1.25n Is=.0055n Rb=.005 ksubthres=.1 mfg=Siliconix Vds=100 Ron=25m Qg=60n)»
+      «shorted pins: false»
+      «line (100,200) (100,150) 0 0 0x1000000 -1 -1»
+      «line (100,-150) (100,-200) 0 0 0x1000000 -1 -1»
+      «line (-100,150) (-100,-150) 0 0 0x1000000 -1 -1»
+      «line (-100,0) (-200,0) 0 0 0x1000000 -1 -1»
+      «line (100,-150) (-50,-150) 0 0 0x1000000 -1 -1»
+      «line (100,150) (-50,150) 0 0 0x1000000 -1 -1»
+      «line (-50,150) (-50,-150) 0 0 0x1000000 -1 -1»
+      «triangle (70,-150) (-25,-125) (-25,-175) 0 0 0x1000000 0x3000000 -1 -1»
+      «text (200,200) 1 7 0 0x1000000 -1 -1 "M1"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "SUD40N10-25"»
+      «pin (100,200) (0,0) 1 0 0 0x0 -1 "D"»
+      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "G"»
+      «pin (100,-200) (0,0) 1 0 0 0x0 -1 "S"»
+    »
+  »
+  «component (1600,900) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R27"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "1K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (1100,600) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C9"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "100p"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (1900,600) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R26"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "22m"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (2500,600) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R33"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (4400,1300) 0 0
+    «symbol
+      «type: MN»
+      «description: Autogenerated symbol»
+      «library file: |.model SUD40N10-25 VDMOS(Rg=3 Rd=10m Rs=5m Vto=2.3 Kp=70 lambda=.01 Cgdmax=2n Cgdmin=100p Cgs=1.9n Cjo=1.25n Is=.0055n Rb=.005 ksubthres=.1 mfg=Siliconix Vds=100 Ron=25m Qg=60n)»
+      «shorted pins: false»
+      «line (100,200) (100,150) 0 0 0x1000000 -1 -1»
+      «line (100,-150) (100,-200) 0 0 0x1000000 -1 -1»
+      «line (-100,150) (-100,-150) 0 0 0x1000000 -1 -1»
+      «line (-100,0) (-200,0) 0 0 0x1000000 -1 -1»
+      «line (100,-150) (-50,-150) 0 0 0x1000000 -1 -1»
+      «line (100,150) (-50,150) 0 0 0x1000000 -1 -1»
+      «line (-50,150) (-50,-150) 0 0 0x1000000 -1 -1»
+      «triangle (70,-150) (-25,-125) (-25,-175) 0 0 0x1000000 0x3000000 -1 -1»
+      «text (200,200) 1 7 0 0x1000000 -1 -1 "M2"»
+      «text (200,-200) 1 7 0 0x1000000 -1 -1 "SUD40N10-25"»
+      «pin (100,200) (0,0) 1 0 0 0x0 -1 "D"»
+      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "G"»
+      «pin (100,-200) (0,0) 1 0 0 0x0 -1 "S"»
+    »
+  »
+  «component (4200,900) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R29"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "1K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (3700,600) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C10"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "100p"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (4500,600) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R28"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "22m"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (5100,600) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R34"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (900,-700) 6 0
+    «symbol
+      «type: D»
+      «description: Autogenerated symbol»
+      «library file: |.model 1N4148 D(Is=2.52n Rs=.568 N=1.752 Cjo=4p M=.4 tt=20n Iave=200m Vpk=75 mfg=OnSemi type=silicon)»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (-100,0) 1 46 0 0x1000000 -1 -1 "D18"»
+      «text (100,0) 1 45 0 0x1000000 -1 -1 "1N4148"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (5100,2600) 6 0
+    «symbol
+      «type: D»
+      «description: Autogenerated symbol»
+      «library file: |.model PDS760 D(Is=360n Rs=.016 N=1.04 Cjo=1200p M=.33 Eg=.69 Xti=2 Iave=7 Vpk=60 mfg=Diodes_Inc. type=Schottky)»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «line (-100,40) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (100,80) (100,120) 0 0 0x1000000 -1 -1»
+      «line (100,120) (70,120) 0 0 0x1000000 -1 -1»
+      «line (-70,40) (-100,40) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (-100,0) 1 46 0 0x1000000 -1 -1 "D12"»
+      «text (100,0) 1 45 0 0x1000000 -1 -1 "PDS760"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (5100,2000) 6 0
+    «symbol
+      «type: D»
+      «description: Autogenerated symbol»
+      «library file: |.model PDS760 D(Is=360n Rs=.016 N=1.04 Cjo=1200p M=.33 Eg=.69 Xti=2 Iave=7 Vpk=60 mfg=Diodes_Inc. type=Schottky)»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «line (-100,40) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (100,80) (100,120) 0 0 0x1000000 -1 -1»
+      «line (100,120) (70,120) 0 0 0x1000000 -1 -1»
+      «line (-70,40) (-100,40) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (-100,0) 1 46 0 0x1000000 -1 -1 "D13"»
+      «text (100,0) 1 45 0 0x1000000 -1 -1 "PDS760"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (6000,2200) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C13"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "300µ"»
+      «text (100,-500) 1 7 0 0x1000000 -1 -1 "Rser=0.3"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6600,2200) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C14"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "6.7µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (7200,2200) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R32"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "11"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6400,-700) 8 0
+    «symbol LM8261
+      «type: X»
+      «description: LM8261 21MHz Opamp (National Semi Native Model)»
+      «library file: |.SUBCKT LM8261 3 2 7 4 6\nV5 8 34 0.7E-3\nQ6 5 8 11 Q6M\nR2 12 38 100.0E3\nD1 46 31 D1M\nE1 16 0 17 0 1.0\nV6 31 12 0.75\nV7 34 51 4.0E-3\nR3 2 36 500.0\nR4 51 3 500.0\nM1 20 12 46 46 MWPM\nI1 7 46 100.0E-6\nI2 41 4 50.0E-6\nI3 7 44 50.0E-6\nR5 29 27 500.0\nE2 38 16 43 9 1.0\nRE2 43 0 1.0E12\nV4 7 43 2.0\nR7 7 9 10.0E6\nR20 9 4 10.0E6\nQ7 26 36 37 Q6M\nR14 7 26 300.0\nR15 7 5 300.0\nR6 29 33 500.0\nQ3 23 23 8 QQN\nR18 37 42 500.0\nQ9 42 18 4 QQN\nR19 11 42 500.0\nQ1 13 13 7 QQP\nQ2 21 21 4 QQN\nR16 28 4 300.0\nR17 45 4 300.0\nC4 19 6 8.0E-12\nR8 17 19 220.0\nR10 7 22 12.0\nQ4 36 36 23 QQN\nR11 4 15 12.0\nQ5 8 8 49 QQN\nR12 24 15 100.0\nI5 32 7 4.0E-6\nQ28 14 35 28 QQN\nR13 25 22 100.0\nQ8 49 49 36 QQN\nR9 46 30 1.0\nQ29 17 35 45 Q29M\nQ30 50 20 4 QQN\nQ31 20 20 4 QQN\nQ32 6 50 15 Q32M\nQ33 50 24 4 QQN\nI6 4 35 4.0E-6\nQ34 44 44 21 QQN\nI7 39 7 2.0E-6\nV10 7 40 1.4\nQ35 7 44 50 QQN\nQ36 6 30 22 Q36M\nQ37 12 25 7 QQP\nQ38 41 41 13 QQP\nQ40 50 41 46 QQP\nQ41 14 32 26 QQP\nQ42 17 32 5 Q42M\nQ43 29 39 7 QQP\nQ44 45 34 27 Q44M\nQ45 28 36 33 Q45M\nQ46 18 40 29 QQP\nQ47 18 18 4 QQN\n.MODEL QQN NPN\n.MODEL QQP PNP\n.MODEL Q44M PNP BF=85.0\n.MODEL Q45M PNP BF=85.0\n.MODEL Q6M NPN BF=200.0\n.MODEL Q29M NPN VAF=150.0\n.MODEL Q42M PNP VAF=150.0\n.MODEL Q32M NPN BF=600.0 VAF=125.0\n.MODEL Q36M PNP BF=165.0 VAF=100.0\n.MODEL MWPM PMOS KP=1.0E-3 VTO=-0.6\n.MODEL D1M D IS=7.0E-14 M=0.45 N=2 TT=6.0E-9\n.ENDS»
+      «shorted pins: false»
+      «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
+      «line (-150,200) (-50,200) 0 0 0x1000000 -1 -1»
+      «line (-100,-150) (-100,-250) 0 0 0x1000000 -1 -1»
+      «line (-200,-450) (-200,450) 0 0 0x1000000 -1 -1»
+      «line (-200,450) (400,0) 0 0 0x1000000 -1 -1»
+      «line (400,0) (-200,-450) 0 0 0x1000000 -1 -1»
+      «line (50,300) (110,300) 0 0 0x1000000 -1 -1»
+      «line (80,330) (80,270) 0 0 0x1000000 -1 -1»
+      «line (50,-300) (110,-300) 0 0 0x1000000 -1 -1»
+      «text (300,-250) 1 15 0 0x1000000 -1 -1 "X2"»
+      «text (200,-400) 1 7 0 0x1000000 -1 -1 "LM8261"»
+      «pin (-200,-200) (20,0) 1 15 0 0x0 -1 "IN+"»
+      «pin (-200,200) (20,0) 1 15 0 0x0 -1 "IN-"»
+      «pin (0,300) (20,0) 1 15 0 0x0 -1 "Vdd"»
+      «pin (0,-300) (-20,0) 1 15 0 0x0 -1 "Vss"»
+      «pin (400,0) (-20,0) 1 15 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (7700,-100) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R36"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "24.91K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (7700,-800) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R35"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "1.1K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (5100,-1800) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V5"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "2.048"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6400,-1500) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R13"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "4.75K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6800,-1800) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C15"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "0.1µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6300,800) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C17"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "470p"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6700,200) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C16"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "0.1µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (6100,200) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R14"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "30.1K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-500,-100) 0 0
+    «symbol LM5032
+      «type: X»
+      «description: LM5032 Dual Interleaved current mode controller by Valentin Volodin (Qspice Version from KSKelvin)»
+      «library file: |.subckt LM5032 VIN COMP1 CS1 SS1 UVLO VCC OUT1 GND1 GND2 OUT2 RES SS2 CS2 COMP2 DCL RT/SYNC\nR1 N047 N048 2566.666\nD1 N048 N047 Ideal\nI1 N047 N048 19.5m\nC1 N047 N048 3p\nR2 N055 GND1 154k\nE1 N047 GND1 VIN GND1 table=(0 0,3.167 0,3.6 1.175,7.88 4,11.42 7.7)\nF1 VIN GND1 V1 1\nV1 N048 N055 0\nD2 N055 N056 Ideal\nC2 N055 N056 3p\nR3 N056 GND1 17.1k\nXS1 N056 N049 N051 GND1 SVCC\nR4 N037 VCC 2k\n¥A3 Q5V2GND1 GND1 Driver_off ¥ Vcc_UVT ¥ ¥ ¥ N057 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=50n\nG1 GND1 UVLO N051 GND1 4u\nR5 VCC N049 5.9\n¥A2 Q5V2GND1 GND1 ¥ Vcc_UVT N049 GND1 Q5V2GND1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Trise=50n Vt=6.9 Vh=0.7\n¥A1 Q5V2GND1 GND1 N051 N057 UVLO ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=50n Ref=(1.25-(0))\nD3 GND1 UVLO Z5\nC3 UVLO GND1 3p ic=0\n¥A4 Q5V2GND1 GND1 N020 N016 N016 N001 GND1 GND1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ D-FLOP Trise=10n\n¥A5 Q5V2GND1 GND1 N003 N008 N001 ¥ ¥ ¥ N020 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A6 Q5V2GND1 GND1 N025 N031 N016 ¥ ¥ ¥ N001 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nC4 N005 GND1 112p\nC5 N027 GND1 112p\nD4 N004 N003 Ideal\nD5 N026 N025 Ideal\nV3 N037 N036 0\n¥A7 Q5V2GND1 GND1 N001 ¥ N030 N023 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A8 Q5V2GND1 GND1 N023 ¥ N021 N022 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A9 Q5V2GND1 GND1 N021 ¥ N018 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(2.1-(0)) Trise=10n\n¥A10 Q5V2GND1 GND1 ¥ N030 N018 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.2-(0)) Trise=10n\nC6 N018 GND1 112p\n¥A11 Q5V2GND1 GND1 N022 ¥ RT/SYNC ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(3.3-(0)) Trise=10n\nR9 N004 N005 100\nR10 N026 N027 100\nD6 N018 N019 Ideal\nR11 N019 N001 130\n¥A12 Q5V2GND1 GND1 ¥ N011 N005 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.4-(0)) Trise=10n\n¥A13 Q5V2GND1 GND1 ¥ N033 N027 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.4-(0)) Trise=10n\n¥A14 Q5V2GND1 GND1 CLK1 ICLK1 N011 ¥ ¥ ¥ N008 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A15 Q5V2GND1 GND1 CLK2 ICLK2 N033 ¥ ¥ ¥ N031 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nE2 RAMP1 GND1 N005 GND1 table=(0.4 0,2 2)\nE3 RAMP2 GND1 N027 GND1 table=(0.4 0,2 2)\nG2 GND1 SLOPE1 RAMP1 GND1 22.5u\nG3 GND1 SLOPE2 RAMP2 GND1 22.5u\n¥A16 Q5V2GND1 GND1 UserMaxDC1 ¥ DCL RAMP1 Q5V2GND1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Trise=10n Vt=0 Vh=1m\n¥A17 Q5V2GND1 GND1 UserMaxDC2 ¥ DCL RAMP2 Q5V2GND1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Trise=10n Vt=0 Vh=1m\nE4 N038 GND1 UVLO GND1 table=(1.25 2,1.67 1.75,4.06 0.42,4.17 0.39,4.27 0.35,4.38 0.32,4.48 0.28,4.58 0.27)\n¥A18 Q5V2GND1 GND1 MaxDC1 ¥ N038 RAMP1 Q5V2GND1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Trise=10n Vt=0 Vh=1m\n¥A19 Q5V2GND1 GND1 MaxDC2 ¥ N038 RAMP2 Q5V2GND1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Trise=10n Vt=0 Vh=1m\nD7 GND1 N037 Z2\nR15 N035 N036 820\nG5 GND1 SS1 DCon GND1 9.8u\nI2 GND1 SS1 1u\nD14 GND1 SS1 Z5\n¥A28 Q5V2GND1 GND1 N039 ¥ SS1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(1.5-(0)) Trise=10n\n¥A29 Q5V2GND1 GND1 N043 N042 N041 N045 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A30 Q5V2GND1 GND1 N054 N044 N052 N059 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A31 Q5V2GND1 GND1 T12 IT12 N042 ¥ ¥ ¥ N044 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A32 Q5V2GND1 GND1 T13 IT13 ¥ N043 ¥ ¥ N044 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A33 Q5V2GND1 GND1 T10 IT10 N043 ¥ ¥ ¥ N054 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A34 Q5V2GND1 GND1 T11 IT11 N042 ¥ ¥ ¥ N054 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A35 Q5V2GND1 GND1 N041 ¥ Driver_off N040 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A36 Q5V2GND1 GND1 N052 ¥ Driver_off ¥ N053 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A37 Q5V2GND1 GND1 N045 ¥ Restart_Latch ¥ T10 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A38 Q5V2GND1 GND1 N059 ¥ T11 N050 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A39 Q5V2GND1 GND1 ¥ N050 SS1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.2-(0)) Trise=10n\n¥A40 Q5V2GND1 GND1 N040 ¥ T12 N039 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A41 Q5V2GND1 GND1 N053 ¥ ¥ ¥ ¥ T13 IRestart_Latch ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\nD15 SS1 N058 Ideal\n¥A42 Q5V2GND1 GND1 N046 ¥ T13 ¥ ¥ ¥ T10 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nR17 N058 IT11 50\nG6 GND1 SS2 DCon GND1 9.8u\nI3 GND1 SS2 1u\nD16 GND1 SS2 Z5\n¥A23 Q5V2GND1 GND1 N060 ¥ SS2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(1.5-(0)) Trise=10n\n¥A24 Q5V2GND1 GND1 N064 N063 N062 N066 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A44 Q5V2GND1 GND1 N076 N065 N070 N079 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A45 Q5V2GND1 GND1 T22 IT12 N063 ¥ ¥ ¥ N065 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A46 Q5V2GND1 GND1 T23 IT23 ¥ N064 ¥ ¥ N065 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A47 Q5V2GND1 GND1 T20 IT10 N064 ¥ ¥ ¥ N076 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A48 Q5V2GND1 GND1 T21 IT21 N063 ¥ ¥ ¥ N076 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A49 Q5V2GND1 GND1 N062 ¥ Driver_off N061 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A50 Q5V2GND1 GND1 N070 ¥ Driver_off ¥ N074 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A51 Q5V2GND1 GND1 N066 ¥ Restart_Latch ¥ T20 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A52 Q5V2GND1 GND1 N079 ¥ T21 N069 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A53 Q5V2GND1 GND1 ¥ N069 SS2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.2-(0)) Trise=10n\n¥A54 Q5V2GND1 GND1 N061 ¥ T22 N060 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A55 Q5V2GND1 GND1 N074 ¥ ¥ ¥ ¥ T23 IRestart_Latch ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\nD17 SS2 N078 Ideal\n¥A56 Q5V2GND1 GND1 N067 ¥ T23 ¥ ¥ ¥ T20 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nR18 N078 IT21 50\n¥A57 Q5V2GND1 GND1 DCon ¥ N046 ¥ ¥ ¥ N067 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\nE5 +5V GND1 N037 GND1 2.5\nD8 GND1 RES Z5\nC7 RES GND1 3p ic=0\n¥A20 Q5V2GND1 GND1 IRestart_Latch Restart_Latch N029 Restart ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A21 Q5V2GND1 GND1 N029 ¥ DC1 ¥ DC2 ¥ Driver_off ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A22 Q5V2GND1 GND1 ¥ N024 ¥ ¥ Driver_off ¥ Restart_Latch ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nD9 RES N017 Ideal\nR6 N017 N024 50\n¥A25 Q5V2GND1 GND1 Restart ¥ RES GND1 Q5V2GND1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=2.45 Vh=0.1 Trise=10n\nG4 GND1 RES N002 GND1 4u\nG7 RES GND1 N015 GND1 2u\n¥A26 Q5V2GND1 GND1 N007 ¥ ¥ N006 ¥ ¥ ICLK1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A27 Q5V2GND1 GND1 N013 ¥ N010 ¥ ¥ ICLK1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A43 Q5V2GND1 GND1 N006 N010 ILim1 CLK1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A59 Q5V2GND1 GND1 N009 ¥ ¥ N028 ¥ ¥ ICLK2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A60 Q5V2GND1 GND1 N034 ¥ N032 ¥ ¥ ICLK2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A61 Q5V2GND1 GND1 N028 N032 ILim2 CLK2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A63 Q5V2GND1 GND1 N002 N012 ¥ ¥ N007 ¥ N009 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A64 Q5V2GND1 GND1 N015 ¥ N012 N014 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A65 Q5V2GND1 GND1 N014 ¥ N013 ¥ ¥ ¥ N034 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nR7 +5V COMP1 5k\nXA58 SS1 GND1 GND1 COMP1 LTspiceVaristor-A58 rclamp=5\n.subckt LTspiceVaristor-A58 C+ C- V- V+\nD1 N01 V+ Di\nD2 V+ N02 Di\nBminClamp V- N01 V=abs(V(C+,C-))\nBmaxClamp N02 V- V=abs(V(C+,C-))\n.model Di D Ron=Rclamp Vfwd=0\n.param Rclamp=1\n.ends LTspiceVaristor-A58\n¥A62 Q5V2GND1 GND1 N075 ¥ SLOPE1 N073 Q5V2GND1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Trise=10n Vt=0 Vh=1m\nR16 CS1 SLOPE1 2k\nR19 CS1 GND1 42k\n¥A66 Q5V2GND1 GND1 ILim1 ¥ SLOPE1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.5-(0)) Trise=10n\n¥A67 Q5V2GND1 GND1 N077 ¥ N075 ¥ ¥ ¥ ILim1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A68 Q5V2GND1 GND1 ¥ N080 N077 CLK1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A69 Q5V2GND1 GND1 DC1 ¥ N080 MaxDC1 UserMaxDC1 ICLK1 DCon ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A70 Q5V2GND1 GND1 ¥ N068 Driver_off ¥ ¥ ¥ Restart ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A71 Q5V2GND1 GND1 N081 IOUT1 N068 ¥ ¥ ¥ DC1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\nXS2 OUT1 VCC N081 GND1 TSW\nXS3 GND1 OUT1 N081 GND1 BSW\nR8 +5V COMP2 5k\nXA72 SS2 GND2 GND2 COMP2 LTspiceVaristor-A72 rclamp=5\n.subckt LTspiceVaristor-A72 C+ C- V- V+\nD1 N01 V+ Di\nD2 V+ N02 Di\nBminClamp V- N01 V=abs(V(C+,C-))\nBmaxClamp N02 V- V=abs(V(C+,C-))\n.model Di D Ron=Rclamp Vfwd=0\n.param Rclamp=1\n.ends LTspiceVaristor-A72\n¥A73 Q5V2GND2 GND2 N094 ¥ SLOPE2 N093 Q5V2GND2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Trise=10n Vt=0 Vh=1m\nR12 CS2 SLOPE2 2k\nR20 CS2 GND2 42k\n¥A74 Q5V2GND2 GND2 ILim2 ¥ SLOPE2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Ref=(0.5-(0)) Trise=10n\n¥A75 Q5V2GND2 GND2 N095 ¥ N094 ¥ ¥ ¥ ILim2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A76 Q5V2GND2 GND2 ¥ N097 N095 CLK2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP Trise=10n\n¥A77 Q5V2GND2 GND2 DC2 ¥ N097 MaxDC2 UserMaxDC2 ICLK2 DCon ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\n¥A78 Q5V2GND2 GND2 ¥ N088 Driver_off ¥ ¥ ¥ Restart ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A79 Q5V2GND2 GND2 N098 IOUT2 N088 ¥ ¥ ¥ DC2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Trise=10n\nXS4 OUT2 VCC N098 GND2 TSW\nXS5 GND2 OUT2 N098 GND2 BSW\n¥A80 Q5V2GND1 GND1 ¥ N084 Vcc_UVT ¥ ¥ ¥ N086 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\n¥A81 Q5V2GND2 GND2 ¥ N099 Vcc_UVT ¥ ¥ ¥ N101 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nD10 N085 N084 Ideal\nD11 N100 N099 Ideal\nR21 N085 CS1 30\nR22 N100 CS2 30\n¥A82 Q5V2GND1 GND1 N086 ¥ IOUT1 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n Td=50n\n¥A83 Q5V2GND2 GND2 N101 ¥ IOUT2 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n Td=50n\nC18 SS1 GND1 3p ic=0\nC19 SS2 GND1 3p ic=0\nD12 N035 RT/SYNC Ideal\nH1 N082 GND1 V3 10000\nT1 N082 GND1 N083 GND1 Td=200n Z0=1k\nR14 N083 GND1 1k\nE8 N087 GND1 N083 N082 table=(0 0,10m 5)\nE9 N090 GND1 N082 N083 table=(0 0,10m 5)\n¥A84 Q5V2GND1 GND1 ¥ N089 N087 ¥ ¥ ¥ N090 ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Trise=10n\nXS6 IRT N096 N089 GND1 CMS\nE10 N096 GND1 N083 GND1 1\nC9 IRT GND1 1n\nG8 GND1 N005 IRT GND1 0.1m\nG9 GND1 N027 IRT GND1 0.1m\nG10 GND1 N018 IRT GND1 0.2m\nG11 GND1 DCL IRT GND1 0.1m\nD13 N071 N072 comp\nR13 N072 N073 10k\nR23 N073 GND1 5k\nD18 N091 N092 comp\nR24 N092 N093 10k\nR25 N093 GND2 5k\nE6 N071 GND1 COMP1 GND1 1\nE7 N091 GND2 COMP2 GND2 1\n.model Ideal D(Ron=1m Roff=1g Vfwd=0)\n.subckt SVCC + - +C -C Vser=0\nS1 + N001 +C -C SWq\nVS1 N002 N001 Vser\nDS1 - N002 Di\n.model Di D Ron=1m Roff=100Meg Vfwd=0\n.model SWq SW Ron=0.1 Roff=1g Vt=2.5 Vh=-0.5\n.ends SVCC\n.model Z5 D(Ron=100 Roff=1g Vfwd=0 Vrev=5)\n.model Z2 D(Ron=1m Roff=1g Vfwd=0 Vrev=2)\n.model Z2_5 D(Ron=1m Roff=1g Vfwd=0 Vrev=2.5)\n.subckt TSW + - +C -C Vser=0 Ilimit=1.5\nS1 + N001 +C -C SWq\nVS1 N002 N001 Vser\nIS1 N003 N002 Ilimit Vsat=100m\nDS1 - N003 Di\n.model Di D Ron=1m Roff=100Meg Vfwd=0\n.model SWq SW Ron=4 Roff=175k Vt=2.5 Vh=-1\n.ends TSW\n.subckt BSW + - +C -C Vser=0 Ilimit=2.5\nS1 + N001 +C -C SWq\nVS1 N002 N001 Vser\nIS1 N003 N002 Ilimit Vsat=100m\nDS1 - N003 Di\n.model Di D Ron=1m Roff=100Meg Vfwd=0\n.model SWq SW Ron=175k Roff=3 Vt=2.5 Vh=-1\n.ends BSW\n.subckt CMS + - +C -C Vser=0\nS1 + N001 +C -C SWq\nVS1 N002 N001 Vser\nDS1 - N002 Di\n.model Di D Ron=1m Roff=100Meg Vfwd=0\n.model SWq SW Ron=50 Roff=10g Vt=2.5 Vh=-1\n.ends CMS\n.model comp D(Ron=50 Roff=1g Vfwd=1.2)\nVQ1 Q5V2GND1 GND1 5\nVQ2 Q5V2GND2 GND2 5\n.ends LM5032»
+      «shorted pins: false»
+      «rect (-700,-1600) (700,1600) 0 0 0 0xff0000 0xf5e5f3 -1 0 -1»
+      «text (0,1850) 1 15 0 0x1000000 -1 -1 "X1"»
+      «text (0,1650) 1 15 0 0x1000000 -1 -1 "LM5032"»
+      «pin (-700,1400) (20,0) 1 7 0 0x0 -1 "VIN"»
+      «pin (700,-200) (-30,0) 1 11 0 0x0 -1 "COMP1"»
+      «pin (700,200) (-30,0) 1 11 0 0x0 -1 "CS1"»
+      «pin (-700,-1000) (20,0) 1 7 0 0x0 -1 "SS1"»
+      «pin (-700,600) (20,0) 1 7 0 0x0 -1 "UVLO"»
+      «pin (-700,200) (20,0) 1 7 0 0x0 -1 "VCC"»
+      «pin (700,600) (-20,0) 1 11 0 0x0 -1 "OUT1"»
+      «pin (700,-1000) (-20,0) 1 11 0 0x0 -1 "GND1"»
+      «pin (700,-1400) (-20,0) 1 11 0 0x0 -1 "GND2"»
+      «pin (700,1400) (-20,0) 1 11 0 0x0 -1 "OUT2"»
+      «pin (-700,-200) (20,0) 1 7 0 0x0 -1 "RES"»
+      «pin (-700,-1400) (20,0) 1 7 0 0x0 -1 "SS2"»
+      «pin (700,1000) (-20,0) 1 11 0 0x0 -1 "CS2"»
+      «pin (700,-600) (-20,0) 1 11 0 0x0 -1 "COMP2"»
+      «pin (-700,1000) (20,0) 1 7 0 0x0 -1 "DCL"»
+      «pin (-700,-600) (20,0) 1 7 0 0x0 -1 "RT/SYNC"»
+    »
+  »
+  «net (-1500,1300) 1 14 0 "+10V"»
+  «net (-2300,-1600) 1 13 0 "GND"»
+  «net (-4400,-200) 1 13 0 "GND"»
+  «net (400,-1700) 1 13 0 "GND"»
+  «net (1900,300) 1 13 0 "GND"»
+  «net (1100,300) 1 13 0 "GND"»
+  «net (4500,300) 1 13 0 "GND"»
+  «net (3700,300) 1 13 0 "GND"»
+  «net (6000,1900) 1 13 0 "GND"»
+  «net (6600,1900) 1 13 0 "GND"»
+  «net (7200,1900) 1 13 0 "GND"»
+  «net (6400,-1100) 1 13 0 "GND"»
+  «net (6400,-300) 1 14 0 "+10V"»
+  «net (7700,-1100) 1 13 0 "GND"»
+  «net (6800,-2000) 1 13 0 "GND"»
+  «net (5100,-2000) 1 13 0 "GND"»
+  «net (400,1300) 1 14 0 "OUT2"»
+  «net (400,500) 1 14 0 "OUT1"»
+  «net (5800,2600) 1 14 0 "VOUT"»
+  «junction (7700,-500)»
+  «junction (7200,2600)»
+  «junction (7000,200)»
+  «junction (7000,-500)»
+  «junction (6800,-1500)»
+  «junction (6600,2600)»
+  «junction (6000,2600)»
+  «junction (5700,200)»
+  «junction (5700,-700)»
+  «junction (5600,2600)»
+  «junction (5100,-300)»
+  «junction (5100,-1500)»
+  «junction (4500,2600)»
+  «junction (4500,900)»
+  «junction (3700,900)»
+  «junction (1900,2000)»
+  «junction (1900,900)»
+  «junction (1100,900)»
+  «junction (400,-700)»
+  «junction (400,-1500)»
+  «junction (-900,2600)»
+  «junction (-1500,1300)»
+  «junction (-1500,-1500)»
+  «junction (-2300,900)»
+  «junction (-2300,-300)»
+  «junction (-2300,-700)»
+  «junction (-2300,-1500)»
+  «junction (-2900,500)»
+  «junction (-2900,-300)»
+  «junction (-3500,500)»
+  «junction (-4400,500)»
+  «wire (-1500,1300) (-1700,1300) "+10V"»
+  «wire (-1200,1300) (-1500,1300) "+10V"»
+  «wire (-1200,100) (-1500,100) "+10V"»
+  «wire (-1500,100) (-1500,1300) "+10V"»
+  «wire (-2100,900) (-2300,900) "GND"»
+  «wire (-1200,900) (-1700,900) "N01"»
+  «wire (-2100,1300) (-2300,1300) "GND"»
+  «wire (-2300,1300) (-2300,900) "GND"»
+  «wire (-1200,500) (-1700,500) "N02"»
+  «wire (-2100,-300) (-2300,-300) "GND"»
+  «wire (-1200,-300) (-1700,-300) "N03"»
+  «wire (-2300,-300) (-2300,900) "GND"»
+  «wire (-2100,-700) (-2300,-700) "GND"»
+  «wire (-1200,-700) (-1700,-700) "N04"»
+  «wire (-2300,-700) (-2300,-300) "GND"»
+  «wire (-2100,-1500) (-2300,-1500) "GND"»
+  «wire (-1500,-1500) (-1700,-1500) "N05"»
+  «wire (-2300,-1500) (-2300,-700) "GND"»
+  «wire (-2300,-1600) (-2300,-1500) "GND"»
+  «wire (-1200,-1100) (-1500,-1100) "N05"»
+  «wire (-1500,-1100) (-1500,-1500) "N05"»
+  «wire (-1200,-1500) (-1500,-1500) "N05"»
+  «wire (-2300,-300) (-2900,-300) "GND"»
+  «wire (-2900,300) (-2900,500) "N06"»
+  «wire (-2900,-300) (-2900,-100) "GND"»
+  «wire (-2900,500) (-2100,500) "N06"»
+  «wire (-2900,-300) (-3500,-300) "GND"»
+  «wire (-3500,300) (-3500,500) "N06"»
+  «wire (-3500,-300) (-3500,-100) "GND"»
+  «wire (-3500,500) (-2900,500) "N06"»
+  «wire (-4100,500) (-4400,500) "N07"»
+  «wire (-3500,500) (-3700,500) "N06"»
+  «wire (-4400,300) (-4400,500) "N07"»
+  «wire (-4400,-200) (-4400,-100) "GND"»
+  «wire (-4400,500) (-4400,2600) "N07"»
+  «wire (-900,2600) (-500,2600) "N07"»
+  «wire (-500,2000) (-900,2000) "N07"»
+  «wire (-900,2000) (-900,2600) "N07"»
+  «wire (-4400,2600) (-900,2600) "N07"»
+  «wire (400,-1500) (400,-1100) "GND"»
+  «wire (400,-1100) (200,-1100) "GND"»
+  «wire (200,-1500) (400,-1500) "GND"»
+  «wire (400,-1700) (400,-1500) "GND"»
+  «wire (400,-700) (700,-700) "N08"»
+  «wire (200,-300) (400,-300) "N08"»
+  «wire (400,-300) (400,-700) "N08"»
+  «wire (200,-700) (400,-700) "N08"»
+  «wire (1100,300) (1100,400) "GND"»
+  «wire (1900,900) (1900,1100) "N09"»
+  «wire (1900,300) (1900,400) "GND"»
+  «wire (1400,900) (1100,900) "N10"»
+  «wire (1900,800) (1900,900) "N09"»
+  «wire (1900,900) (1800,900) "N09"»
+  «wire (1100,900) (1100,800) "N10"»
+  «wire (1100,900) (200,900) "N10"»
+  «wire (1900,1500) (1900,2000) "N11"»
+  «wire (-100,2000) (1900,2000) "N11"»
+  «wire (1900,900) (2500,900) "N09"»
+  «wire (2500,900) (2500,800) "N09"»
+  «wire (3700,300) (3700,400) "GND"»
+  «wire (4500,900) (4500,1100) "N12"»
+  «wire (4500,300) (4500,400) "GND"»
+  «wire (4000,900) (3700,900) "N13"»
+  «wire (4500,800) (4500,900) "N12"»
+  «wire (4500,900) (4400,900) "N12"»
+  «wire (3700,900) (3700,800) "N13"»
+  «wire (4200,1300) (3200,1300) "OUT1"»
+  «wire (3700,900) (3400,900) "N13"»
+  «wire (4500,900) (5100,900) "N12"»
+  «wire (5100,900) (5100,800) "N12"»
+  «wire (3400,900) (3400,100) "N13"»
+  «wire (3200,-100) (600,-100) "N13"»
+  «wire (200,100) (400,100) "N13"»
+  «wire (400,100) (600,-100) "N13"»
+  «wire (3400,100) (3200,-100) "N13"»
+  «wire (3200,300) (3000,100) "OUT1"»
+  «wire (3000,100) (800,100) "OUT1"»
+  «wire (800,100) (400,500) "OUT1"»
+  «wire (400,500) (200,500) "OUT1"»
+  «wire (3200,1300) (3200,300) "OUT1"»
+  «wire (4500,1500) (4500,2600) "N14"»
+  «wire (4500,2600) (-100,2600) "N14"»
+  «wire (4500,2600) (4900,2600) "N14"»
+  «wire (1900,2000) (4900,2000) "N11"»
+  «wire (2500,400) (2500,-300) "N15"»
+  «wire (2500,-300) (5100,-300) "N15"»
+  «wire (5100,-300) (5100,400) "N15"»
+  «wire (5300,2000) (5600,2000) "VOUT"»
+  «wire (5600,2000) (5600,2600) "VOUT"»
+  «wire (5300,2600) (5600,2600) "VOUT"»
+  «wire (6000,2400) (6000,2600) "VOUT"»
+  «wire (6000,1900) (6000,2000) "GND"»
+  «wire (5800,2600) (5600,2600) "VOUT"»
+  «wire (6600,2400) (6600,2600) "VOUT"»
+  «wire (6600,1900) (6600,2000) "GND"»
+  «wire (6600,2600) (6000,2600) "VOUT"»
+  «wire (7200,2400) (7200,2600) "VOUT"»
+  «wire (7200,1900) (7200,2000) "GND"»
+  «wire (7200,2600) (6600,2600) "VOUT"»
+  «wire (6400,-400) (6400,-300) "+10V"»
+  «wire (6400,-1100) (6400,-1000) "GND"»
+  «wire (7700,100) (7700,2600) "VOUT"»
+  «wire (7700,-500) (7700,-300) "N16"»
+  «wire (7700,-1100) (7700,-1000) "GND"»
+  «wire (7700,2600) (7200,2600) "VOUT"»
+  «wire (7000,-500) (6600,-500) "N16"»
+  «wire (7700,-600) (7700,-500) "N16"»
+  «wire (6600,-1500) (6800,-1500) "N17"»
+  «wire (5100,-1600) (5100,-1500) "N15"»
+  «wire (6800,-1500) (6800,-900) "N17"»
+  «wire (6800,-1600) (6800,-1500) "N17"»
+  «wire (6800,-900) (6600,-900) "N17"»
+  «wire (5100,-1500) (6200,-1500) "N15"»
+  «wire (5700,-700) (1100,-700) "N18"»
+  «wire (5100,-300) (5100,-1500) "N15"»
+  «wire (7000,200) (7000,800) "N16"»
+  «wire (7700,-500) (7000,-500) "N16"»
+  «wire (6100,800) (5700,800) "N18"»
+  «wire (7000,800) (6500,800) "N16"»
+  «wire (5700,200) (5700,-700) "N18"»
+  «wire (6000,-700) (5700,-700) "N18"»
+  «wire (5900,200) (5700,200) "N18"»
+  «wire (7000,-500) (7000,200) "N16"»
+  «wire (5700,800) (5700,200) "N18"»
+  «wire (7000,200) (6900,200) "N16"»
+  «wire (6500,200) (6300,200) "N19"»
+  «wire (400,1300) (200,1300) "OUT2"»
+  «wire (1600,1300) (400,1300) "OUT2"»
+  «wire (6000,2600) (5800,2600) "VOUT"»
+  «text (-4050,-1400) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 10m skipbp\n.option fastmath=1\n.option reltol=.1\n.plot V(VOUT)\n.plot V(OUT1)"»
+  «text (-4300,3350) 1 7 1 0x1000000 -1 -1 "ï»¿LM5032 Texas Instruments High voltage dual Interleaved current mode controller\nPorted Valentin Volodin ValVol.zip in https://valvol.xyz/models.php\nBy KSKelvin, Qspice subcircuit is converted from LTspice syntax/devices to Qspice syntax/devices\n - download custom Symbols-KSKelvin from https://github.com/KSKelvin-Github/Qspice"»
+»
+
