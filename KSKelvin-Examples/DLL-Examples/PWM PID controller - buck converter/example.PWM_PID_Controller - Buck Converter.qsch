@@ -1,0 +1,241 @@
+ÿØÿÛ«schematic
+  «component (-2200,300) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "15"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1700,600) 2 0
+    «symbol SW
+      «type: S»
+      «description: Voltage Controlled Switch»
+      «shorted pins: false»
+      «line (-136,100) (-200,100) 0 0 0x1000000 -1 -1»
+      «line (-136,100) (-121,89) 0 0 0x1000000 -1 -1»
+      «line (-136,-100) (-200,-100) 0 0 0x1000000 -1 -1»
+      «line (-165,91) (-165,61) 0 0 0x1000000 -1 -1»
+      «line (-180,76) (-150,76) 0 0 0x1000000 -1 -1»
+      «line (-180,-76) (-150,-76) 0 0 0x1000000 -1 -1»
+      «line (-136,-100) (-121,-89) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,105) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-105) 0 0 0x1000000 -1 -1»
+      «line (94,-45) (15,60) 0 0 0x1000000 -1 -1»
+      «ellipse (-150,-150) (150,150) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «ellipse (-25,55) (25,105) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «ellipse (-25,-105) (25,-55) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (150,-200) 1 103 0 0x1000000 -1 -1 "S1"»
+      «text (300,-50) 1 103 0 0x1000000 -1 -1 "IdealSW"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+      «pin (-200,100) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (-200,-100) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-1300,300) 0 0
+    «symbol D
+      «type: D»
+      «description: Silicon Diode»
+      «library file: Diode.txt»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (100,200) 1 7 0 0x1000000 -1 -1 "D1"»
+      «text (100,-200) 1 7 0 0x1000000 -1 -1 "IdealD"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «component (-800,600) 2 0
+    «symbol L
+      «type: L»
+      «description: Inductor»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
+      «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "L1"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "20µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (-400,300) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "100µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (200,300) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "0.5"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (1000,-300) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R4"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "Rb"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (-4900,-1400) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "Vsetpt"»
+      «text (-250,-2200) 1 39 0 0x1000000 -1 -1 "pulse 4.5/scale 6.5/scale 0.1m 0 0 2m 4m"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (1000,300) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (130,150) 1 7 0 0x1000000 -1 -1 "R3"»
+      «text (130,-150) 1 7 0 0x1000000 -1 -1 "Rt"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
+    »
+  »
+  «component (-2900,-1600) 0 0
+    «symbol PWM_PID_Controller
+      «type: Ø(.DLL)»
+      «description: PWM PID Controller»
+      «shorted pins: false»
+      «rect (-500,700) (500,-400) 0 0 0 0x4000000 0xffffff -1 1 -1»
+      «text (0,950) 1 12 0 0x1000000 -1 -1 "X1"»
+      «text (0,814) 1 15 0 0x1000000 -1 -1 "PWM_PID_Controller"»
+      «text (-500,-650) 1 7 0 0x1000000 -1 -1 "double Kp=<Kp> P Gain"»
+      «text (-500,-800) 1 7 0 0x1000000 -1 -1 "double Ki=<Ki> I Gain"»
+      «text (-500,-950) 1 7 0 0x1000000 -1 -1 "double Kd=<Kd> D Gain"»
+      «text (-500,-500) 1 7 0 0x1000000 -1 -1 "double Kv=<Kv> Overall Gain"»
+      «text (-500,-1100) 1 7 0 0x1000000 -1 -1 "bool Itype=<0;[rect],(1;[trap])> Integration method"»
+      «text (-500,-1250) 1 7 0 0x1000000 -1 -1 "double Fsw=<50k> Switching frequency"»
+      «text (-500,-1400) 1 7 0 0x1000000 -1 -1 "double OSD=<OSD> Oversampling ratio"»
+      «pin (-500,500) (50,0) 1 7 145 0x0 -1 "setpt"»
+      «pin (500,0) (-40,0) 1 11 146 0x0 -1 "ctrl"»
+      «pin (-500,0) (50,0) 1 7 145 0x0 -1 "fb"»
+      «pin (500,-300) (-40,0) 1 11 146 0x0 -1 "sawtooth"»
+      «pin (500,500) (-40,0) 1 11 18 0x0 -1 "Q"»
+    »
+  »
+  «net (-1600,300) 1 13 0 "GND"»
+  «net (-2200,0) 1 13 0 "GND"»
+  «net (-1300,0) 1 13 0 "GND"»
+  «net (-400,0) 1 13 0 "GND"»
+  «net (200,0) 1 13 0 "GND"»
+  «net (-1700,-300) 1 7 1 "gate"»
+  «net (-2000,-1900) 1 14 0 "sawtooth"»
+  «net (200,600) 1 14 0 "out"»
+  «net (-2200,600) 1 14 0 "in"»
+  «net (1000,-600) 1 13 0 "GND"»
+  «net (-4900,-1700) 1 13 0 "GND"»
+  «net (-2000,-1600) 1 14 0 "ctrl"»
+  «net (800,0) 1 14 0 "div"»
+  «net (-3700,-1600) 1 14 0 "fb"»
+  «net (-3700,-1100) 1 14 0 "setpt"»
+  «junction (1000,0)»
+  «junction (200,600)»
+  «junction (-400,600)»
+  «junction (-1300,600)»
+  «junction (-1800,-300)»
+  «wire (200,500) (200,600) "out"»
+  «wire (200,0) (200,100) "GND"»
+  «wire (-2200,100) (-2200,0) "GND"»
+  «wire (-2200,600) (-2200,500) "in"»
+  «wire (-1300,500) (-1300,600) "N01"»
+  «wire (-1300,0) (-1300,100) "GND"»
+  «wire (-400,600) (-600,600) "out"»
+  «wire (-1300,600) (-1000,600) "N01"»
+  «wire (-400,100) (-400,0) "GND"»
+  «wire (200,600) (-400,600) "out"»
+  «wire (-400,600) (-400,500) "out"»
+  «wire (-1300,600) (-1500,600) "N01"»
+  «wire (-1600,300) (-1600,400) "GND"»
+  «wire (-1800,400) (-1800,-300) "gate"»
+  «wire (-1800,-300) (-1700,-300) "gate"»
+  «wire (-1900,600) (-2200,600) "in"»
+  «wire (1000,-600) (1000,-500) "GND"»
+  «wire (1000,0) (1000,-100) "div"»
+  «wire (1000,600) (1000,500) "out"»
+  «wire (-4900,-1100) (-4900,-1200) "setpt"»
+  «wire (-1900,-1900) (-2000,-1900) "sawtooth"»
+  «wire (-4900,-1700) (-4900,-1600) "GND"»
+  «wire (-2000,-1600) (-1900,-1600) "ctrl"»
+  «wire (200,600) (1000,600) "out"»
+  «wire (800,0) (600,0) "div"»
+  «wire (1000,100) (1000,0) "div"»
+  «wire (600,0) (600,-3200) "div"»
+  «wire (1000,0) (800,0) "div"»
+  «wire (600,-3200) (-3900,-3200) "div"»
+  «wire (-3900,-3200) (-3900,-1600) "div"»
+  «wire (-3700,-1600) (-3400,-1600) "div"»
+  «wire (-3700,-1100) (-4900,-1100) "setpt"»
+  «wire (-3900,-1600) (-3700,-1600) "div"»
+  «wire (-3400,-1100) (-3700,-1100) "setpt"»
+  «wire (-2400,-1900) (-2000,-1900) "sawtooth"»
+  «wire (-2000,-1600) (-2400,-1600) "ctrl"»
+  «wire (-2400,-1100) (-1800,-1100) "gate"»
+  «wire (-1800,-300) (-1800,-1100) "gate"»
+  «text (-2350,1200) 0.8 7 0 0x1000000 -1 -1 "ï»¿.model IdealSW SW (Ron=1m Roff=100Meg Vt=0.5 Vh=0)"»
+  «text (-2350,1050) 0.8 7 0 0x1000000 -1 -1 "ï»¿.model IdealD D (Ron=1m Roff=100Meg Vfwd=0)"»
+  «text (-5150,1100) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0 7.5m 0; 1.5m"»
+  «text (-1000,-550) 0.8 7 0 0x1000000 -1 -1 "ï»¿.param Rt=40K\n.param Rb=10K \n.param scale=(Rt+Rb)/Rb"»
+  «text (-5150,2100) 1 7 1 0x1000000 -1 -1 "ï»¿\\KSKelvin-Examples\\DLL-Examples\\PWM PID controller - buck converter\\\nBy KSKelvin on 10-29-2026\n  - https://github.com/QSpice-Circuits/Qspice-examples\n\nClose Loop Feedback for Buck Converter with PWM PID Controller\nStudy Switching Freq and PID Sampling Freq Relationship"»
+  «text (-1000,-250) 0.8 7 1 0x1000000 -1 -1 "ï»¿Resistor Divider Network"»
+  «text (-3930,-4080) 1 7 0 0x1000000 -1 -1 "ï»¿; affected by OSD\n.param Kv=5\n.param Kp=0.1\n.param Ki=500\n.param Kd=0"»
+  «text (-2030,-4080) 1 7 1 0x1000000 -1 -1 "ï»¿; unaffected by OSD\n.param Kv=1\n.param Kp=0\n.param Ki=1000\n.param Kd=0"»
+  «text (-3900,-3400) 1 7 0 0x1000000 -1 -1 "ï»¿.step param OSD list 1 2 8"»
+  «text (-5150,500) 1 7 0 0x1000000 -1 -1 "ï»¿.plot tran V(out)\n.plot tran V(gate)\n.plot tran V(sawtooth)\n.plot tran V(ctrl) "»
+  «text (-1850,-2900) 1 7 1 0x1000000 -1 -1 "ï»¿OSD : Oversampling Ratio of PID\ni.e. PID sampling at Fsw*OSD"»
+»
+
