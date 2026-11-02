@@ -269,7 +269,7 @@
   «wire (200,-1400) (-300,-1400) "N05"»
   «wire (400,800) (700,800) "N08"»
   «text (900,-50) 1 7 0 0x1000000 -1 -1 "ï»¿.model D D Ron=1m Vfwd=0"»
-  «text (-1100,-2950) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.1\n.plot I(Isw)\n.plot V(IN) V(OUT)"»
+  «text (1700,-2000) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 0.1\n.plot I(Isw)\n.plot I(L1)\n.plot V(IN) V(OUT)"»
   «text (-1900,1600) 1 7 1 0x1000000 -1 -1 "ï»¿Voltage hysteresis control of buck converter\nCustom Symbol from Symbols-KSKelvin\n  - download link : https://github.com/KSKelvin-Github/Qspice/"»
   «text (-1900,950) 1 7 1 0x1000000 -1 -1 "ï»¿Input voltage step"»
 »
