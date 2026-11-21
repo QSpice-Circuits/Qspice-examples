@@ -76,7 +76,7 @@
   «component (-200,-400) 0 0
     «symbol Op-Amp-with-Limited-Output
       «type: X»
-      «description: (PWL) Op-Amp with Limited Output»
+      «description: (PLECS) Op-Amp with Limited Output»
       «library file: |.subckt Op-Amp-with-Limited-Output IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=limit(A*V(IN+,IN-),Vmin,Vmax)\nR1 IN+ IN- 1e15\n.ends Op-Amp-with-Limited-Output»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
@@ -150,7 +150,7 @@
   «component (100,-3400) 0 0
     «symbol Op-Amp
       «type: X»
-      «description: (PWL) Op-Amp»
+      «description: (PLECS) Op-Amp»
       «library file: |.subckt Op-Amp IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=A*V(IN+,IN-)\nR1 IN+ IN- 1e15\n.ends Op-Amp»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
@@ -203,7 +203,7 @@
   «component (4900,-3400) 0 0
     «symbol Op-Amp
       «type: X»
-      «description: (PWL) Op-Amp»
+      «description: (PLECS) Op-Amp»
       «library file: |.subckt Op-Amp IN+ IN- OUT+ OUT-\nB1 OUT+ OUT- V=A*V(IN+,IN-)\nR1 IN+ IN- 1e15\n.ends Op-Amp»
       «shorted pins: false»
       «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»

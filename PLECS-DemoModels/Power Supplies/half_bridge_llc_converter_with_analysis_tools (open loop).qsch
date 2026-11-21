@@ -19,7 +19,7 @@
   «component (400,1000) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PWL) MOSFET with Diode [Ideal]»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -50,7 +50,7 @@
   «component (400,-200) 0 0
     «symbol MOSFET-with-Diode
       «type: X»
-      «description: (PWL) MOSFET with Diode [Ideal]»
+      «description: (PLECS) MOSFET with Diode [Ideal]»
       «library file: |.subckt MOSFET-with-Diode D G S\nS1 D S G 0 SWi ON=s_init OFF=!s_init\nD1 S D Di\n.model Di D Ron=1m Roff=20Meg Vfwd=0\n.model SWi SW Ron=max(1m,Ron) Roff=20Meg Vt=0.5 Vh=0\n.ends MOSFET-with-Diode»
       «shorted pins: false»
       «line (0,200) (0,150) 0 0 0x1000000 -1 -1»
@@ -81,7 +81,7 @@
   «component (1200,300) 2 0
     «symbol Capacitor
       «type: C»
-      «description: (PWL) Capacitor»
+      «description: (PLECS) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -99,7 +99,7 @@
   «component (1800,300) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PWL) Inductor»
+      «description: (PLECS) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -115,7 +115,7 @@
   «component (2300,-200) 0 0
     «symbol Inductor
       «type: L»
-      «description: (PWL) Inductor»
+      «description: (PLECS) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -168,7 +168,7 @@
   «component (3700,300) 6 0
     «symbol Diode
       «type: X»
-      «description: (PWL) Diode»
+      «description: (PLECS) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -186,7 +186,7 @@
   «component (3700,-700) 6 0
     «symbol Diode
       «type: X»
-      «description: (PWL) Diode»
+      «description: (PLECS) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -204,7 +204,7 @@
   «component (4900,-400) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PWL) Capacitor»
+      «description: (PLECS) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
@@ -222,7 +222,7 @@
   «component (-1500,-2600) 0 0
     «symbol Constant
       «type: V»
-      «description: (PWL) Constant»
+      «description: (PLECS) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -235,7 +235,7 @@
   «component (-700,-2600) 0 0
     «symbol Gain
       «type: X»
-      «description: (PWL) Gain»
+      «description: (PLECS) Gain»
       «library file: |.subckt Gain in out\nE1 out 0 in 0 K\n.ends Gain»
       «shorted pins: false»
       «line (-80,50) (-80,-60) 0 0 0x1000000 -1 -1»
@@ -252,7 +252,7 @@
   «component (600,-2600) 0 0
     «symbol Saturation
       «type: X»
-      «description: (PWL) Saturation»
+      «description: (PLECS) Saturation»
       «library file: |.subckt Saturation in out\nB1 out 0 V=limit(V(in),LowerLimit,UpperLimit)\n.ends Saturation»
       «shorted pins: false»
       «line (0,-170) (0,170) 0 0 0xffa0a1 -1 -1»
@@ -272,7 +272,7 @@
   «component (1400,-2200) 0 0
     «symbol Constant
       «type: V»
-      «description: (PWL) Constant»
+      «description: (PLECS) Constant»
       «shorted pins: false»
       «line (0,-200) (0,-150) 0 0 0x1000000 -1 1»
       «rect (-200,150) (200,-150) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»
@@ -285,7 +285,7 @@
   «component (4900,-2100) 0 0
     «symbol Turn-on-Delay
       «type: X»
-      «description: (PWL) Turn-on Delay»
+      «description: (PLECS) Turn-on Delay»
       «library file: |.subckt Turn-on-Delay IN OUT\n¥1 p1v 0 N01 ¥ IN ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Td=T_d\n¥2 p1v 0 OUT ¥ IN N01 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Rout=1m\nV1 p1v 0 1\n.ends Turn-on-Delay»
       «shorted pins: false»
       «line (-150,-100) (0,-100) 0 0 0x1000000 -1 -1»
@@ -325,7 +325,7 @@
   «component (5600,-2900) 0 0
     «symbol Turn-on-Delay
       «type: X»
-      «description: (PWL) Turn-on Delay»
+      «description: (PLECS) Turn-on Delay»
       «library file: |.subckt Turn-on-Delay IN OUT\n¥1 p1v 0 N01 ¥ IN ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ OR Td=T_d\n¥2 p1v 0 OUT ¥ IN N01 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ AND Rout=1m\nV1 p1v 0 1\n.ends Turn-on-Delay»
       «shorted pins: false»
       «line (-150,-100) (0,-100) 0 0 0x1000000 -1 -1»
@@ -375,7 +375,7 @@
   «component (2900,-2400) 0 0
     «symbol Variable-Frequency-PWM
       «type: X»
-      «description: (PWL) Variable Frequency PWM»
+      «description: (PLECS) Variable Frequency PWM»
       «library file: |.subckt Variable-Frequency-PWM m df s\nV1 n1v 0 -1\nV2 p1v 0 1\n¥1 p1v n1v sign ¥ master 0 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT VT=VT VH=VH TTOL=TTOL\nB1 df-limit 0 V=limit(0.001,V(df),1000)\nB2 master 0 V=if(CarrierType==1,idt(V(f-setpoint),0,V(sign)), idt(sign*V(sign)*V(f-setpoint)*2,0,0))\nB3 latch 0 V=sign*V(sign)<=0.5 & state(1,sign*V(sign))>0.5\nB4 df-zoh 0 V=idt(0,V(df-limit),V(latch))\nB5 f-setpoint 0 V=V(df-zoh)*f\nB6 saw 0 V=V(master)*(CarrierLimits_max-CarrierLimits_min)+CarrierLimits_min\nB7 s 0 V=if(V(m)>V(saw),OutputValues_max,OutputValues_min)\n.param VT=if(CarrierType==1,1,0.5)\n.param VH=if(CarrierType==1,0,0.5)\n.param sign=if(CarrierType==1,1,-1)\n.ends Variable-Frequency-PWM»
       «shorted pins: false»
       «rect (-500,400) (500,-400) 0 0 0 0x1000000 0xc8ffe6 -1 0 -1»

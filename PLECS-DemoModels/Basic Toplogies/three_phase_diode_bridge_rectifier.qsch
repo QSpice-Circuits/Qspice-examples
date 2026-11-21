@@ -2,7 +2,7 @@
   «component (-800,0) 0 0
     «symbol Voltage-Source-AC-3-phase
       «type: X»
-      «description: (PWL) Voltage Source AC 3-phase»
+      «description: (PLECS) Voltage Source AC 3-phase»
       «library file: |.subckt Voltage-Source-AC-3-phase a b c n\nV1 a n sin 0 V w -phi/2/pi/w 0 0\nV2 b n sin 0 V w -phi/2/pi/w 0 -2/3*180\nV3 c n sin 0 V w -phi/2/pi/w 0 2/3*180\n.ends Voltage-Source-AC-3-phase»
       «shorted pins: false»
       «line (300,200) (150,200) 0 0 0x1000000 -1 -1»
@@ -29,7 +29,7 @@
   «component (300,700) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PWL) Inductor»
+      «description: (PLECS) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -45,7 +45,7 @@
   «component (300,0) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PWL) Inductor»
+      «description: (PLECS) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -61,7 +61,7 @@
   «component (300,-700) 2 0
     «symbol Inductor
       «type: L»
-      «description: (PWL) Inductor»
+      «description: (PLECS) Inductor»
       «shorted pins: false»
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
@@ -77,7 +77,7 @@
   «component (1500,1100) 0 0
     «symbol Diode
       «type: X»
-      «description: (PWL) Diode»
+      «description: (PLECS) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -95,7 +95,7 @@
   «component (1500,-1100) 0 0
     «symbol Diode
       «type: X»
-      «description: (PWL) Diode»
+      «description: (PLECS) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -113,7 +113,7 @@
   «component (2500,1100) 0 0
     «symbol Diode
       «type: X»
-      «description: (PWL) Diode»
+      «description: (PLECS) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -131,7 +131,7 @@
   «component (2500,-1100) 0 0
     «symbol Diode
       «type: X»
-      «description: (PWL) Diode»
+      «description: (PLECS) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -149,7 +149,7 @@
   «component (3500,1100) 0 0
     «symbol Diode
       «type: X»
-      «description: (PWL) Diode»
+      «description: (PLECS) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -167,7 +167,7 @@
   «component (3500,-1100) 0 0
     «symbol Diode
       «type: X»
-      «description: (PWL) Diode»
+      «description: (PLECS) Diode»
       «library file: |.subckt Diode A K\nD1 A K Di\n.model Di D Ron=if(Ron<=0,1m,Ron) Roff=10Meg Vfwd=Vf\n.ends Diode»
       «shorted pins: false»
       «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
@@ -249,7 +249,7 @@
   «component (5200,0) 0 0
     «symbol Capacitor
       «type: C»
-      «description: (PWL) Capacitor»
+      «description: (PLECS) Capacitor»
       «shorted pins: false»
       «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
       «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
